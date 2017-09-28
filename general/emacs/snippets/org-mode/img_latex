@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: img_latex
+# key: img_latex
+# --
+\begin{figure}
+  \includegraphics[width=\linewidth,height=18cm,keepaspectratio]{$0}
+  \caption{$1}
+  \label{fig:$0}
+\end{figure}

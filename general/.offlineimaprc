@@ -1,0 +1,83 @@
+[general]
+accounts = jrenslin, yahoo, museumdigital, livecom
+# Controls how many accounts may be synced simultaneously
+maxsyncaccounts = 1
+ui = ttyui
+socktimeout = 60
+pythonfile = ~/Sync/Programming/Python/Basic/offlineimap.py
+
+# Offlineimap can synchronize more than one account at a time.  If you
+# want to enable this feature, set the below value to something
+# greater than 1.  To force it to synchronize only one account at a
+# time, set it to 1.
+#
+# Note: if you are using autorefresh and have more than one account,
+# you must set this number to be >= to the number of accounts you have;
+# since any given sync run never "finishes" due to a timer, you will never
+# sync your additional accounts if this is 1.
+
+maxsyncaccounts = 10
+
+[Account jrenslin]
+localrepository = jrenslinlocal
+remoterepository = jrenslinremote
+autorefresh = 2
+
+[Account yahoo]
+localrepository = yahoolocal
+remoterepository = yahooremote
+autorefresh = 2
+
+[Account museumdigital]
+localrepository = museumdigitallocal
+remoterepository = museumdigitalremote
+autorefresh = 2
+
+[Account livecom]
+localrepository = livecomlocal
+remoterepository = livecomremote
+autorefresh = 60
+
+[Repository jrenslinlocal]
+type = Maildir
+localfolders = ~/Mail/jrenslin
+
+[Repository yahoolocal]
+type = Maildir
+localfolders = ~/Mail/yahoo
+
+[Repository museumdigitallocal]
+type = Maildir
+localfolders = ~/Mail/museum-digital
+
+[Repository livecomlocal]
+type = Maildir
+localfolders = ~/Mail/livecom
+
+[Repository jrenslinremote]
+type = IMAP
+# Not public
+
+# Folders to get:
+# folderfilter = lambda foldername: foldername in [
+#             'INBOX', 'Drafts', 'Sent', 'archiv']
+
+[Repository yahooremote]
+type = IMAP
+# Not public
+
+[Repository museumdigitalremote]
+type = IMAP
+# Not public
+
+[Repository livecomremote]
+type = IMAP
+# Not public
+
+[mbnames]
+enabled = yes
+filename = ~/.mutt/mailboxes
+header = "mailboxes "
+peritem = "+%(accountname)s/%(foldername)s"
+sep = " "
+footer = "\n"

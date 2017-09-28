@@ -1,0 +1,93 @@
+separator=false
+separator_block_width=0
+
+[mpd]
+label=<span>   🎧
+command=mpc status -p 6601 | head -n 1 | sed 's/$/   <\/span>/'
+align=center
+interval=20
+min_width=300
+markup=pango
+
+
+[ram]
+label=<span>   
+command=free -m | awk 'NR==2{printf "%.2f%%", $3/1000 }' | sed 's/\%/G   <\/span>/'
+interval=3
+markup=pango
+min_width=250
+align=right
+
+[cpu]
+label=<span>   
+command=~/git-src/i3blocks-gaps/scripts/cpu_usage | sed 's/$/   <\/span>/'
+interval=3
+markup=pango
+
+
+[temp]
+#label=<span>   🌡
+label=<span>   
+command=echo "$(sensors coretemp-isa-0000 | awk '/Package/ {print $4}' | sed 's/+//')" | sed 's/$/   <\/span>/'
+interval=15
+markup=pango
+
+
+[bandwidth]
+command=echo "$(~/git-src/i3blocks-gaps/scripts/bandwidth | sed 's/IN/⮋/' | sed 's/OUT/⮉/')" | sed 's/^/<span>   /' | sed 's/$/   <\/span>/'
+interval=5
+markup=pango
+min_width=110
+align=center
+
+[load]
+label=<span>   
+command=~/git-src/i3blocks-gaps/scripts/load_average | sed 's/$/   <\/span>/'
+interval=10
+markup=pango
+
+
+[volume]
+label=<span>   
+command=~/git-src/i3blocks-gaps/scripts/volume | sed 's/$/   <\/span>/'
+#command=amixer get Master | grep -E -o '[0-9]{1,3}?%' | head -1 | sed 's/^/<span>/' | sed 's/$/<\/span>/'
+interval=2
+signal=10
+markup=pango
+
+
+[email]
+label=<span>   📧 
+command=echo "$(python3 ~/Sync/Programming/Python/checkmaildir/checkmaildirs_number.py | sed 's/$/   <\/span>/')"
+interval=120
+color=#dddddd
+markup=pango
+
+
+# Buttons
+# [rss]
+# full_text=<span>   🏷   </span>
+# command=gnome-terminal --hide-menubar -e newsbeuter
+# markup=pango
+
+
+# [ncmpcpp]
+# full_text=<span>   ♬   </span>
+# command=gnome-terminal --hide-menubar -e ncmpcpp
+# markup=pango
+
+
+# [ip]
+# full_text=<span>   🔗   </span>
+# command=notify-send $(hostname --all-ip-addresses) 
+# markup=pango
+
+[time]
+label=<span>   🕓
+command=date '+%Y-%m-%d %H:%M:%S' | sed 's/$/   <\/span>/'
+interval=5
+color=#ffffff
+background=#101010
+markup=pango
+
+

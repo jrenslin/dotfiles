@@ -1,0 +1,13 @@
+set sendmail  = "/usr/bin/msmtp -a yahoo"
+set mbox      = "+yahoo/archive"
+set postponed = "+yahoo/drafts"
+
+color status cyan default
+
+macro index D \
+    "<save-message>+yahoo/Trash<enter>" \
+    "move message to the trash"
+
+macro index S \
+    "<save-message>+yahoo/Spam<enter>"  \
+        "mark message as spam"

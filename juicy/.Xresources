@@ -1,0 +1,103 @@
+Xft.dpi:          100
+Xft.antialias:    true
+Xft.hinting:      true
+Xft.rgba:         rgb
+Xft.autohint:     true
+Xft.hintstyle:    hintfull
+Xft.lcdfilter:    lcddefault
+
+
+*foreground:      #FFFFFF
+*background:      #141414
+*cursorColor:     #c5c8c6
+
+!blacky
+*color0:          #000000
+*color8:          #373B41
+
+!red
+*color1:          #FF0054
+*color9:          #D65E75
+
+!green
+*color2:          #B1D630
+*color10:         #87cf05
+
+!yellow
+*color3:          #9D895E
+*color11:         #ECE1C8
+
+!blue
+*color4:          #d1ed87
+*color12:         #d1ed87
+
+!magenta
+*color5:          #B576BC
+*color13:         #DEB3DF
+
+!cyan
+*color6:          #569A9F
+*color14:         #B6E0E5
+
+!white
+*color7:          #E2DCCC
+*color15:         #E2DCCC
+
+! -------------------
+! Anki
+! -------------------
+
+! ------------------------------------------------------------------------------
+! URXVT settings
+! ------------------------------------------------------------------------------
+
+URxvt.depth:                    32
+URxvt.geometry:                 90x30
+URxvt.loginShell:               true
+URxvt.internalBorder:           15
+URxvt.lineSpace:                1
+
+! transparency - true or false (default)
+URxvt*transparent:             false
+
+! tint with any color; i.e., blue, red, tomato4, olivedrab2, etc.
+! some nice listings are at:
+! http://www.nisrv.com/drupal/?q=node/11
+! http://www.htmlgoodies.com/tutorials/colors/article.php/3478921
+! URxvt*tintColor: S_base02
+
+! shading - 0 to 99 darkens, 101 to 200 lightens.
+! Do not use with tintColor; just use a darker or lighter color instead.
+URxvt*shading:                 100
+
+URxvt*saveLines:               100
+
+! URxvt*foreground: #657b83
+! URxvt*background: #002b36
+
+! do not scroll with output
+URxvt*scrollTtyOutput:         false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer:        true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress:       true
+
+! # Terminal font
+URxvt*font:                    xft:Meslo LG S DZ:Regular:size=11.4,\
+                               xft:M+ 2c,\
+                               xft:Liberation Mono
+URxvt*boldFont:                xft:Meslo LG S DZ:Bold:size=11.4,\
+                               xft:M+ 2c,\
+                               xft:Liberation Mono:size=13
+URxvt*letterSpace:             -2
+
+! # scrollbar - true (default) or false
+URxvt*scrollBar:               false
+
+! # scrollbar position - left=false (default) or right=true
+URxvt*scrollBar_right:         false
+
+! # scrollbar style - rxvt (default), plain, next, or xterm
+URxvt*scrollstyle:             plain

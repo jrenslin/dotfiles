@@ -1,0 +1,20 @@
+text/plain;           w3m -I %{charset} -T text/plain; copiousoutput;
+text/html;            w3m -I %{charset} -T text/html; copiousoutput;
+text/enriched;        w3m -I %{charset} -T text/enriched; copiousoutput;
+text/*;               w3m -I %{charset} -T text/html; copiousoutput;
+
+
+application/pdf;      mupdf -r 180 %s; 
+application/cbz;      mupdf -r 180 %s; 
+application/cbr;      mupdf -r 180 %s; 
+application/msword;   libreoffice %s;
+application/json;     emacsclient %s; 
+application/xml;      emacsclient %s; 
+application/rdf;      emacsclient %s;
+
+application/*         mimeopen %s;
+
+image/*;              feh -F %s
+image/gif;            firefox %s;
+
+video/*;              mpv %s;

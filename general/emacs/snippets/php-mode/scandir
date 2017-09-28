@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: scandir
+# key: scandir_
+# --
+array_diff(scandir('./XYZ'), array('.', '..'))
+

@@ -1,0 +1,79 @@
+# --------------------------------------------------------------------------
+# Styling
+# --------------------------------------------------------------------------
+
+# Formatting Options ---------------------------------
+
+# Set linear view instead of threads
+set       sort             = date
+
+# Set the date format as used in index 
+set       date_format      = "%y-%m-%d"
+
+# Set format for index view
+set       index_format     = "[%Z] %-4C  %-20.20F   %s %> 📅 %D"
+
+# Set the format of the status line (at the bottom)
+set       status_format    = "—%r—————————————————————―――――| %?M?%M/?%m msgs%?n?, %n new?%?d?, %d del?%?F?, %F flag?%?t?, %t tag?%?p?, %p postp?%?b?, %b inc?%?l?, %l? >――(%f)――%s―%>―%P―"
+
+# Set format
+set       folder_format    = "[%N] %-4C %f %> 📅 %-14d %t (👨 %-8.8u %-8.8g - %6s)"
+
+set       message_format   = "%s"
+
+# Pager ----------------------------------------------
+
+set       text_flowed      = yes
+set       markers          = no
+set       smart_wrap       = yes
+
+# Sidebar --------------------------------------------
+
+# Should the Sidebar be shown?
+set       sidebar_visible = yes
+
+# How wide should the Sidebar be in screen columns?
+# Note: Some characters, e.g. Chinese, take up two columns each.
+set       sidebar_width = 30
+
+# Should the mailbox paths be abbreviated?
+set       sidebar_short_path = no
+
+# When abbreviating mailbox path names, use any of these characters as path
+# separators.  Only the part after the last separators will be shown.
+# For file folders '/' is good.  For IMAP folders, often '.' is useful.
+set       sidebar_delim_chars = '/.'
+
+# If the mailbox path is abbreviated, should it be indented?
+set       sidebar_folder_indent = yes
+
+# Indent mailbox paths with this string.
+set       sidebar_indent_string = '  '
+
+# Make the sidebar only display mailboxes that contain new, or flagged, mail.
+set       sidebar_new_mail_only = yes
+
+# When searching for mailboxes containing new mail, should the search wrap around when it reaches the end of the list?
+set       sidebar_next_new_wrap = no
+
+# Show the Sidebar on the right-hand side of the screen
+set       sidebar_on_right = no
+
+# The character to use as the divider between the Sidebar and the other Mutt panels. [On previous versions, this function seems to have only been available for one character. Now, the string may contain more than one character that will be used.]
+set       sidebar_divider_char = ' | '
+
+# Display the Sidebar mailboxes using this format string.
+set       sidebar_format = '%B%?F? [%F]?%* %?N?%N/?%S'
+
+# Sort the mailboxes in the Sidebar using this method:
+#       count    - total number of messages
+#       flagged  - number of flagged messages
+#       new      - number of new messages
+#       path     - mailbox path
+#       unsorted - do not sort the mailboxes
+set       sidebar_sort_method = 'unsorted'
+
+# Any mailboxes that are whitelisted will always be visible, even if the sidebar_new_mail_only option is enabled.
+sidebar_whitelist '=jrenslin/INBOX'
+sidebar_whitelist '=yahoo/Inbox'
+sidebar_whitelist '=museum-digital/Inbox'

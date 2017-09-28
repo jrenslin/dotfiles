@@ -1,0 +1,314 @@
+#---------------------------------------------
+# TINT2 CONFIG FILE
+#---------------------------------------------
+
+# ID 1
+rounded = 2
+background_color = #222933 100
+#background_color = #25232A 100
+border_width = 0
+border_color = #25232A 100
+
+# ID 2
+rounded = 2
+background_color = #2C3441 100
+border_color = #2C3441 100
+
+# ID 3
+rounded = 2
+background_color = #67548F 100
+border_width = 0
+border_color = #67548F 100
+
+# ID 4
+rounded = 2
+background_color = #25232A 100
+border_width = 0
+border_color = #f2f2f2 100
+
+# ID 5
+rounded = 2
+background_color = #bb5555 100
+border_width = 0
+border_color = #bb5555 100
+
+# TASKBAR 1
+taskbar_mode = single_desktop
+taskbar_padding = 60 0 20
+taskbar_background_id = 0
+taskbar_active_background_id = 0
+taskbar_name = 1
+taskbar_hide_inactive_tasks = 0
+taskbar_hide_different_monitor = 0
+taskbar_always_show_all_desktop_tasks = 0
+taskbar_name_padding = 4 2
+taskbar_name_background_id = 0
+taskbar_name_active_background_id = 0
+taskbar_name_font_color = #e3e3e3 100
+taskbar_name_active_font_color = #ffffff 100
+taskbar_distribute_size = 0
+taskbar_sort_order = none
+task_align = left
+
+# TASKBAR 2
+taskbar_mode = multi_desktop
+taskbar_hide_if_empty = 0
+taskbar_padding = 20 0 0
+taskbar_background_id = 0
+taskbar_active_background_id = 0
+taskbar_name = 1
+taskbar_hide_inactive_tasks = 1
+taskbar_hide_different_monitor = 1
+taskbar_always_show_all_desktop_tasks = 1
+taskbar_name_padding = 40 2
+taskbar_name_background_id = 0
+taskbar_name_active_background_id = 2
+taskbar_name_urgent_background_id = 5
+taskbar_name_font_color = #e3e3e3 100
+taskbar_name_active_font_color = #ffffff 100
+taskbar_distribute_size = 1
+taskbar_sort_order = none
+task_align = left
+
+# PANEL
+panel_monitor = all
+panel_position = top left
+panel_size = 100% 60
+panel_margin = 0 0
+panel_padding = 60 0 0
+font_shadow = 0
+panel_background_id = 1
+wm_menu = 1
+panel_dock = 0
+panel_layer = bottom
+autohide = 0
+autohide_show_timeout = 0
+autohide_hide_timeout = 0
+# panel_items = T
+panel_items = TEEEEEEBCS
+
+# TASKS
+
+task_icon = 0
+task_text = 1
+task_maximum_size = 150 25
+task_centered = 1
+task_padding = 10 0
+task_padding_active = 10 0
+task_font = Source Sans Pro Semibold 15
+task_font_color = #E2DCCC 100
+task_icon_asb = 100 0 0
+task_background_id = 1
+task_active_background_id = 2
+task_active_font_color = #E2DCCC 100
+task_urgent_background_id = 5
+task_urgent_font_color = green 100
+urgent_nb_of_blink = 5
+
+
+#---------------------------------------------
+# SYSTRAYBAR
+#---------------------------------------------
+systray_padding = 0 4 8
+systray_background_id = 0
+systray_sort = ascending
+systray_icon_size = 30
+systray_icon_asb = 100 0 0
+systray_monitor = 1
+
+#-------------------------------------
+# Clock
+time1_format = %H:%M
+time2_format = %A %d %B
+time1_timezone = 
+time2_timezone = 
+clock_font_color = #ffffff 100
+clock_padding = 2 0
+clock_background_id = 0
+clock_tooltip = 
+clock_tooltip_timezone = 
+clock_lclick_command = 
+clock_rclick_command = orage
+clock_mclick_command = 
+clock_uwheel_command = 
+clock_dwheel_command = 
+
+#---------------------------------------------
+# Battery
+#---------------------------------------------
+battery_hide = never
+battery_low_status = 25
+battery_low_cmd  = notify-send "battery low"
+bat1_font = Source Sans Pro Semibold 15
+bat2_font = Source Sans Pro Semibold 15
+battery_font_color = #E2DCCC 100
+battery_padding = 20 0
+battery_background_id = 1
+
+
+#---------------------------------------------
+# CLOCK
+#---------------------------------------------
+time1_format = %H:%M
+time1_font = Dejavu Sans 16
+clock_font_color = #E2DCCC 100
+clock_padding = 4 10
+clock_background_id = 1
+clock_lclick_command =
+clock_tooltip = %a, %d. %b %Y
+time2_font= sans 8
+clock_lclick_command = gnome-terminal -e ikhal --hide-menubar --geometry=-0+0
+
+#---------------------------------------------
+# Executor 1: MPD
+execp = new
+execp_command = echo "🎧  $(mpc status -p 6601 | head -n 1)"
+execp_interval = 15
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 0
+execp_font = Dejavu sans 15
+execp_font_color = #FFFFFF 100
+# execp_font_color = #25232A 100
+execp_padding = 30 0 20
+execp_background_id = 2
+execp_centered = 1
+execp_lclick_command = mpc -p 6601 toggle
+execp_rclick_command = mpc -p 6601 stop
+execp_mclick_command = gnome-terminal --hide-menubar -e ncmpcpp
+
+#---------------------------------------------
+# Executor 2: CPU
+execp = new
+execp_command = echo "   $(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage "%"}' | cut -c -4)%"
+execp_interval = 15
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 0
+execp_font = Dejavu sans 15
+execp_font_color = #FFFFFF 100
+execp_padding = 30 0 20
+execp_background_id = 4
+execp_centered = 1
+
+#---------------------------------------------
+# Executor 3: Temperature
+execp = new 
+execp_command = echo "   $(sensors coretemp-isa-0000 | awk '/Package/ {print $4}' | sed 's/+//')"
+execp_interval = 15
+execp_has_icon = 0 
+execp_cache_icon = 0
+execp_continuous = 0 
+execp_markup = 0
+execp_font = Dejavu sans 15
+execp_font_color = #FFFFFF 100
+execp_padding = 30 0 20
+execp_background_id = 2
+execp_centered = 1
+
+#---------------------------------------------
+# Executor 4: Currently connected to which WIFI network
+execp = new
+execp_command = echo "📊   $(wicd-cli -i | awk '/Connected to/ {print $3} {print $5}' | sed ':a;N;$!ba;s/\n/ /g' | awk '{$1=$1;print}')"
+execp_interval = 30
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0 
+execp_markup = 0
+execp_font = Dejavu sans 15
+execp_font_color = #FFFFFF 100
+execp_padding = 30 0 20
+execp_background_id = 4
+execp_centered = 1
+
+#---------------------------------------------
+# Executor 4: Mail
+execp = new
+execp_command = echo "📧   $(python ~/Sync/Programming/Python/checkmaildir/checkmaildirs_number.py)"
+execp_interval = 30
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 0
+execp_font = Dejavu sans 15
+execp_font_color = #FFFFFF 100
+execp_padding = 30 0 20
+execp_background_id = 2
+execp_centered = 1
+
+
+#--------------------------------------------
+# Separator 1
+separator = new
+separator_background_id = 2
+separator_color = #FF89CF 100
+separator_color = #7889CF 100
+separator_style = dots
+separator_size = 300
+separator_padding = 0 0
+
+#-------------------------------------
+# Executor 6
+execp = new
+execp_command = ~/Sync/Programming/bash/tint2/tint2_vol.sh
+execp_interval = 15
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 0
+execp_lclick_command = pactl list sinks | grep -qi 'Mute: yes' && pactl set-sink-mute 0 0 || pactl set-sink-mute 0 1
+execp_rclick_command = pactl list sources | grep -A12 'Source #1' | grep -qi 'Mute: yes' && pactl set-source-mute 1 0 || pactl set-source-mute 1 1
+execp_mclick_command = pavucontrol
+execp_uwheel_command = amixer set Capture 2%+; amixer set Master 2%+
+execp_dwheel_command = amixer set Capture 2%-; amixer set Master 2%-
+execp_font = Dejavu sans 15
+execp_font_color = #E2DCCC 100
+execp_padding = 30 0 0
+execp_background_id = 0
+# execp_centered = 1
+# execp_icon_w = 0
+# execp_icon_h = 0
+
+#-------------------------------------
+# Executor 1
+execp = new
+execp_command = /home/jrenslin/Sync/Programming/bash/tint2/tint2_weather.sh 
+execp_interval = 300
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 0
+execp_lclick_command = firefox https://maps.darksky.net/@temperature,21.125,-7.207,3
+execp_font = Dejavu sans 15
+execp_font_color = #E2DCCC 100
+execp_padding = 0 0
+execp_background_id = 0
+execp_centered = 1
+
+#-------------------------------------
+# Executor 3
+execp = new
+execp_command = /home/jrenslin/Sync/Programming/bash/tint2/clock.sh 
+execp_interval = 5	
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 0
+execp_font = Dejavu sans 15
+execp_font_color = #67548F 100
+execp_padding = 20 20
+execp_background_id = 2
+execp_centered = 1
+
+# TOOLTIP
+     
+tooltip_font_color = #E2DCCC 100
+tooltip_font = terminus 8
+
+#---------------------------------------------
+# MOUSE ACTION ON TASK
+#---------------------------------------------
+mouse_middle = none
+mouse_right = close

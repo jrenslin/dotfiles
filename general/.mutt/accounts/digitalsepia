@@ -1,0 +1,13 @@
+set sendmail  = "/usr/bin/msmtp -a digitalsepia"
+set mbox      = "+digitalsepia/archive"
+set postponed = "+digitalsepia/drafts"
+
+color status orange default
+
+macro index D \
+    "<save-message>+digitalsepia/Trash<enter>" \
+    "move message to the trash"
+
+macro index S \
+    "<save-message>+digitalsepia/Spam<enter>"  \
+        "mark message as spam"

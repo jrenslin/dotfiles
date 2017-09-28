@@ -1,0 +1,12 @@
+# Lines starting with # are comments
+
+# Write subs, thumbnail and metadata to file
+--embed-subs
+--embed-thumbnail
+--add-metadata
+
+# Always download the best video available
+-f 'best'
+
+# Save all videos under Movies directory in your home directory
+-o ~/Downloads/%(title)s.%(ext)s

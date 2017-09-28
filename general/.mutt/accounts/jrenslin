@@ -1,0 +1,14 @@
+set sendmail  = "msmtp -a jrenslin"
+#set sendmail  = "~/Documents/echosh.sh"
+set mbox      = "+jrenslin/archive"
+set postponed = "+jrenslin/drafts"
+
+color status red default
+
+macro index D \
+    "<save-message>+jrenslin/Trash<enter>" \
+    "move message to the trash"
+
+macro index S \
+    "<save-message>+jrenslin/Spam<enter>"  \
+        "mark message as spam"

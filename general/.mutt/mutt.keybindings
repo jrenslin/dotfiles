@@ -1,0 +1,60 @@
+# --------------------------------------------------------------------------
+# Macros and Bind - shown with an example mapping
+# --------------------------------------------------------------------------
+
+bind      editor           <Tab>     complete-query        # Try to autocomplete on tab
+bind      editor           ^T        complete              # Show a complete list of options for completion
+
+# Integration with khard -----------------------------
+
+macro     index,pager      A \
+    "<pipe-message>khard add-email<return>" \
+    "add the sender email address to khard"                # Bind adding a new contact to address book
+
+# General Keybindings  -------------------------------
+
+
+# Index & Pager --------------------------------------
+
+macro	    index,pager    <F2>       "!man mutt\n" "Show Mutt documentation"     # Show documentation on keypress (F1 is reserved by gnome-terminal)
+
+# Index ----------------------------------------------
+
+macro     index            .         "<limit>~B "          # Press . (dot) to search (limit) for mails by their contents
+macro     index            \Cr       "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "mark all messages as read"
+ # Ctrl-R to mark all as read
+bind      index            N         toggle-new            # Press N to view only new mails
+
+# Pager ----------------------------------------------
+
+macro     pager,attach    U          "|urlview<enter>" "call urlview to open links"  # enable extraction of URLs in pager and attachments menu
+
+bind      pager           <up>       previous-line         # Scroll up inside the message rather than the index
+bind      pager           <down>     next-line             # Scroll down inside the message rather than the index
+bind      pager           <left>     previous-entry        # Use horizontal arrow keys to navigate mails in inbox
+bind      pager           <right>    next-entry            # Use horizontal arrow keys to navigate mails in inbox
+
+macro     pager           .          "<buffy-list>" "list mailboxes with new mail"      # show folders which new mails
+
+bind      compose          p         postpone-message      # Bind postponing the message
+bind      compose          g         pgp-menu              # Integrate PGP with composing mails more comfortably
+
+# Sidebar --------------------------------------------
+
+bind      index,pager     \Cp        sidebar-prev          # Move the highlight to the next/previous mailbox
+bind      index,pager     \Cn        sidebar-next          # Move the highlight to the next/previous mailbox
+
+# Move the highlight to the next/previous page. This is useful if you have a LOT of mailboxes.
+bind      index,pager     <F3>       sidebar-page-up
+bind      index,pager     <F4>       sidebar-page-down
+
+bind      index,pager     <F5>       sidebar-prev-new      # Move the highlight to the previous mailbox containing new, or flagged, mail.
+bind      index,pager     <F6>       sidebar-next-new      # Move the highlight to the next mailbox containing new, or flagged, mail.
+
+bind      index,pager     \Co        sidebar-open          # Open the highlighted mailbox
+bind      index,pager     B          sidebar-toggle-visible # Toggle the visibility of the Sidebar.
+
+
+
+# macro     pager            H         <view-attachments>/html<enter><view-mailcap><exit>   # Open an HTML attachment in FF
+# bind      attach          <return>   view-mailcap         # View attachments properly.

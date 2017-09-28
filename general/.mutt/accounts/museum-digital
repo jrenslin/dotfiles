@@ -1,0 +1,14 @@
+set sendmail  = "msmtp -a museum-digital"
+#set sendmail  = "~/Documents/echosh.sh"
+set mbox      = "+museum-digital/archive"
+set postponed = "+museum-digital/drafts"
+
+color status red default
+
+macro index D \
+    "<save-message>+museum-digital/Trash<enter>" \
+    "move message to the trash"
+
+macro index S \
+    "<save-message>+museum-digital/Spam<enter>"  \
+        "mark message as spam"

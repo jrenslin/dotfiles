@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+#name : blockquote
+#key : blockquote
+#contributor : Joshua R. Enslin
+# --
+#+BEGIN_QUOTE
+$1
+#+END_QUOTE

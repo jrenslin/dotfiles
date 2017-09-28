@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+#name : bibliography
+#key : bibliography
+#contributor : Joshua R. Enslin
+# --
+\pagebreak
+\linespread{1.0}
+\bibliographystyle{apacite}
+\bibliography{pdf,frankfurt}
+\addbibliography{}
+

@@ -1,0 +1,148 @@
+# --------------------------------------------------------------------------
+# Colors
+# --------------------------------------------------------------------------
+
+color     normal          default            default                      # Set default to ... default
+color     attachment      brightblack        default                      # Attachments
+color     hdrdefault      white	             default                      # Default color of headers in pager
+color     indicator       brightwhite        brightblack                  # Arrow or bar used to indicate the current item in a menu
+color     message         brightyellow       black                        # informational messages
+color     markers         red                default                      # Markers (disabled)
+color     quoted          magenta            default                      # Quoted text
+color     quoted2         magenta            default                      # Quoted text
+color     signature       brightblue         default                      # Signatures
+color     search          white              brightblue                   # hiliting of words in the pager
+color     status          brightwhite        default                      # Status
+color     tilde           cyan               default                      # The tilde for completeness (turned off anyway)
+color     tree            blue               default                      # Tree in threaded view (disabled, too)
+
+# Headers (as shown in pager)  ---------------------
+
+color     header          brightblack        default  "^Received:"
+color     header          brightgreen        default  "^message-id:"
+color     header          brightgreen        default  "^x-mailer:"
+color     header          brightgreen        default  "^user-agent:"
+color     header          brightblue         default  "^date: "
+color     header          red                default  "^from: "
+color     header          red                default  "^subject: "
+color     header          green              default  "^X-Spam-Index: "
+color     header          green              default  "^X-Mailer: "
+color     header          blue               default  "^Message-ID: "
+color     header          brightblue         white    "^Return-Path: "
+color     header          brightblue         default  "^to: "
+color     header          brightblue         default  "^cc: "
+color     header          brightblue         default  "^reply-to: "
+
+# Index --------------------------------------------
+
+color     index           green              default  ~F                  # Flagged
+color     index           red                default  ~D                  # Tagged for deletion
+color     index           blue               default  ~T                  # Tagged
+color     index           brightblue         default  ~N                  # New
+color     index           blue               default  ~O                  # Old
+color     index           magenta            black    ~k                  # GPG
+
+
+# Body ---------------------------------------------
+
+color     body            red                default  "[Jj]oshua [Ee]Enslin"
+
+color     body            black              default  "(^| )_[-a-z0-9_]+_[,.?]?[ \n]"
+color     body            blue               default  '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+'
+
+color     body            brightblack        blue     "192.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}"                # local networks
+
+color     body            green              black    "(http|http[s]|ftp|news|telnet|finger)://[^ \"\t\r\n]*"    # URLS
+color     body            green              default  "(www)\\.[-.a-z0-9]+\\.[a-z][a-z][a-z]?([-_./~a-z0-9]+)?"  # WWW
+color     body            green              black    "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"                    # Mailtos
+
+color     body            green              black    "\\$[a-zA-Z][-_a-zA-Z]+"     # Variables  i. e. '$LOGNAME' or '$0'
+color     body            green              black    "\\$[0-9]+[.,0-9]*"          # Variables  i. e. '$LOGNAME' or '$0'
+
+color     body            brightyellow       black    "\\<[-A-ZÖÜßÄ']{4,}\\>"      # SCREAMING IN CAPS
+
+
+# GPG / PGP
+color     body            green              black    "^#v[+-]"
+color     body            brightmagenta      black    "^\\[---.*"
+color     body            color241           default  "^gpg:.*"
+color     body            brightred          default  "^(gpg: )?Bad signature.*"
+color     body            red                default  "^(gpg: )?warning:.*"
+color     body            red                default  "^(gpg: ).*failed:.*"
+color     body            color241           default  "^Primary key fingerprint:.*"
+color     body            brightblack        yellow   "-----END PGP PUBLIC KEY BLOCK-----"
+color     body            brightblack        yellow   "-----BEGIN PGP PUBLIC KEY BLOCK-----"
+color     body            black              yellow   "Version: GnuPG v1.[01].[67].*"
+
+# Highlight the relevant elements in the diff
+color     body            green              default  "^diff \-.*"
+color     body            green              default  "^index [a-f0-9].*"
+color     body            green              default  "^\-\-\- .*"
+color     body            green              default  "^[\+]{3} .*"
+color     body            cyan               default  "^[\+][^\+]+.*"
+color     body            blue               default  "^\-[^\-]+.*"
+color     body            brightblue         default  "^@@ .*"
+
+# Highlight interesting words ----------------------
+
+color     body            brightmagenta      black    "Artistic License"
+color     body            brightmagenta      black    "BSD License"
+color     body            brightmagenta      black    "GNU (Lesser )?General Public License"
+color     body            brightmagenta      black    "L?GPL"
+color     body            brightmagenta      black    "MIT/X Consortium License"
+color     body            brightmagenta      black    "OSI Approved"
+color     body            brightmagenta      black    "Public Domain"
+color     body            red                black    "Free Software"
+color     body            red                black    "Open Source"
+color     body            red                black    "[sS]lashdot"
+color     body            red                black    "[nN]ews[fF]orge"
+color     body            red                black    "[sS]ource[fF]orge"
+
+# IP-Adresse des Mail-Hubs wird speziell hervorgehoben:
+color     header          black              default   '\[1.2.3.5\]'   
+
+# Sidebar ------------------------------------------
+
+color     sidebar_highlight      default             color8            # Color of the highlighted, but not open, mailbox.
+color     sidebar_divider        white               default           # Color of the divider separating the Sidebar from NeoMutt panels
+color     sidebar_flagged        default             default             # Color to give mailboxes containing flagged mail
+color     sidebar_new            default             default             # Color to give mailboxes containing new mail
+color     sidebar_ordinary       default             default           # Color to give mailboxes containing no new/flagged mail, etc
+
+
+# Note (From http://www.strcat.de/dotfiles/mutt.color)
+# 
+# object can be one of:
+#   * attachment
+#   * body              (match regexp in the body of messages)
+#   * bold              (hiliting bold patterns in the body of messages)
+#   * error             (error messages printed by Mutt)
+#   * header            (match regexp in the message header)
+#   * hdrdefault        (default color of the message header in the pager)
+#   * index             (match pattern in the message index)
+#   * indicator         (arrow or bar used to indicate the current item in a menu)
+#   * markers           (the '+' markers at the beginning of wrapped lines in the pager)
+#   * message           (informational messages)
+#   * normal            (normal (not quoted) text
+#   * quoted            (text matching $quote_regexp in the body of a message)
+#   * quoted1, quotedN  (higher levels of quoting)
+#   * search            (hiliting of words in the pager)
+#   * signature
+#   * status            (mode lines used to display info about the mailbox or message)
+#   * tilde             (the '~' used to pad blank lines in the pager)
+#   * tree              (thread tree drawn in the message index and attachment menu)
+#   * underline         (hiliting underlined patterns in the body of messages)
+#
+#
+# foreground and background can be one of the following:
+#   * white
+#   * black
+#   * green
+#   * magenta
+#   * blue
+#   * cyan
+#   * yellow
+#   * red
+#   * default
+# foreground can optionally be prefixed with the keyword bright to make the
+# foreground color boldfaced (e.g., brightred) or colorX{,X,XX}

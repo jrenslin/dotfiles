@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pagebreak
+# key: pagebreak_
+# --
+#+ODT: <text:p text:style-name="PageBreak"/>

@@ -1,0 +1,125 @@
+# --------------------------------------------------------------------------
+#
+# Dependencies / To be installed:
+#     - urlview
+# 
+# --------------------------------------------------------------------------
+
+# --------------------------------------------------------------------------
+# Link to emacs and khard
+# --------------------------------------------------------------------------
+
+# Get comfy
+set         query_command         = "khard email --parsable --search-in-source-files %s"
+
+# --------------------------------------------------------------------------
+# Paths
+# --------------------------------------------------------------------------
+
+source      ~/.mutt/mailboxes                                                # Retrieve mailboxes information // File is created by offlineimap
+
+source                            ~/.mutt/mailboxes
+set         folder                = "~/Mail"                                 # Mailbox location
+# set         signature             = ~/.mutt/signature                        # Location of signature
+set         spoolfile             = "+jrenslin/INBOX"                        # Spoolfile
+set         record                = "=jrenslin/INBOX.Sent"                   # Copy messages to sent
+set         postponed             = "~/Mail/jrenslin/INBOX.Drafts"
+
+
+# set alias_file                  = ~/.mutt/alias                            # where to store aliases
+# set certificate_file            = ~/.mutt/certificates                     # where to store certs
+# set mailcap_path                = ~/.mutt/mailcap                          # entries for filetypes
+# set tmpdir                      = ~/.mutt/temp                             # where to keep temp files
+
+# --------------------------------------------------------------------------
+# Set accounts
+# --------------------------------------------------------------------------
+
+folder-hook /*                    source ~/.mutt/accounts/jrenslin
+folder-hook yahoo/*               source ~/.mutt/accounts/yahoo
+folder-hook gmail/*               source ~/.mutt/accounts/gmail
+folder-hook museum-digital/*      source ~/.mutt/accounts/museum-digital
+# folder-hook digitalsepia/*      source ~/.mutt/accounts/digitalsepia
+folder-hook livecom/*             source ~/.mutt/accounts/livecom
+
+# --------------------------------------------------------------------------
+# Basic settings
+# --------------------------------------------------------------------------
+
+set                                      mailcap_sanitize
+# Enable extended buffy mode to calculate total, new, and flagged message counts for each mailbox.
+set                                      mail_check_stats
+
+alternates                               # Nor public
+unset                                    metoo
+set                  charset             = "utf-8"
+set                  realname            = "Joshua Ramon Enslin"             # who am i?
+set                  sendmail_wait       = 0
+set                  postpone            = ask-yes
+
+# --------------------------------------------------------------------------
+# Interaction
+# --------------------------------------------------------------------------
+
+# Viewing ---------------------------------
+
+auto_view                                text/plain
+auto_view                                text/html
+auto_view                                text/enriched
+alternative_order                        text/plain text/enriched text/html
+
+set                  delete              = ask-yes
+set                  sleep_time          = 0                                 # be fast
+
+set                  pager               = "builtin"                         # specifies which pager you would like to use to view messages
+set                  pager_index_lines   = 0                                # determines the number of lines of a mini-index which is shown when in the pager
+
+set                  wrapmargin          = 10                               # Controls the size of the margin remaining at the right side of the terminal
+
+
+# Composing ----------------------------------------------------------------
+
+set                  abort_nosubject     = ask-yes
+
+set                  editor              = "emacsclient -t"
+set                  edit_headers                                            # show headers when composing
+set                  fast_reply                                              # skip to compose when replying
+set                  forward_format     = "Fwd: %s"                          # format of subject when forwarding
+set                  attribution        = "On %d, %n wrote:"                 # format of quoting header
+set                  include            = yes                                # include message in replies without asking
+set                  sig_dashes                                              # dashes before sig
+
+set                  mime_forward       = yes                                # By default forward attachments
+
+# set                askcc                                                   # ask for CC:
+# set                fcc_attach                                              # save attachments with the body
+# unset              mime_forward                                            # forward attachments as part of body
+# set                reply_to                                                # reply to Reply to: field
+# set                reverse_name                                            # reply as whomever it was to
+# set                forward_quote                                           # include message in forwards
+# set                envelope_from                                           # which from?
+
+# --------------------------------------------------------------------------
+# Include Save-Hooks File
+# --------------------------------------------------------------------------
+
+source ~/.mutt/mutt.save-hooks                             # save-hook definitions
+
+# --------------------------------------------------------------------------
+# Include Colors File
+# --------------------------------------------------------------------------
+
+source ~/.mutt/mutt.color                                  # color settings
+
+# --------------------------------------------------------------------------
+# Include file for Styling and Viewing Mail
+# --------------------------------------------------------------------------
+
+source ~/.mutt/mutt.styling                                # styling
+
+# --------------------------------------------------------------------------
+# Include Keybindings File
+# --------------------------------------------------------------------------
+
+source ~/.mutt/mutt.keybindings                            # Keybindings
+

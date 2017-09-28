@@ -1,0 +1,13 @@
+set sendmail  = "/usr/bin/msmtp -a livecom"
+set mbox      = "+livecom/archive"
+set postponed = "+livecom/drafts"
+
+color status blue default
+
+macro index D \
+    "<save-message>+livecom/Trash<enter>" \
+    "move message to the trash"
+
+macro index S \
+    "<save-message>+livecom/Spam<enter>"  \
+        "mark message as spam"

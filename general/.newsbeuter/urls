@@ -1,0 +1,73 @@
+### News
+
+https://blog.fefe.de/rss.xml?html                                           News Fun Tech                       "~Fefe's Blog"
+
+### Personal Blogs
+https://toumeishoujo.wordpress.com/feed/                                    Blog Personal                       "~Dyan's Blog"
+https://feeds.feedburner.com/joi-ito/weblog                                 Tech                                "~Joi Ito's Blog"
+http://feeds.dashes.com/AnilDash                                            Blog Personal Tech                  "~Dashes.com"
+
+### Aggregators
+http://smc.org.ph/smc_amn/rss.php?category=42&status=published              Migration                           "Asian Migration News: East Asia"
+http://smc.org.ph/smc_amn/rss.php?category=25&status=published              Migration                           "Asian Migration News: Southeast Asia"
+
+### Topical Blogs
+
+### Museum-Digital
+https://www.museum-digital.de/blog2/feeds/                                  Museum-Digital Museums  Digitization   "! ~Museum-Digital Blog"
+https://feeds.feedburner.com/TheMuseumOfTheFuture?format=xml                Blog Museums Digitization              "! ~Jasper Visser: The Museum of the Future"
+"query:Museums                                                              Articles:tags # \"Museums\""
+
+### Webtoons and Manga
+https://xkcd.com/atom.xml                                                   Webtoons Fun Hacking                   "! ~XKCD"
+http://chibird.com/rss                                                      Webtoons Cuteness                      "! ~Chibird"
+"query:Webtoons                                                             Articles:tags # \"Webtoons\""
+
+https://www.reddit.com/r/unixporn/new/.rss                                  Tech Fun                               "~Reddit: Unixporn"
+
+https://www.ccc.de/de/rss/updates.xml                                       Hacking Organizations                  "! ~CCC.de"
+http://www.ilo.org/global/rss-feeds/news/lang--en/index.htm                 Labour Organizations                   "! ~International Labour Organization"
+https://www.iom.int/press-room/news/rss.xml                                 Migration Organizations                "! ~International Organization for Migration"
+http://www.museumsbund.de/feed/                                             Museums Organizations                  "! ~Deutscher Museumsbund"
+http://icom.museum/news/L/0/?type=72                                        Museums Organizations                  "! ~International Council of Museums"
+"query:Organizations                                                        Articles:tags # \"Organizations\""
+
+### Secutiry focused blogs
+https://warisboring.com/feed/                                               Blog Security                       "! ~War is Boring"
+https://feeds.feedburner.com/Offizierech                                    Blog Security                       "! Offiziere.ch"
+"query:Security                                                             Articles:tags # \"Security\""
+
+### Magazines
+# https://harpers.org/feed/                                                   General Politics               "~Harper's Magazine"
+
+### Podcasts
+https://alternativlos.org/opus.rss                                          Podcast Politics                    "! ~Alternativlos"
+https://feeds.metaebene.me/lnp/oga                                          Podcast Politics                    "! ~Logbuch Netzpolitik"
+https://neusprech.org/kategorie/neusprechfunk/feed/                         Podcast Language                    "! ~Neusprechfunk"
+https://chaosradio.ccc.de/chaosradio-latest.rss                                                                 "! ~Chaosradio"
+http://www.staatsbuergerkunde-podcast.de/feed/                              Podcast GDR History DDR             "! ~Staatsbürgerkunde"
+"query:Podcasts                                                             Articles:tags # \"Podcast\""
+
+### Universities
+https://www.cseas.kyoto-u.ac.jp/en/feed/                                    Universities Southeast Asia         "! ~Center for Southeast Asian Studies, Kyoto University"
+"query:Universities                                                         Articles:tags # \"Universities\""
+
+
+### Topical Newspapers
+https://www.techinasia.com/feed                                             Digitization Start-Ups Asia    "~Tech in Asia"
+
+### Philippines
+https://newsinfo.inquirer.net/feed/atom                                     News Philippines               "! ~Philippine Daily Inquirer: Newsinfo">
+https://opinion.inquirer.net/feed/atom                                      News Philippines               "~Philippine Daily Inquirer: Opinion"
+https://globalnation.inquirer.net/feed/atom                                 News Philippines               "! ~Philippine Daily Inquirer: Global Nation"
+https://feeds.feedburner.com/rappler?format=xml                             News Philippines               "! ~Rappler.com"
+https://www.gmanetwork.com/news/rss/news                                    News Philippines               "! ~GMA News"
+
+"query:Philippines                                                          Articles:tags # \"Philippines\""
+
+### East Asia
+http://rss.asahi.com/rss/asahi/national.rdf                                 Japan                          "!朝日新聞:　社会"
+http://rss.asahi.com/rss/asahi/politics.rdf                                 Japan                          "!朝日新聞:　政治"
+"query:Japan                                                                Articles:tags # \"Japan\""
+
+http://www.taipeitimes.com/xml/taiwan.rss                                   Taiwan                         "Taipei Times"

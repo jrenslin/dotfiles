@@ -1,0 +1,219 @@
+########################################
+##### Fetching and Reloading ###########
+########################################
+
+auto-reload                     yes
+refresh-on-startup              yes
+# reload-only-visible-feeds     no
+reload-time                     20
+reload-threads                  3
+
+download-retries                1
+download-timeout                30
+max-downloads                   3
+
+####  download-full-page
+# If set to yes, then for all feed items with no content but with a link, the link is downloaded and the result used as content instead. This may significantly increase the download times of "empty" feeds.
+# Syntax: [yes/no]
+# Default value: no
+download-full-page yes
+
+####  ignore-mode
+# This configuration option defines in what way an article is ignored (see ignore-article). If set to "download", then it is ignored in the download/parsing phase (which is the default) and thus never written to the cache, if it set to "display", it is ignored when displaying articles but is kept in the cache.
+# Syntax: [download/display]
+# Default value: download
+ignore-mode "display"
+
+########################################
+##### Proxy ############################
+########################################
+
+####  proxy-type
+# Set proxy type. Allowed values: http, socks4, socks4a, socks5, socks5h.
+# Syntax: <type>
+# Default value: http
+# proxy-type socks5
+
+####  proxy
+# Set the proxy to use for downloading RSS feeds. (Don't forget to actually enable the proxy with `use-proxy yes`.)
+# Syntax: <server:port>
+# Default value: n/a
+# proxy localhost:3128
+
+####  use-proxy
+# If yes, then the configured proxy will be used for downloading the RSS feeds.
+# Syntax: [yes/no]
+# Default value: no
+# use-proxy yes
+
+########################################
+##### Display ##########################
+########################################
+
+always-display-description      false
+# article-sort-order            date-reverse
+articlelist-format              " %f%6i ···· 📅 %D ···· %t %>  ✍%10a ···· 💾%6L"
+display-article-progress        yes
+feedlist-format                 " %n %4i ···· %t %> ···· %11u"
+
+####  datetime-format
+# This format specifies the date/time format in the article list. For a detailed documentation on the allowed formats, consult the manpage of strftime(3).
+# Syntax: <date/time format>
+# Default value: %b %d
+datetime-format                 "%m-%d"
+
+####  articlelist-title-format
+#
+# Format of the title in article list. See "Format Strings" section of
+# Newsbeuter manual for details on available formats.
+#
+# Syntax: <format>
+#
+# Default value: "%N %V - Articles in feed '%T' (%u unread, %t total) - %U"
+#
+articlelist-title-format        "%9> ---- %2u/%5t ---- %T  %60>    "
+
+####  feedlist-title-format
+# Format of the title in feed list. See "Format Strings" section of Newsbeuter
+# manual for details on available formats.
+# Syntax: <format>
+# Default value: "N %V - Your feeds (%u unread, %t total)%?T? - tag `%T'&?"
+feedlist-title-format           "%7> ---- Feeds %> ---- %5u / %2t "
+
+####  filebrowser-title-format
+# Format of the title in file browser. See "Format Strings" section of Newsbeuter manual for details on available formats.
+# Syntax: <format>
+# Default value: "%N %V - %?O?Open File&Save File? - %f"
+filebrowser-title-format        "%?O?Open File&Save File? - %f %> %N %V"
+
+####  itemview-title-format
+# Format of the title in article view. See "Format Strings" section of Newsbeuter manual for details on available formats.
+# Syntax: <format>
+# Default value: "%N %V - Article '%T' (%u unread, %t total)"
+itemview-title-format           "Article '%T' %> < %u unread / %t total < %N %V"
+
+####  dialogs-title-format
+# Format of the title in dialog list. See "Format Strings" section of Newsbeuter manual for details on available formats.
+# Syntax: <format>
+# Default value: "%N %V - Dialogs"
+dialogs-title-format            "%6> Dialogs %30 %> %N %V"
+
+####  selecttag-title-format
+# Format of the title in tag selection dialog. See "Format Strings" section of Newsbeuter manual for details on available formats.
+# Syntax: <format>
+# Default value: "%N %V - Select Tag"
+selecttag-title-format          "Select Tag %> %N %V"
+
+####  show-keymap-hint
+# If no, then the keymap hints on the bottom of screen will not be displayed.
+# Syntax: [yes/no]
+# Default value: yes
+# show-keymap-hint no
+
+####  display-article-progress
+# If set to yes, then a read progress (in percent) is displayed in the article
+# view. Otherwise, no read progress is displayed.
+# Syntax: [yes/no]
+# Default value: yes
+display-article-progress        yes
+
+########################################
+##### Colors ###########################
+########################################
+
+color                           background           blue         default
+color                           listnormal           default      default
+color                           listfocus            color15        color8        bold
+color                           listnormal_unread    color3       default       bold
+color                           listfocus_unread     color15        color8        bold
+color                           info                 color7       color0        bold
+color                           article              default      default
+
+########################################
+##### Highlighting #####################
+########################################
+
+highlight             all     "newsbeuter"                            red         default       default
+highlight-article             "author =~ \"Andreas Krennmair\""       green       default       bold
+highlight-article             "author =~ \"Jayeel Cornelio\""         green       default       bold
+highlight-article             "author =~ \"Lisandro Claudio\""        green       default       bold
+highlight-article             "content =~ \"OFWs\""                   blue        default       bold
+highlight-article             "content =~ \"Migrant\""                blue        default       bold
+highlight-article             "content =~ \"foreign\ workers\""       blue        default       bold
+highlight-article             "content =~ \"migration\""              blue        default       bold
+
+highlight             article "^(Feed):.*$"                           black       default       bold
+highlight             article "^(Title):.*$"                          color1      default       bold
+highlight             article "https?://[^ ]+"                        color14     default       
+highlight             article "\\[image\\ [0-9]+\\]"                  yellow      default
+
+########################################
+##### Interaction ######################
+########################################
+
+browser                       firefox
+notify-program                dunst
+player                        mpv
+# notify-always               no
+# notify-screen               no
+# notify-beep                 no
+
+########################################
+##### Filters ##########################
+########################################
+
+####  define-filter
+# With this command, you can predefine filters, which you can later select from a list, and which are then applied after selection. This is especially useful for filters that you need often and you don't want to enter them every time you need them.
+# Syntax: <name> <filter>
+# Default value: n/a
+# // I am using filters for searching through posts, not the feed overview.
+define-filter "Posts containing migration"        "content =~ \"Migrant\""
+
+########################################
+##### Macros ###########################
+########################################
+
+####  macro
+# With this command, you can define a macro key and specify a list of commands
+# that shall be executed when the macro prefix and the macro key are pressed.
+# Syntax: <macro key> <command list>
+# Default value: n/a
+# macro k open ; reload ; quit
+
+########################################
+##### Keybindings ######################
+########################################
+
+# bind-key
+
+bind-key              ^R      reload-all
+bind-key              ^LEFT   prev-feed
+bind-key              ^RIGHT  next-feed
+bind-key              LEFT    prev
+bind-key              RIGHT   next
+
+########################################
+##### Bookmarking and saving ###########
+########################################
+
+bookmark-cmd                  "~/Sync/Programming/bash/shortcut_scripts/example-bookmark-plugin.sh"
+bookmark-interactive          no
+# bookmark-autopilot          yes
+save-path                     "~/Sync/.newsbeuter-bookmarks"
+download-path                 "~/Downloads"
+
+
+########################################
+##### Podcasts #########################
+########################################
+
+# podcast-auto-enqueue        no
+
+########################################
+##### Killfile #########################
+########################################
+
+# ignore-article "*" "title =~ \"Gentoo\""
+
+ignore-article "https://www.techinasia.com/feed" "(      title !~  \"^.*Philippines.*$\" and                                                                                          title !~  \"^.*Indonesia.*$\" and                                                                                            title !~  \"^.*Japan.*$\" and                                                                                                title !~  \"^.*China.*$\" and                                                                                                title !~  \"^.*Workers.*$\" )"
+
