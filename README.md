@@ -20,13 +20,6 @@ Because of the split structure, configuration files of some programs are split, 
 mutt
 : The color settings are in the theme-specific folders (located at `<folder>/.mutt/mutt.colors`). Everything else can be found in `general/.mutt`.
 
-## Screenshots
-
-![Comfy: Browser startpage](Screenshots/ComfyStartpage.png "Comfy: Browser startpage")
-![Comfy: Listening to music](Screenshots/Comfy-MusicTmux.png "Comfy: Listening to Music")
-![Juicy: With one terminal opened](Screenshots/Juicy-OneTerminal.png "Juicy: With One Terminal Opened")
-![Summer: Newsbeuter and Khal opened side-by-side](Screenshots/Summer-Newsbeuter-Khal.jpg "Summer: Newsbeuter and Khal opened side-by-side")
-
 ## Setup
 
 | Purpose           | Program                                         | Note                                    |
@@ -85,3 +78,10 @@ Some sources that were extremely helpful are:
 
 - pascalpoitras' [WeeChat configuration](https://gist.github.com/pascalpoitras/8406501)
 - Although I'm using Debian, the Arch Wiki.
+
+## Screenshots
+
+![Comfy: Browser startpage](Screenshots/ComfyStartpage.png "Comfy: Browser startpage")
+![Comfy: Listening to music](Screenshots/Comfy-MusicTmux.png "Comfy: Listening to Music")
+![Juicy: With one terminal opened](Screenshots/Juicy-OneTerminal.png "Juicy: With One Terminal Opened")
+![Summer: Newsbeuter and Khal opened side-by-side](Screenshots/Summer-Newsbeuter-Khal.jpg "Summer: Newsbeuter and Khal opened side-by-side")
