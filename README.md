@@ -20,9 +20,6 @@ Because of the split structure, configuration files of some programs are split, 
 mutt
 : The color settings are in the theme-specific folders (located at `<folder>/.mutt/mutt.colors`). Everything else can be found in `general/.mutt`.
 
-firefox_home (The browser startpage)
-: The CSS file controlling the style of the startpage can be found in the theme specific folder (`.config/firefox_home/home.css`). The HTML and JS files are in `general/.config/firefox_home/`.
-
 ## Setup
 
 | Purpose           | Program                                         | Note                                    |
