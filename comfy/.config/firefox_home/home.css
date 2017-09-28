@@ -4,7 +4,7 @@ Outside elements
 ############## */
 
 html {margin:0px;padding:0px;background-color:e2dccc;color:#555;font-family: Roboto, Courier;text-align:center;height:100%;width:100%; }
-html:before {content: " "; display:block; height:100%;width:100%; background:#000; filter: grayscale(0); background: url(../../Sync/Images/Wallpapers/desktop_light/small_steps.png) repeat center center fixed; opacity:0.8;z-index:1;}
+html:before {content: " "; display:block; height:100%;width:100%; background:#000; filter: grayscale(0); background: url(/home/jrenslin/Sync/Images/Wallpapers/desktop_light/small_steps.png) repeat center center fixed; opacity:0.8;z-index:1;}
 main {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center;font-size:1.0.5em;width:90%;z-index:1;}
 
 /* ##############
