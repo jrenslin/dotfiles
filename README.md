@@ -1,6 +1,6 @@
 # Dotfiles
 
-My dotfiles. I'm running Debian Testing.
+My dotfiles. I'm running Debian Testing. 
 
 ## Structure
 
@@ -9,7 +9,7 @@ I'm using `stow` to keep my dotfiles in one place. As I got different themes, I 
 1. `general` is always stowed and contains configuration files that are unrelated to style and color
 2. `comfy`, `juicy`, and `summer` contain style-related files. If styling cannot be distinguished from other settings for a given program, the programs config file(s) is/are kept here, too.
 
-For this split to work properly, `stow` should only set up symlinks to files, not to whole folders. To prevent it from setting up folders, the folders must have been created beforehand. This can be done via the [`install.sh`](#install-sh) script included in this repository.
+For this split to work properly, `stow` should only set up symlinks to files, not to whole folders. To prevent it from setting up folders, the folders must have been created beforehand. This can be done via the [`install.sh`](#installsh) script included in this repository.
 
 *Note: The newsbeuter config is an excemption from this general rule. I'm synchronizing my* `.newsbeuter` *folder to keep the same database on my laptop and my workstation.*
 
@@ -24,7 +24,7 @@ mutt
 
 ![Comfy: Browser startpage](Screenshots/ComfyStartpage.png "Comfy: Browser startpage")
 ![Comfy: Listening to music](Screenshots/Comfy-MusicTmux.png "Comfy: Listening to Music")
-![Juicy: With one terminal opened](Screenshots/Comfy-MusicTmux.png "Juicy: With One Terminal Opened")
+![Juicy: With one terminal opened](Screenshots/Juicy-OneTerminal.png "Juicy: With One Terminal Opened")
 ![Summer: Newsbeuter and Khal opened side-by-side](Screenshots/Summer-Newsbeuter-Khal.jpg "Summer: Newsbeuter and Khal opened side-by-side")
 
 ## Setup
