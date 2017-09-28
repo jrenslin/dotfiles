@@ -18,6 +18,7 @@ golang
 gparted
 htop
 i3lock
+lftp
 lm-sensors
 lxappearence
 mpc
@@ -47,6 +48,7 @@ texlive-fonts-extra
 texlive-latex-recommended
 texlive-latex-extra
 tint2
+tmux
 tree
 unrar
 unzip
@@ -54,6 +56,7 @@ urlview
 w3m
 weechat
 wicd-curses
+wmctrl
 xautolock
 xcompmgr
 zsh
