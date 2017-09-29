@@ -297,16 +297,18 @@ values."
 (add-to-list 'auto-mode-alist '(".*mutt.*" . message-mode))
 
 ;; Enable CUA in usual cases
-(add-hook 'Emacs-Lisp-mode-hook 'cua-mode)
-(add-hook 'python-mode-hook 'cua-mode)
-(add-hook 'html-mode-hook 'cua-mode)
+(add-hook 'conf-mode-hook 'cua-mode)
 (add-hook 'css-mode-hook 'cua-mode)
-(add-hook 'markdown-mode-hook 'cua-mode)
+(add-hook 'emacs-lisp-mode-hook 'cua-mode)
 (add-hook 'fundamental-mode-hook 'cua-mode)
-(add-hook 'php-mode-hook 'cua-mode)
 (add-hook 'go-mode-hook 'cua-mode)
+(add-hook 'html-mode-hook 'cua-mode)
 (add-hook 'lisp-mode-hook 'cua-mode)
+(add-hook 'markdown-mode-hook 'cua-mode)
 (add-hook 'message-mode-hook 'cua-mode)
+(add-hook 'php-mode-hook 'cua-mode)
+(add-hook 'python-mode-hook 'cua-mode)
+(add-hook 'web-mode-hook 'cua-mode)
 
 ;; Set proper snippets directory
 (setq yas-snippet-dirs

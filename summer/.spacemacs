@@ -138,11 +138,11 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(kaolin
+   dotspacemacs-themes '(moe-light
+                         kaolin
                          moe-dark
                          subatomic256
                          monokai
-                         moe-light
                          wheatgrass
                          wombat)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
@@ -297,16 +297,18 @@ values."
 (add-to-list 'auto-mode-alist '(".*mutt.*" . message-mode))
 
 ;; Enable CUA in usual cases
-(add-hook 'Emacs-Lisp-mode-hook 'cua-mode)
-(add-hook 'python-mode-hook 'cua-mode)
-(add-hook 'html-mode-hook 'cua-mode)
+(add-hook 'conf-mode-hook 'cua-mode)
 (add-hook 'css-mode-hook 'cua-mode)
-(add-hook 'markdown-mode-hook 'cua-mode)
+(add-hook 'emacs-lisp-mode-hook 'cua-mode)
 (add-hook 'fundamental-mode-hook 'cua-mode)
-(add-hook 'php-mode-hook 'cua-mode)
 (add-hook 'go-mode-hook 'cua-mode)
+(add-hook 'html-mode-hook 'cua-mode)
 (add-hook 'lisp-mode-hook 'cua-mode)
+(add-hook 'markdown-mode-hook 'cua-mode)
 (add-hook 'message-mode-hook 'cua-mode)
+(add-hook 'php-mode-hook 'cua-mode)
+(add-hook 'python-mode-hook 'cua-mode)
+(add-hook 'web-mode-hook 'cua-mode)
 
 ;; Set proper snippets directory
 (setq yas-snippet-dirs
@@ -448,9 +450,13 @@ values."
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["#080808" "#d70000" "#67b11d" "#875f00" "#268bd2" "#af00df" "#00ffff" "#b2b2b2"])
+ '(custom-safe-themes
+   (quote
+    ("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "98cc377af705c0f2133bb6d340bf0becd08944a588804ee655809da5d8140de6" "5dc0ae2d193460de979a463b907b4b2c6d2c9c4657b2e9e66b8898d2592e3de5" "c395bd62143d73b02b88dd5707e8634831734e0c632a1a9dbf9071306837ead5" default)))
+ '(evil-want-Y-yank-to-eol nil)
  '(package-selected-packages
    (quote
-    (powerline spinner org-plus-contrib skewer-mode simple-httpd json-snatcher json-reformat multiple-cursors js2-mode hydra parent-mode haml-mode pos-tip flx magit-popup git-commit with-editor iedit anzu goto-chg undo-tree highlight popup diminish projectile pkg-info epl swiper bind-map bind-key packed async f s memoize font-lock+ avy php-mode biblio parsebib biblio-core pythonic gruber-darker-theme gruvbox-dark-theme gruvbox-theme go-guru go-eldoc go-mode origami counsel smartparens evil flycheck helm helm-core markdown-mode magit yasnippet ivy dash helm-themes helm-swoop helm-projectile helm-mode-manager helm-flx helm-descbinds helm-ag ace-jump-helm-line yapfify ws-butler winum which-key wgrep web-mode web-beautify wc-mode volatile-highlights vi-tilde-fringe uuidgen use-package toc-org tagedit subatomic256-theme spaceline smex smeargle slim-mode scss-mode sass-mode restart-emacs request rainbow-delimiters pyvenv pytest pyenv-mode py-isort pug-mode popwin pip-requirements phpunit phpcbf php-extras php-auto-yasnippets persp-mode pcre2el paradox orgit org-bullets open-junk-file neotree move-text moe-theme mmm-mode markdown-toc magit-gitflow macrostep lorem-ipsum livid-mode live-py-mode linum-relative link-hint less-css-mode json-mode js2-refactor js-doc ivy-hydra info+ indent-guide hy-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-make helm-c-yasnippet helm-bibtex google-translate golden-ratio gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md flycheck-pos-tip flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu emmet-mode elisp-slime-nav dumb-jump drupal-mode define-word cython-mode counsel-projectile column-enforce-mode coffee-mode clean-aindent-mode auto-highlight-symbol auto-compile anaconda-mode all-the-icons aggressive-indent adaptive-wrap ace-window ace-link))))
+    (molokai-dark-theme powerline spinner org-plus-contrib skewer-mode simple-httpd json-snatcher json-reformat multiple-cursors js2-mode hydra parent-mode haml-mode pos-tip flx magit-popup git-commit with-editor iedit anzu goto-chg undo-tree highlight popup diminish projectile pkg-info epl swiper bind-map bind-key packed async f s memoize font-lock+ avy php-mode biblio parsebib biblio-core pythonic gruber-darker-theme gruvbox-dark-theme gruvbox-theme go-guru go-eldoc go-mode origami counsel smartparens evil flycheck helm helm-core markdown-mode magit yasnippet ivy dash helm-themes helm-swoop helm-projectile helm-mode-manager helm-flx helm-descbinds helm-ag ace-jump-helm-line yapfify ws-butler winum which-key wgrep web-mode web-beautify wc-mode volatile-highlights vi-tilde-fringe uuidgen use-package toc-org tagedit subatomic256-theme spaceline smex smeargle slim-mode scss-mode sass-mode restart-emacs request rainbow-delimiters pyvenv pytest pyenv-mode py-isort pug-mode popwin pip-requirements phpunit phpcbf php-extras php-auto-yasnippets persp-mode pcre2el paradox orgit org-bullets open-junk-file neotree move-text moe-theme mmm-mode markdown-toc magit-gitflow macrostep lorem-ipsum livid-mode live-py-mode linum-relative link-hint less-css-mode json-mode js2-refactor js-doc ivy-hydra info+ indent-guide hy-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-make helm-c-yasnippet helm-bibtex google-translate golden-ratio gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md flycheck-pos-tip flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu emmet-mode elisp-slime-nav dumb-jump drupal-mode define-word cython-mode counsel-projectile column-enforce-mode coffee-mode clean-aindent-mode auto-highlight-symbol auto-compile anaconda-mode all-the-icons aggressive-indent adaptive-wrap ace-window ace-link))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
