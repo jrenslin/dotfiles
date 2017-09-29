@@ -285,159 +285,160 @@ values."
   (eval-after-load 'helm
     '(require 'helm-bibtex))
   (eval-after-load 'php-mode
-      '(require 'php-ext))
+    '(require 'php-ext))
   (global-hl-line-mode -1) ; Disable current line highlight
-    (global-linum-mode) ; Show line numbers by default
-    (require 'neotree)
-    ; (neotree-show)
-    (global-set-key [f8] 'neotree-toggle)
-    )
+  (global-linum-mode) ; Show line numbers by default
+  (require 'powerline)
+  (require 'neotree)
+  ;; (neotree-show)
+  (global-set-key [f8] 'neotree-toggle)
 
-;; Bind message mode to mails crafted in mutt
-(add-to-list 'auto-mode-alist '(".*mutt.*" . message-mode))
+  ;; Bind message mode to mails crafted in mutt
+  (add-to-list 'auto-mode-alist '(".*mutt.*" . message-mode))
 
-;; Enable CUA in usual cases
-(add-hook 'conf-mode-hook 'cua-mode)
-(add-hook 'css-mode-hook 'cua-mode)
-(add-hook 'emacs-lisp-mode-hook 'cua-mode)
-(add-hook 'fundamental-mode-hook 'cua-mode)
-(add-hook 'go-mode-hook 'cua-mode)
-(add-hook 'html-mode-hook 'cua-mode)
-(add-hook 'lisp-mode-hook 'cua-mode)
-(add-hook 'markdown-mode-hook 'cua-mode)
-(add-hook 'message-mode-hook 'cua-mode)
-(add-hook 'php-mode-hook 'cua-mode)
-(add-hook 'python-mode-hook 'cua-mode)
-(add-hook 'web-mode-hook 'cua-mode)
+  ;; Enable CUA in usual cases
+  (add-hook 'conf-mode-hook 'cua-mode)
+  (add-hook 'css-mode-hook 'cua-mode)
+  (add-hook 'emacs-lisp-mode-hook 'cua-mode)
+  (add-hook 'fundamental-mode-hook 'cua-mode)
+  (add-hook 'go-mode-hook 'cua-mode)
+  (add-hook 'html-mode-hook 'cua-mode)
+  (add-hook 'lisp-mode-hook 'cua-mode)
+  (add-hook 'markdown-mode-hook 'cua-mode)
+  (add-hook 'message-mode-hook 'cua-mode)
+  (add-hook 'php-mode-hook 'cua-mode)
+  (add-hook 'python-mode-hook 'cua-mode)
+  (add-hook 'web-mode-hook 'cua-mode)
 
-;; Set proper snippets directory
-(setq yas-snippet-dirs
-      '("~/Sync/Programming/dotfiles/general/emacs/snippets"                 ;; personal snippets
-        ))
+  ;; Set proper snippets directory
+  (setq yas-snippet-dirs
+        '("~/Sync/Programming/dotfiles/general/emacs/snippets"                 ;; personal snippets
+          ))
 
-;; UI
+  ;; UI
+  (setq neo-theme 'arrow)
 
-(setq neo-theme 'arrow)
+  (setq-default left-fringe-width  100)
+  (setq-default right-fringe-width  100)
 
-(setq-default left-fringe-width  100)
-(setq-default right-fringe-width  100)
+  ;; BibTeX handling
+  (setq bibtex-completion-bibliography
+        '("~/Sync/Jabref/pdf.bib"
+          "~/Sync/Jabref/frankfurt.bib"))
+  (setq bibtex-completion-library-path '("~/Sync/Readings"))
+  ;; (setq bibtex-completion-pdf-field "File")
+  (setq bibtex-completion-notes-path "~/synced_notes/Readings")
+  (setq bibtex-completion-pdf-symbol "⌘")
+  (setq bibtex-completion-notes-symbol "✎")
 
-;; BibTeX handling
-(setq bibtex-completion-bibliography
-      '("~/Sync/Jabref/pdf.bib"
-        "~/Sync/Jabref/frankfurt.bib"))
-(setq bibtex-completion-library-path '("~/Sync/Readings"))
-;; (setq bibtex-completion-pdf-field "File")
-(setq bibtex-completion-notes-path "~/synced_notes/Readings")
-(setq bibtex-completion-pdf-symbol "⌘")
-(setq bibtex-completion-notes-symbol "✎")
+  (setq bibtex-completion-format-citation-functions
+        '((org-mode      . bibtex-completion-format-citation-cite)
+          (latex-mode    . bibtex-completion-format-citation-cite)
+          (markdown-mode . bibtex-completion-format-citation-pandoc-citeproc)
+          (default       . bibtex-completion-format-citation-default)))
 
-(setq bibtex-completion-format-citation-functions
-      '((org-mode      . bibtex-completion-format-citation-cite)
-        (latex-mode    . bibtex-completion-format-citation-cite)
-        (markdown-mode . bibtex-completion-format-citation-pandoc-citeproc)
-        (default       . bibtex-completion-format-citation-default)))
+  (global-set-key [F9] 'bibtex-completion-insert-citation)
 
-(global-set-key [F9] 'bibtex-completion-insert-citation)
+  (setq org-latex-packages-alist '(("margin=3cm" "geometry" nil)))
+  (setq org-latex-pdf-process
+        '("latexmk -pdflatex='pdflatex -interaction nonstopmode' -pdf -bibtex -f %f"))
+  ;; (setq org-latex-pdf-process (quote ("texi2dvi --pdf --clean --verbose --batch %f" "bibtex ")))
 
-(setq org-latex-packages-alist '(("margin=3cm" "geometry" nil)))
-(setq org-latex-pdf-process
-      '("latexmk -pdflatex='pdflatex -interaction nonstopmode' -pdf -bibtex -f %f"))
-;; (setq org-latex-pdf-process (quote ("texi2dvi --pdf --clean --verbose --batch %f" "bibtex ")))
+  ;; Add spell checker to org-mode
+  (add-hook 'org-mode-hook 'flyspell-mode)
+  (add-hook 'org-mode-hook 'flyspell-buffer)
+  (add-hook 'org-mode-hook 'cua-mode)
+  (add-hook 'org-mode-hook 'toggle-truncate-lines)
 
-;; Add spell checker to org-mode
-(add-hook 'org-mode-hook 'flyspell-mode)
-(add-hook 'org-mode-hook 'flyspell-buffer)
-(add-hook 'org-mode-hook 'cua-mode)
-(add-hook 'org-mode-hook 'toggle-truncate-lines)
+  (add-hook 'org-mode-hook (lambda () (setq ispell-parser 'tex)))
+  (defun flyspell-ignore-tex ()
+    (interactive)
+    (set (make-variable-buffer-local 'ispell-parser) 'tex))
+  (add-hook 'org-mode-hook 'flyspell-ignore-tex)
 
-(add-hook 'org-mode-hook (lambda () (setq ispell-parser 'tex)))
-(defun flyspell-ignore-tex ()
-  (interactive)
-  (set (make-variable-buffer-local 'ispell-parser) 'tex))
-(add-hook 'org-mode-hook 'flyspell-ignore-tex)
+  ;; Add word count for org-mode
+  (add-hook 'org-mode-hook 'wc-mode)
 
-;; Add word count for org-mode
-(add-hook 'org-mode-hook 'wc-mode)
+  (defun org-mode-rebindings ()
+    (define-key org-mode-map (kbd "C-c 1") 'helm-yas-complete)
+    (define-key org-mode-map (kbd "C-c 2") 'helm-bibtex))
 
-(defun org-mode-rebindings ()
-  (define-key org-mode-map (kbd "C-c 1") 'helm-yas-complete)
-  (define-key org-mode-map (kbd "C-c 2") 'helm-bibtex))
+  (add-hook 'org-mode-hook 'org-mode-rebindings)
 
-(add-hook 'org-mode-hook 'org-mode-rebindings)
+  ;; Reftex
 
-;; Reftex
+  (setq reftex-default-bibliography 
+        '("~/Sync/jabref/pdf.bib"))
 
-(setq reftex-default-bibliography 
-  '("~/Sync/jabref/pdf.bib"))
+  (setq reftex-bibpath-environment-variables
+        '("~/Sync/jabref/:~/Sync/jabref/"))
 
-(setq reftex-bibpath-environment-variables
-      '("~/Sync/jabref/:~/Sync/jabref/"))
+  (setq reftex-bibpath-environment-variables
+        '("~/Sync/Readings"))
+  (setq reftex-default-bibliography '("~/Sync/jabref/pdf.bib"))
+  (setq reftex-bibliography-commands '("bibliography" "nobibliography" "addbibresource"))
 
-(setq reftex-bibpath-environment-variables
-'("~/Sync/Readings"))
-(setq reftex-default-bibliography '("~/Sync/jabref/pdf.bib"))
-(setq reftex-bibliography-commands '("bibliography" "nobibliography" "addbibresource"))
+  (setq reftex-default-bibliography
+        (quote
+         ("pdf.bib" "frankfurt.bib")))
 
-(setq reftex-default-bibliography
-      (quote
-       ("pdf.bib" "frankfurt.bib")))
+  (add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; with AUCTeX LaTeX mode
+  (autoload 'reftex-mode     "reftex" "RefTeX Minor Mode" t)
+  (autoload 'turn-on-reftex  "reftex" "RefTeX Minor Mode" nil)
+  (autoload 'reftex-citation "reftex-cite" "Make citation" nil)
+  (autoload 'reftex-index-phrase-mode "reftex-index" "Phrase mode" t)
+  (add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; with AUCTeX LaTeX mode
+  (add-hook 'latex-mode-hook 'turn-on-reftex)   ; with Emacs latex mode
 
-(add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; with AUCTeX LaTeX mode
-(autoload 'reftex-mode     "reftex" "RefTeX Minor Mode" t)
-(autoload 'turn-on-reftex  "reftex" "RefTeX Minor Mode" nil)
-(autoload 'reftex-citation "reftex-cite" "Make citation" nil)
-(autoload 'reftex-index-phrase-mode "reftex-index" "Phrase mode" t)
-(add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; with AUCTeX LaTeX mode
-(add-hook 'latex-mode-hook 'turn-on-reftex)   ; with Emacs latex mode
+  ;; Make RefTeX faster
+  (setq reftex-enable-partial-scans t)
+  (setq reftex-save-parse-info t)
+  (setq reftex-use-multiple-selection-buffers t)
+  (setq reftex-plug-into-AUCTeX t)
 
-;; Make RefTeX faster
-(setq reftex-enable-partial-scans t)
-(setq reftex-save-parse-info t)
-(setq reftex-use-multiple-selection-buffers t)
-(setq reftex-plug-into-AUCTeX t)
+  ;; Make RefTeX work with Org-Mode
+  ;; use 'C-c (' instead of 'C-c [' because the latter is already
+  ;; defined in orgmode to the add-to-agenda command.
 
-;; Make RefTeX work with Org-Mode
-;; use 'C-c (' instead of 'C-c [' because the latter is already
-;; defined in orgmode to the add-to-agenda command.
+  (defun org-mode-reftex-setup ()
+    (load-library "reftex") 
+    (and (buffer-file-name)
+         (file-exists-p (buffer-file-name))
+         (reftex-parse-all))
+    (define-key org-mode-map (kbd "C-c (") 'reftex-citation))
 
-(defun org-mode-reftex-setup ()
-  (load-library "reftex") 
-  (and (buffer-file-name)
-  (file-exists-p (buffer-file-name))
-  (reftex-parse-all))
-  (define-key org-mode-map (kbd "C-c (") 'reftex-citation))
+  (add-hook 'org-mode-hook 'org-mode-reftex-setup)
 
-(add-hook 'org-mode-hook 'org-mode-reftex-setup)
+  ;; RefTeX formats for biblatex (not natbib)
+  (setq reftex-cite-format
+        '(
+          (?\C-m . "\\cite[]{%l}")
+          (?t . "\\textcite{%l}")
+          (?a . "\\autocite[]{%l}")
+          (?p . "\\parencite{%l}")
+          (?f . "\\footcite[][]{%l}")
+          (?F . "\\fullcite[]{%l}")
+          (?x . "[]{%l}")
+          (?X . "{%l}")
+          ))
 
-;; RefTeX formats for biblatex (not natbib)
-(setq reftex-cite-format
-      '(
-        (?\C-m . "\\cite[]{%l}")
-        (?t . "\\textcite{%l}")
-        (?a . "\\autocite[]{%l}")
-        (?p . "\\parencite{%l}")
-        (?f . "\\footcite[][]{%l}")
-        (?F . "\\fullcite[]{%l}")
-        (?x . "[]{%l}")
-        (?X . "{%l}")
-        ))
+  (setq font-latex-match-reference-keywords
+        '(("cite" "[{")
+          ("cites" "[{}]")
+          ("autocite" "[{")
+          ("footcite" "[{")
+          ("footcites" "[{")
+          ("parencite" "[{")
+          ("textcite" "[{")
+          ("fullcite" "[{") 
+          ("citetitle" "[{") 
+          ("citetitles" "[{") 
+          ("headlessfullcite" "[{")))
 
-(setq font-latex-match-reference-keywords
-      '(("cite" "[{")
-        ("cites" "[{}]")
-        ("autocite" "[{")
-        ("footcite" "[{")
-        ("footcites" "[{")
-        ("parencite" "[{")
-        ("textcite" "[{")
-        ("fullcite" "[{") 
-        ("citetitle" "[{") 
-        ("citetitles" "[{") 
-        ("headlessfullcite" "[{")))
+  (setq reftex-cite-prompt-optional-args nil)
+  (setq reftex-cite-cleanup-optional-args t)
 
-(setq reftex-cite-prompt-optional-args nil)
-(setq reftex-cite-cleanup-optional-args t)
+  )
 
 ;; (set-face-attribute 'fringe nil :background "black")
 ;; (add-to-list 'default-frame-alist '(background-color . "#141414"))
