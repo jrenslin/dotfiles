@@ -9,6 +9,10 @@
     <title>🏢</title>
     <link rel="stylesheet" href="home.css">
 
+    <!--
+         JS function for loading a given .js file.
+         This is used for switching between the different modes.
+    -->
     <script type="text/javascript" >
      function LoadMyJs(scriptName) {
          var docHeadObj = document.getElementsByTagName("head")[0];
@@ -78,6 +82,10 @@
 	      </div>
     </main>
 
+    <!--
+         Different links that are less used, and thus got no keyboard shortcuts bound to them.
+         Only visible on hover.
+    -->
     <aside>
         <a>Firefox</a>
         <div>
@@ -97,6 +105,10 @@
         </div>
     </aside>
 
+    <!--
+         I use the non-default modes rarely myself admittedly.
+         Hence, here's a short reminder on how to switch to them.
+    -->
     <section class="help" style="">
 
         <h2>Help: Modes</h2>
@@ -112,10 +124,11 @@
             <dd>Enable hotkey mode</dd>
         </dl>
 
-
     </section>
 
-
+    <!--
+         Time table with the current semester's regular schedule.
+    -->
     <section>
 
         <h2>Semester Time Table</h2>
@@ -123,44 +136,38 @@
         <table>
 
             <tr><th></th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
-            <tr><td>10-12</td><td> </td><td></td><td></td><td>
-                <h5>Politics of Higher Education in Insular Southeast Asia (SEAS 4.2)</h5>
+            <tr><td>10-12</td><td></td><td></td><td></td><td>
+                <h5><a href="https://qis.server.uni-frankfurt.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=228665&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung">Media in Southeast Asia</a></h5>
+                <dl>
+                    <dt>P:</dt><dd>Arndt Graf</dd>
+                    <dt>L:</dt><dd>SH 3.108</dd>
+                </dl>
+            </td><td></td></tr>
+            <tr><td>12-14</td><td></td><td>
+                <h5><a href="https://qis.server.uni-frankfurt.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=238493&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung">Internationalizing higher education in Southeast Asia: global trends in local contexts</a></h5>
                 <dl>
                     <dt>P:</dt><dd>Alexandra Samokhvalova</dd>
-                    <dt>L:</dt><dd>SH 5.102</dd>
-                </dl>
-                </td><td></td></tr>
-            <tr><td>12-14</td><td></td><td>
-                <h5>Classical Javanese II: Interpreting Language and Culture (SEAS 5.2)</h5>
-                <dl>
-                    <dt>P:</dt><dd>Judith Bosnak</dd>
                     <dt>L:</dt><dd>SH 5.103</dd>
                 </dl>
-            </td><td></td><td>
-                <h5>Current Issues in Indonesian, Malaysian and International Media [SEAS 1.2]</h5>
-                <dl>
-                    <dt>P:</dt><dd>Bernd Nothofer</dd>
-                    <dt>L:</dt><dd>Jur 604</dd>
-                </dl>
-            </td><td>
-                <h5>Current Research on Southeast Asia (SEAS 3.2)</h5>
-                <dl>
-                    <dt>P:</dt><dd>Elsa Clave</dd>
-                    <dt>L:</dt><dd>SH 1.109</dd>
-                </dl></td></tr>
+            </td><td></td><td></td><td></td></tr>
             <tr><td>14-16</td><td></td><td></td><td></td><td></td><td></td></tr>
             <tr><td>16-18</td><td>
-                <h5>Aktuelle indonesische Internet-Nachrichten (SEAS 1.2)</h5>
+                <h5><a href="https://qis.server.uni-frankfurt.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=229155&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung">Indonesian movies</a></h5>
                 <dl>
                     <dt>P:</dt><dd>Hedy Holzwarth</dd>
-                    <dt>L:</dt><dd>NM 103</dd>
+                    <dt>L:</dt><dd>JUR 804</dd>
                 </dl>
-            </td><td></td><td></td><td></td><td></td></tr>
+            </td><td></td><td></td><td>
+                <h5><a href="https://qis.server.uni-frankfurt.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=238492&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung">Transnationale Migration in Südostasien</a></h5>
+                <dl>
+                    <dt>P:</dt><dd>J. Enslin</dd>
+                    <dt>L:</dt><dd>SH 1.103</dd>
+                </dl>
+            </td><td></td></tr>
 
         </table>
 
     </section>
-
 
     <!-- Keybindings for switching modes and general inline js functions. -->
     <script type="text/javascript">
@@ -211,4 +218,3 @@
 
 </body>
 </html>
-
