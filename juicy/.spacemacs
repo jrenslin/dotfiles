@@ -64,6 +64,7 @@ values."
    dotspacemacs-additional-packages '(all-the-icons
                                       helm-bibtex
                                       helm-c-yasnippet
+                                      nyan-mode
                                       wc-mode
                                       yasnippet)
    ;; A list of packages that cannot be updated.
@@ -282,163 +283,171 @@ values."
 ;; Own manual additions
 
 (defun dotspacemacs/user-config ()
+  (require 'spaceline-config)
+  (spaceline-emacs-theme)
   (eval-after-load 'helm
     '(require 'helm-bibtex))
   (eval-after-load 'php-mode
     '(require 'php-ext))
   (global-hl-line-mode -1) ; Disable current line highlight
+  (setq linum-format (concat linum-format " "))
   (global-linum-mode) ; Show line numbers by default
-  (require 'powerline)
   (require 'neotree)
   ;; (neotree-show)
   (global-set-key [f8] 'neotree-toggle)
 
-  ;; Bind message mode to mails crafted in mutt
-  (add-to-list 'auto-mode-alist '(".*mutt.*" . message-mode))
+  )
 
-  ;; Enable CUA in usual cases
-  (add-hook 'conf-mode-hook 'cua-mode)
-  (add-hook 'css-mode-hook 'cua-mode)
-  (add-hook 'emacs-lisp-mode-hook 'cua-mode)
-  (add-hook 'fundamental-mode-hook 'cua-mode)
-  (add-hook 'go-mode-hook 'cua-mode)
-  (add-hook 'html-mode-hook 'cua-mode)
-  (add-hook 'lisp-mode-hook 'cua-mode)
-  (add-hook 'markdown-mode-hook 'cua-mode)
-  (add-hook 'message-mode-hook 'cua-mode)
-  (add-hook 'php-mode-hook 'cua-mode)
-  (add-hook 'python-mode-hook 'cua-mode)
-  (add-hook 'web-mode-hook 'cua-mode)
+;; Bind message mode to mails crafted in mutt
+(add-to-list 'auto-mode-alist '(".*mutt.*" . message-mode))
+(add-to-list 'auto-mode-alist '("\\.task\\'" . conf-mode))
+(add-to-list 'auto-mode-alist '("\\rc\\'" . conf-mode))
 
-  ;; Set proper snippets directory
-  (setq yas-snippet-dirs
-        '("~/Sync/Programming/dotfiles/general/emacs/snippets"                 ;; personal snippets
-          ))
+;; Enable CUA in usual cases
+(add-hook 'conf-mode-hook 'cua-mode)
+(add-hook 'css-mode-hook 'cua-mode)
+(add-hook 'emacs-lisp-mode-hook 'cua-mode)
+(add-hook 'fundamental-mode-hook 'cua-mode)
+(add-hook 'go-mode-hook 'cua-mode)
+(add-hook 'html-mode-hook 'cua-mode)
+(add-hook 'lisp-mode-hook 'cua-mode)
+(add-hook 'latex-mode-hook 'cua-mode)
+(add-hook 'markdown-mode-hook 'cua-mode)
+(add-hook 'message-mode-hook 'cua-mode)
+(add-hook 'php-mode-hook 'cua-mode)
+(add-hook 'org-mode-hook 'nyan-mode)
+(add-hook 'python-mode-hook 'cua-mode)
+(add-hook 'tex-mode-hook 'cua-mode)
+(add-hook 'Tex-mode-hook 'cua-mode)
+(add-hook 'web-mode-hook 'cua-mode)
 
-  ;; UI
-  (setq neo-theme 'arrow)
+;; Set proper snippets directory
+(setq yas-snippet-dirs
+      '("~/Sync/Programming/dotfiles/general/emacs/snippets"                 ;; personal snippets
+        ))
 
-  (setq-default left-fringe-width  100)
-  (setq-default right-fringe-width  100)
+;; UI
+(setq neo-theme 'arrow)
 
-  ;; BibTeX handling
-  (setq bibtex-completion-bibliography
-        '("~/Sync/Jabref/pdf.bib"
-          "~/Sync/Jabref/frankfurt.bib"))
-  (setq bibtex-completion-library-path '("~/Sync/Readings"))
-  ;; (setq bibtex-completion-pdf-field "File")
-  (setq bibtex-completion-notes-path "~/synced_notes/Readings")
-  (setq bibtex-completion-pdf-symbol "⌘")
-  (setq bibtex-completion-notes-symbol "✎")
+(setq-default left-fringe-width  100)
+(setq-default right-fringe-width  100)
 
-  (setq bibtex-completion-format-citation-functions
-        '((org-mode      . bibtex-completion-format-citation-cite)
-          (latex-mode    . bibtex-completion-format-citation-cite)
-          (markdown-mode . bibtex-completion-format-citation-pandoc-citeproc)
-          (default       . bibtex-completion-format-citation-default)))
+;; BibTeX handling
+(setq bibtex-completion-bibliography
+      '("~/Sync/Jabref/pdf.bib"
+        "~/Sync/Jabref/frankfurt.bib"))
+(setq bibtex-completion-library-path '("~/Sync/Readings"))
+;; (setq bibtex-completion-pdf-field "File")
+(setq bibtex-completion-notes-path "~/synced_notes/Readings")
+(setq bibtex-completion-pdf-symbol "⌘")
+(setq bibtex-completion-notes-symbol "✎")
 
-  (global-set-key [F9] 'bibtex-completion-insert-citation)
+(setq bibtex-completion-format-citation-functions
+      '((org-mode      . bibtex-completion-format-citation-cite)
+        (latex-mode    . bibtex-completion-format-citation-cite)
+        (markdown-mode . bibtex-completion-format-citation-pandoc-citeproc)
+        (default       . bibtex-completion-format-citation-default)))
 
-  (setq org-latex-packages-alist '(("margin=3cm" "geometry" nil)))
-  (setq org-latex-pdf-process
-        '("latexmk -pdflatex='pdflatex -interaction nonstopmode' -pdf -bibtex -f %f"))
-  ;; (setq org-latex-pdf-process (quote ("texi2dvi --pdf --clean --verbose --batch %f" "bibtex ")))
+(global-set-key [F9] 'bibtex-completion-insert-citation)
 
-  ;; Add spell checker to org-mode
-  (add-hook 'org-mode-hook 'flyspell-mode)
-  (add-hook 'org-mode-hook 'flyspell-buffer)
-  (add-hook 'org-mode-hook 'cua-mode)
-  (add-hook 'org-mode-hook 'toggle-truncate-lines)
+(setq org-latex-packages-alist '(("margin=3cm" "geometry" nil)))
+(setq org-latex-pdf-process
+      '("latexmk -pdflatex='pdflatex -interaction nonstopmode' -pdf -bibtex -f %f"))
+;; (setq org-latex-pdf-process (quote ("texi2dvi --pdf --clean --verbose --batch %f" "bibtex ")))
 
-  (add-hook 'org-mode-hook (lambda () (setq ispell-parser 'tex)))
-  (defun flyspell-ignore-tex ()
-    (interactive)
-    (set (make-variable-buffer-local 'ispell-parser) 'tex))
-  (add-hook 'org-mode-hook 'flyspell-ignore-tex)
+;; Add spell checker to org-mode
+(add-hook 'org-mode-hook 'flyspell-mode)
+(add-hook 'org-mode-hook 'flyspell-buffer)
+(add-hook 'org-mode-hook 'cua-mode)
+(add-hook 'org-mode-hook 'toggle-truncate-lines)
 
-  ;; Add word count for org-mode
-  (add-hook 'org-mode-hook 'wc-mode)
+(add-hook 'org-mode-hook (lambda () (setq ispell-parser 'tex)))
+(defun flyspell-ignore-tex ()
+  (interactive)
+  (set (make-variable-buffer-local 'ispell-parser) 'tex))
+(add-hook 'org-mode-hook 'flyspell-ignore-tex)
 
-  (defun org-mode-rebindings ()
-    (define-key org-mode-map (kbd "C-c 1") 'helm-yas-complete)
-    (define-key org-mode-map (kbd "C-c 2") 'helm-bibtex))
+;; Add word count for org-mode
+(add-hook 'org-mode-hook 'wc-mode)
 
-  (add-hook 'org-mode-hook 'org-mode-rebindings)
+(defun org-mode-rebindings ()
+  (define-key org-mode-map (kbd "C-c 1") 'helm-yas-complete)
+  (define-key org-mode-map (kbd "C-c 2") 'helm-bibtex))
 
-  ;; Reftex
+(add-hook 'org-mode-hook 'org-mode-rebindings)
 
-  (setq reftex-default-bibliography 
-        '("~/Sync/jabref/pdf.bib"))
+;; Reftex
 
-  (setq reftex-bibpath-environment-variables
+(setq reftex-default-bibliography 
+      '("~/Sync/jabref/pdf.bib"))
+
+(setq reftex-bibpath-environment-variables
         '("~/Sync/jabref/:~/Sync/jabref/"))
 
-  (setq reftex-bibpath-environment-variables
-        '("~/Sync/Readings"))
-  (setq reftex-default-bibliography '("~/Sync/jabref/pdf.bib"))
-  (setq reftex-bibliography-commands '("bibliography" "nobibliography" "addbibresource"))
+(setq reftex-bibpath-environment-variables
+      '("~/Sync/Readings"))
+(setq reftex-default-bibliography '("~/Sync/jabref/pdf.bib"))
+(setq reftex-bibliography-commands '("bibliography" "nobibliography" "addbibresource"))
 
-  (setq reftex-default-bibliography
+(setq reftex-default-bibliography
         (quote
          ("pdf.bib" "frankfurt.bib")))
 
-  (add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; with AUCTeX LaTeX mode
-  (autoload 'reftex-mode     "reftex" "RefTeX Minor Mode" t)
-  (autoload 'turn-on-reftex  "reftex" "RefTeX Minor Mode" nil)
-  (autoload 'reftex-citation "reftex-cite" "Make citation" nil)
-  (autoload 'reftex-index-phrase-mode "reftex-index" "Phrase mode" t)
-  (add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; with AUCTeX LaTeX mode
-  (add-hook 'latex-mode-hook 'turn-on-reftex)   ; with Emacs latex mode
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; with AUCTeX LaTeX mode
+(autoload 'reftex-mode     "reftex" "RefTeX Minor Mode" t)
+(autoload 'turn-on-reftex  "reftex" "RefTeX Minor Mode" nil)
+(autoload 'reftex-citation "reftex-cite" "Make citation" nil)
+(autoload 'reftex-index-phrase-mode "reftex-index" "Phrase mode" t)
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; with AUCTeX LaTeX mode
+(add-hook 'latex-mode-hook 'turn-on-reftex)   ; with Emacs latex mode
 
-  ;; Make RefTeX faster
-  (setq reftex-enable-partial-scans t)
-  (setq reftex-save-parse-info t)
-  (setq reftex-use-multiple-selection-buffers t)
-  (setq reftex-plug-into-AUCTeX t)
+;; Make RefTeX faster
+(setq reftex-enable-partial-scans t)
+(setq reftex-save-parse-info t)
+(setq reftex-use-multiple-selection-buffers t)
+(setq reftex-plug-into-AUCTeX t)
 
-  ;; Make RefTeX work with Org-Mode
-  ;; use 'C-c (' instead of 'C-c [' because the latter is already
-  ;; defined in orgmode to the add-to-agenda command.
+;; Make RefTeX work with Org-Mode
+;; use 'C-c (' instead of 'C-c [' because the latter is already
+;; defined in orgmode to the add-to-agenda command.
 
-  (defun org-mode-reftex-setup ()
-    (load-library "reftex") 
-    (and (buffer-file-name)
-         (file-exists-p (buffer-file-name))
-         (reftex-parse-all))
-    (define-key org-mode-map (kbd "C-c (") 'reftex-citation))
+(defun org-mode-reftex-setup ()
+  (load-library "reftex") 
+  (and (buffer-file-name)
+       (file-exists-p (buffer-file-name))
+       (reftex-parse-all))
+  (define-key org-mode-map (kbd "C-c (") 'reftex-citation))
 
-  (add-hook 'org-mode-hook 'org-mode-reftex-setup)
+(add-hook 'org-mode-hook 'org-mode-reftex-setup)
 
-  ;; RefTeX formats for biblatex (not natbib)
-  (setq reftex-cite-format
-        '(
-          (?\C-m . "\\cite[]{%l}")
-          (?t . "\\textcite{%l}")
-          (?a . "\\autocite[]{%l}")
-          (?p . "\\parencite{%l}")
-          (?f . "\\footcite[][]{%l}")
-          (?F . "\\fullcite[]{%l}")
-          (?x . "[]{%l}")
-          (?X . "{%l}")
-          ))
+;; RefTeX formats for biblatex (not natbib)
+(setq reftex-cite-format
+      '(
+        (?\C-m . "\\cite[]{%l}")
+        (?t . "\\textcite{%l}")
+        (?a . "\\autocite[]{%l}")
+        (?p . "\\parencite{%l}")
+        (?f . "\\footcite[][]{%l}")
+        (?F . "\\fullcite[]{%l}")
+        (?x . "[]{%l}")
+        (?X . "{%l}")
+        ))
 
-  (setq font-latex-match-reference-keywords
-        '(("cite" "[{")
-          ("cites" "[{}]")
-          ("autocite" "[{")
-          ("footcite" "[{")
-          ("footcites" "[{")
-          ("parencite" "[{")
-          ("textcite" "[{")
-          ("fullcite" "[{") 
-          ("citetitle" "[{") 
-          ("citetitles" "[{") 
-          ("headlessfullcite" "[{")))
+(setq font-latex-match-reference-keywords
+      '(("cite" "[{")
+        ("cites" "[{}]")
+        ("autocite" "[{")
+        ("footcite" "[{")
+        ("footcites" "[{")
+        ("parencite" "[{")
+        ("textcite" "[{")
+        ("fullcite" "[{") 
+        ("citetitle" "[{") 
+        ("citetitles" "[{") 
+        ("headlessfullcite" "[{")))
 
-  (setq reftex-cite-prompt-optional-args nil)
-  (setq reftex-cite-cleanup-optional-args t)
-
-  )
+(setq reftex-cite-prompt-optional-args nil)
+(setq reftex-cite-cleanup-optional-args t)
 
 ;; (set-face-attribute 'fringe nil :background "black")
 ;; (add-to-list 'default-frame-alist '(background-color . "#141414"))
@@ -449,18 +458,12 @@ values."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ansi-color-names-vector
-   ["#080808" "#d70000" "#67b11d" "#875f00" "#268bd2" "#af00df" "#00ffff" "#b2b2b2"])
+ '(ansi-color-names-vector nil)
  '(custom-safe-themes
    (quote
-    ("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "98cc377af705c0f2133bb6d340bf0becd08944a588804ee655809da5d8140de6" "5dc0ae2d193460de979a463b907b4b2c6d2c9c4657b2e9e66b8898d2592e3de5" "c395bd62143d73b02b88dd5707e8634831734e0c632a1a9dbf9071306837ead5" default)))
+    ("67e998c3c23fe24ed0fb92b9de75011b92f35d3e89344157ae0d544d50a63a72" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "98cc377af705c0f2133bb6d340bf0becd08944a588804ee655809da5d8140de6" "5dc0ae2d193460de979a463b907b4b2c6d2c9c4657b2e9e66b8898d2592e3de5" "c395bd62143d73b02b88dd5707e8634831734e0c632a1a9dbf9071306837ead5" default)))
  '(evil-want-Y-yank-to-eol nil)
  '(package-selected-packages
    (quote
-    (molokai-dark-theme powerline spinner org-plus-contrib skewer-mode simple-httpd json-snatcher json-reformat multiple-cursors js2-mode hydra parent-mode haml-mode pos-tip flx magit-popup git-commit with-editor iedit anzu goto-chg undo-tree highlight popup diminish projectile pkg-info epl swiper bind-map bind-key packed async f s memoize font-lock+ avy php-mode biblio parsebib biblio-core pythonic gruber-darker-theme gruvbox-dark-theme gruvbox-theme go-guru go-eldoc go-mode origami counsel smartparens evil flycheck helm helm-core markdown-mode magit yasnippet ivy dash helm-themes helm-swoop helm-projectile helm-mode-manager helm-flx helm-descbinds helm-ag ace-jump-helm-line yapfify ws-butler winum which-key wgrep web-mode web-beautify wc-mode volatile-highlights vi-tilde-fringe uuidgen use-package toc-org tagedit subatomic256-theme spaceline smex smeargle slim-mode scss-mode sass-mode restart-emacs request rainbow-delimiters pyvenv pytest pyenv-mode py-isort pug-mode popwin pip-requirements phpunit phpcbf php-extras php-auto-yasnippets persp-mode pcre2el paradox orgit org-bullets open-junk-file neotree move-text moe-theme mmm-mode markdown-toc magit-gitflow macrostep lorem-ipsum livid-mode live-py-mode linum-relative link-hint less-css-mode json-mode js2-refactor js-doc ivy-hydra info+ indent-guide hy-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-make helm-c-yasnippet helm-bibtex google-translate golden-ratio gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md flycheck-pos-tip flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu emmet-mode elisp-slime-nav dumb-jump drupal-mode define-word cython-mode counsel-projectile column-enforce-mode coffee-mode clean-aindent-mode auto-highlight-symbol auto-compile anaconda-mode all-the-icons aggressive-indent adaptive-wrap ace-window ace-link))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+    (zenburn-theme fringe-current-line nyan-mode molokai-dark-theme powerline spinner org-plus-contrib skewer-mode simple-httpd json-snatcher json-reformat multiple-cursors js2-mode hydra parent-mode haml-mode pos-tip flx magit-popup git-commit with-editor iedit anzu goto-chg undo-tree highlight popup diminish projectile pkg-info epl swiper bind-map bind-key packed async f s memoize font-lock+ avy php-mode biblio parsebib biblio-core pythonic gruber-darker-theme gruvbox-dark-theme gruvbox-theme go-guru go-eldoc go-mode origami counsel smartparens evil flycheck helm helm-core markdown-mode magit yasnippet ivy dash helm-themes helm-swoop helm-projectile helm-mode-manager helm-flx helm-descbinds helm-ag ace-jump-helm-line yapfify ws-butler winum which-key wgrep web-mode web-beautify wc-mode volatile-highlights vi-tilde-fringe uuidgen use-package toc-org tagedit subatomic256-theme spaceline smex smeargle slim-mode scss-mode sass-mode restart-emacs request rainbow-delimiters pyvenv pytest pyenv-mode py-isort pug-mode popwin pip-requirements phpunit phpcbf php-extras php-auto-yasnippets persp-mode pcre2el paradox orgit org-bullets open-junk-file neotree move-text moe-theme mmm-mode markdown-toc magit-gitflow macrostep lorem-ipsum livid-mode live-py-mode linum-relative link-hint less-css-mode json-mode js2-refactor js-doc ivy-hydra info+ indent-guide hy-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-make helm-c-yasnippet helm-bibtex google-translate golden-ratio gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md flycheck-pos-tip flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu emmet-mode elisp-slime-nav dumb-jump drupal-mode define-word cython-mode counsel-projectile column-enforce-mode coffee-mode clean-aindent-mode auto-highlight-symbol auto-compile anaconda-mode all-the-icons aggressive-indent adaptive-wrap ace-window ace-link))))
+
