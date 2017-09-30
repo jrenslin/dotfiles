@@ -2,22 +2,22 @@
 [[private]]
 path                              = /home/jrenslin/.calendars/private
 type                              = calendar
-color                             = light red
+color                             = light blue
 
 [[public]]
 path                              = /home/jrenslin/.calendars/public
 type                              = calendar
-color                             = light cyan
+color                             = dark gray
 
 [[university]]
 path                              = /home/jrenslin/.calendars/university
 type                              = calendar
-color                             = light blue
+color                             = light cyan
 
 [[birthdays]]
 path                              = /home/jrenslin/.calendars/birthdays
 type                              = calendar
-color                             = dark green
+color                             = yellow
 
 [locale]
 # local_timezone                  = Europe/Berlin
@@ -43,8 +43,8 @@ timedelta                         = 7d
 path                              = /home/jrenslin/.calendars/khal.db
 
 [highlight_days]
-color                             = light red
-# default_color                   = dark green
+# color                           = light green
+default_color                     = dark green
 method                            = fg
 # multiple                        = 
 
