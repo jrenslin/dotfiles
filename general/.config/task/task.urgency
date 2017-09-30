@@ -1,0 +1,16 @@
+# ----------------------------
+# Urgency coefficients
+# ----------------------------
+
+urgency.age.coefficient                       = 2.0         #
+urgency.age.max                               = 21          # Stop increasing urgency after 3 weeks
+urgency.annotations.coefficient               = 0.4         #
+urgency.due.coefficient                       = 6.0         #
+urgency.active.coefficient                    = 8.0
+urgency.next.coefficient                      = 4.0
+urgency.project.coefficient                   = 0.5         # I'm setting projects anyway, so this is the default ...
+urgency.tags.coefficient                      = 0.5         #
+urgency.user.project.Household.coefficient    = -0.5        # 
+urgency.user.project.University.coefficient   = 0.5         # 
+urgency.user.project.Labour.coefficient       = 0.5         # 
+urgency.user.tag.problem.coefficient          = 4.5         #

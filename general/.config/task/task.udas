@@ -1,0 +1,11 @@
+# ----------------------------
+# UDAs - User Defined Attributes for task
+# ----------------------------
+
+uda.progress.label    = Progress
+uda.progress.type     = numeric
+uda.progress.values   = 0,1,2,3,4,5,6,7,8,9,10
+uda.progress.default  = 0
+
+uda.estimate.label    = Estimate
+uda.estimate.type     = duration

@@ -1,0 +1,53 @@
+# ----------------------------
+# Various settings that determine the output of task
+# ----------------------------
+
+# ----------------------------
+# Terminal
+# ----------------------------
+
+detection             = on         # Check for terminal size?            default: on
+# defaultwidth          = 80       # Default width w/o detection         default: 80
+# defaultheight         = 24       # Default height w/o detection        default: 24
+avoidlastcolumn       = no         #                                     default: no
+hyphenate             = on         # Hyphenate when wrapping words?      default: on
+
+# ----------------------------
+# Lists
+# ----------------------------
+
+verbose               = blank,footnote,label,new-id,affected,project     # Don't show headers
+confirmation          = yes                                              # Confirm deleting tasks?
+indent.annotation     = 2                                                # 
+indent.report         = 0                                                # Indentation of whole report
+# row.padding           = 2
+column.padding        = 2                                                # Indentation of columns
+
+# ----------------------------
+# Indicators
+# ----------------------------
+
+dependency.indicator  = 🔗
+recurrence.indicator  = 🔁
+
+# ----------------------------
+# Dates
+# ----------------------------
+
+dateformat            = Y-M-D
+# dateformat.report     =
+dateformat.holiday    = Y-M-D
+dateformat.edit       = Y-M-D H:N:S
+dateformat.info       = Y-M-D H:N
+# dateformat.annotation=m/d/Y
+
+# ----------------------------
+# Calendar
+# ----------------------------
+
+weekstart                 = Monday      # D
+displayweeknumber         = yes         # 
+calendar.details          = sparse      #
+calendar.details.report   = list        #
+calendar.offset           = off         # 
+calendar.legend           = yes         #

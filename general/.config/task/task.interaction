@@ -1,0 +1,17 @@
+# ----------------------------
+# Editing
+# ----------------------------
+
+editor                = emacsclient            # Text editor for `task edit`   default: $EDITOR
+edit.verbose          = on                     # Show comments when editing    default: on
+# locale                = en-US.UTF8             # Locale; used for syncing
+
+# ----------------------------
+# Interaction
+# ----------------------------
+
+list.all.projects     = yes     # List all projects on `task projects`
+complete.all.projects = yes     # Autocomplete works with all projects
+list.all.tags         = yes     # List all tags on `task tags`
+complete.all.tags     = yes     # Autocomplete works with all tags
+regex                 = yes

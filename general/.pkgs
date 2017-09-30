@@ -25,6 +25,7 @@ mpc
 mpd
 mpv
 msmtp
+mupdf
 mutt
 nautilus
 ncmpcpp
@@ -43,6 +44,7 @@ ranger
 rename
 rofi
 stow
+task
 tesseract-ocr
 texlive-fonts-extra
 texlive-latex-recommended

@@ -54,6 +54,7 @@ folders=(
     ~/.config/openbox
     ~/.config/ranger
     ~/.config/rofi
+    ~/.config/task
     ~/.config/termite
     ~/.config/tint2
     ~/.config/vdirsyncer

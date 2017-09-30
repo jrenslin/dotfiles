@@ -67,10 +67,11 @@ A script for an initial setup. It does the following things:
 
 ## To-Do
 
-| File              | To-Do                                          | Problem                                     |
-| --------          | ---------------------------------------------- | ------------------------------------------- |
+| File / Program    | To-Do                                          | Problem                                     |
+| ----------------- | ---------------------------------------------- | ------------------------------------------- |
 | `.xinitrc`        | Get .xinitrc to recognize my different systems | Find out how to escape hyphens in hostnames |
 | `switch-theme.sh` | Include check for hostname with conky configs  |                                             |
+| `task`            | Get holidays running for `task calendar`       |                                             |
 
 ## Thanks
 

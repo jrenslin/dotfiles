@@ -1,0 +1,26 @@
+# ----------------------------
+# Taskwarrior program configuration file.
+# ----------------------------
+
+# ----------------------------
+# Files
+# ----------------------------
+
+data.location         = ~/.task         # Storage location              default: ~/.task
+locking               = on              # Use locking or not            default: on
+gc                    = on              # Suspend garbage collection?   default: no
+exit.on.missing.db    = no              # Exit automatically if storage location is not available; default: no
+
+# ----------------------------
+# Includes
+# ----------------------------
+
+include               ~/.config/task/comfy.theme
+include               ~/.config/task/task.interaction
+include               ~/.config/task/task.aliases
+include               ~/.config/task/task.styling
+include               ~/.config/task/task.udas
+include               ~/.config/task/task.urgency
+
+# Holidays -------------------
+include               ~/.config/task/german-holidays-2010-2060.rc

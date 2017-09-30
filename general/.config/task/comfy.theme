@@ -1,0 +1,105 @@
+###############################################################################
+#
+# Copyright 2006 - 2016, Paul Beckingham, Federico Hernandez.
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included
+# in all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+# OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+# THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# http://www.opensource.org/licenses/mit-license.php
+#
+###############################################################################
+
+# ----------------------------
+# A color scheme more oriented towards system defaults.
+# Based on the taskwarrior no-color scheme, with many
+# values taken from the dark256 theme.
+# 2017@Joshua Enslin
+# ----------------------------
+
+rule.precedence.color=deleted,completed,active,keyword.,tag.,project.,overdue,scheduled,due.today,due,blocked,blocking,recurring,tagged,uda.
+
+# General decoration
+color.label                   = bold
+color.label.sort              = bold
+color.alternate               = on gray2
+color.header                  = color3
+color.footnote                = color11
+color.warning                 = bold color9
+color.error                   = color15 on color9
+color.debug                   = color252
+
+# Task state
+color.completed               = color2
+color.deleted                 = bold red
+color.active                  = color255 on color1
+color.recurring               = color14
+color.scheduled               = on color238
+color.until                   =
+color.blocked                 = white on gray2
+color.blocking                = black on gray21
+
+# Project
+color.project.none            =
+
+# Priority
+color.uda.priority.H          = color255
+color.uda.priority.M          = color250
+color.uda.priority.L          = color245
+
+# Tags
+color.tag.next                = rgb440
+color.tag.none                =
+color.tagged                  = color10
+
+# Due
+color.due.today               = color255 on color9
+color.due                     = color255 on color1
+color.overdue                 = color9
+
+# Report: burndown
+color.burndown.done           = on color2
+color.burndown.pending        = on color1
+color.burndown.started        = on color4
+
+# Report: history
+color.history.add             = color0 on color1
+color.history.delete          = color0 on color6
+color.history.done            = color0 on color2
+
+# Report: summary
+color.summary.background      = white on color15
+color.summary.bar             = black on color3
+
+# Command: calendar
+color.calendar.due.today      = color15 on color1
+color.calendar.due            = color0 on color1
+color.calendar.holiday        = color0 on color11
+color.calendar.overdue        = color0 on color9
+color.calendar.today          = color255 on color3
+color.calendar.weekend        = color252
+color.calendar.weeknumber     = color12
+
+# Command: sync
+color.sync.added              =
+color.sync.changed            =
+color.sync.rejected           =
+
+# Command: undo
+color.undo.after               = color2
+color.undo.before              = color1
+

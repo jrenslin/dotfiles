@@ -1,0 +1,1028 @@
+# -------------------
+# German holiday data from 2010 until 2060
+# Does not contain irregeular holidays
+
+# Generated using workalendar (https://pypi.python.org/pypi/workalendar/2.3.1) 
+# -------------------
+
+# Holidays for year 2010 ----------
+holiday.de-Newyear2010.name=New year
+holiday.de-Newyear2010.date=2010-01-01
+holiday.de-GoodFriday2010.name=Good Friday
+holiday.de-GoodFriday2010.date=2010-04-02
+holiday.de-EasterMonday2010.name=Easter Monday
+holiday.de-EasterMonday2010.date=2010-04-05
+holiday.de-LabourDay2010.name=Labour Day
+holiday.de-LabourDay2010.date=2010-05-01
+holiday.de-AscensionThursday2010.name=Ascension Thursday
+holiday.de-AscensionThursday2010.date=2010-05-13
+holiday.de-WhitMonday2010.name=Whit Monday
+holiday.de-WhitMonday2010.date=2010-05-24
+holiday.de-DayofGermanUnity2010.name=Day of German Unity
+holiday.de-DayofGermanUnity2010.date=2010-10-03
+holiday.de-ChristmasDay2010.name=Christmas Day
+holiday.de-ChristmasDay2010.date=2010-12-25
+holiday.de-SecondChristmasDay2010.name=Second Christmas Day
+holiday.de-SecondChristmasDay2010.date=2010-12-26
+
+# Holidays for year 2011 ----------
+holiday.de-Newyear2011.name=New year
+holiday.de-Newyear2011.date=2011-01-01
+holiday.de-GoodFriday2011.name=Good Friday
+holiday.de-GoodFriday2011.date=2011-04-22
+holiday.de-EasterMonday2011.name=Easter Monday
+holiday.de-EasterMonday2011.date=2011-04-25
+holiday.de-LabourDay2011.name=Labour Day
+holiday.de-LabourDay2011.date=2011-05-01
+holiday.de-AscensionThursday2011.name=Ascension Thursday
+holiday.de-AscensionThursday2011.date=2011-06-02
+holiday.de-WhitMonday2011.name=Whit Monday
+holiday.de-WhitMonday2011.date=2011-06-13
+holiday.de-DayofGermanUnity2011.name=Day of German Unity
+holiday.de-DayofGermanUnity2011.date=2011-10-03
+holiday.de-ChristmasDay2011.name=Christmas Day
+holiday.de-ChristmasDay2011.date=2011-12-25
+holiday.de-SecondChristmasDay2011.name=Second Christmas Day
+holiday.de-SecondChristmasDay2011.date=2011-12-26
+
+# Holidays for year 2012 ----------
+holiday.de-Newyear2012.name=New year
+holiday.de-Newyear2012.date=2012-01-01
+holiday.de-GoodFriday2012.name=Good Friday
+holiday.de-GoodFriday2012.date=2012-04-06
+holiday.de-EasterMonday2012.name=Easter Monday
+holiday.de-EasterMonday2012.date=2012-04-09
+holiday.de-LabourDay2012.name=Labour Day
+holiday.de-LabourDay2012.date=2012-05-01
+holiday.de-AscensionThursday2012.name=Ascension Thursday
+holiday.de-AscensionThursday2012.date=2012-05-17
+holiday.de-WhitMonday2012.name=Whit Monday
+holiday.de-WhitMonday2012.date=2012-05-28
+holiday.de-DayofGermanUnity2012.name=Day of German Unity
+holiday.de-DayofGermanUnity2012.date=2012-10-03
+holiday.de-ChristmasDay2012.name=Christmas Day
+holiday.de-ChristmasDay2012.date=2012-12-25
+holiday.de-SecondChristmasDay2012.name=Second Christmas Day
+holiday.de-SecondChristmasDay2012.date=2012-12-26
+
+# Holidays for year 2013 ----------
+holiday.de-Newyear2013.name=New year
+holiday.de-Newyear2013.date=2013-01-01
+holiday.de-GoodFriday2013.name=Good Friday
+holiday.de-GoodFriday2013.date=2013-03-29
+holiday.de-EasterMonday2013.name=Easter Monday
+holiday.de-EasterMonday2013.date=2013-04-01
+holiday.de-LabourDay2013.name=Labour Day
+holiday.de-LabourDay2013.date=2013-05-01
+holiday.de-AscensionThursday2013.name=Ascension Thursday
+holiday.de-AscensionThursday2013.date=2013-05-09
+holiday.de-WhitMonday2013.name=Whit Monday
+holiday.de-WhitMonday2013.date=2013-05-20
+holiday.de-DayofGermanUnity2013.name=Day of German Unity
+holiday.de-DayofGermanUnity2013.date=2013-10-03
+holiday.de-ChristmasDay2013.name=Christmas Day
+holiday.de-ChristmasDay2013.date=2013-12-25
+holiday.de-SecondChristmasDay2013.name=Second Christmas Day
+holiday.de-SecondChristmasDay2013.date=2013-12-26
+
+# Holidays for year 2014 ----------
+holiday.de-Newyear2014.name=New year
+holiday.de-Newyear2014.date=2014-01-01
+holiday.de-GoodFriday2014.name=Good Friday
+holiday.de-GoodFriday2014.date=2014-04-18
+holiday.de-EasterMonday2014.name=Easter Monday
+holiday.de-EasterMonday2014.date=2014-04-21
+holiday.de-LabourDay2014.name=Labour Day
+holiday.de-LabourDay2014.date=2014-05-01
+holiday.de-AscensionThursday2014.name=Ascension Thursday
+holiday.de-AscensionThursday2014.date=2014-05-29
+holiday.de-WhitMonday2014.name=Whit Monday
+holiday.de-WhitMonday2014.date=2014-06-09
+holiday.de-DayofGermanUnity2014.name=Day of German Unity
+holiday.de-DayofGermanUnity2014.date=2014-10-03
+holiday.de-ChristmasDay2014.name=Christmas Day
+holiday.de-ChristmasDay2014.date=2014-12-25
+holiday.de-SecondChristmasDay2014.name=Second Christmas Day
+holiday.de-SecondChristmasDay2014.date=2014-12-26
+
+# Holidays for year 2015 ----------
+holiday.de-Newyear2015.name=New year
+holiday.de-Newyear2015.date=2015-01-01
+holiday.de-GoodFriday2015.name=Good Friday
+holiday.de-GoodFriday2015.date=2015-04-03
+holiday.de-EasterMonday2015.name=Easter Monday
+holiday.de-EasterMonday2015.date=2015-04-06
+holiday.de-LabourDay2015.name=Labour Day
+holiday.de-LabourDay2015.date=2015-05-01
+holiday.de-AscensionThursday2015.name=Ascension Thursday
+holiday.de-AscensionThursday2015.date=2015-05-14
+holiday.de-WhitMonday2015.name=Whit Monday
+holiday.de-WhitMonday2015.date=2015-05-25
+holiday.de-DayofGermanUnity2015.name=Day of German Unity
+holiday.de-DayofGermanUnity2015.date=2015-10-03
+holiday.de-ChristmasDay2015.name=Christmas Day
+holiday.de-ChristmasDay2015.date=2015-12-25
+holiday.de-SecondChristmasDay2015.name=Second Christmas Day
+holiday.de-SecondChristmasDay2015.date=2015-12-26
+
+# Holidays for year 2016 ----------
+holiday.de-Newyear2016.name=New year
+holiday.de-Newyear2016.date=2016-01-01
+holiday.de-GoodFriday2016.name=Good Friday
+holiday.de-GoodFriday2016.date=2016-03-25
+holiday.de-EasterMonday2016.name=Easter Monday
+holiday.de-EasterMonday2016.date=2016-03-28
+holiday.de-LabourDay2016.name=Labour Day
+holiday.de-LabourDay2016.date=2016-05-01
+holiday.de-AscensionThursday2016.name=Ascension Thursday
+holiday.de-AscensionThursday2016.date=2016-05-05
+holiday.de-WhitMonday2016.name=Whit Monday
+holiday.de-WhitMonday2016.date=2016-05-16
+holiday.de-DayofGermanUnity2016.name=Day of German Unity
+holiday.de-DayofGermanUnity2016.date=2016-10-03
+holiday.de-ChristmasDay2016.name=Christmas Day
+holiday.de-ChristmasDay2016.date=2016-12-25
+holiday.de-SecondChristmasDay2016.name=Second Christmas Day
+holiday.de-SecondChristmasDay2016.date=2016-12-26
+
+# Holidays for year 2017 ----------
+holiday.de-Newyear2017.name=New year
+holiday.de-Newyear2017.date=2017-01-01
+holiday.de-GoodFriday2017.name=Good Friday
+holiday.de-GoodFriday2017.date=2017-04-14
+holiday.de-EasterMonday2017.name=Easter Monday
+holiday.de-EasterMonday2017.date=2017-04-17
+holiday.de-LabourDay2017.name=Labour Day
+holiday.de-LabourDay2017.date=2017-05-01
+holiday.de-AscensionThursday2017.name=Ascension Thursday
+holiday.de-AscensionThursday2017.date=2017-05-25
+holiday.de-WhitMonday2017.name=Whit Monday
+holiday.de-WhitMonday2017.date=2017-06-05
+holiday.de-DayofGermanUnity2017.name=Day of German Unity
+holiday.de-DayofGermanUnity2017.date=2017-10-03
+holiday.de-ReformationDay2017.name=Reformation Day
+holiday.de-ReformationDay2017.date=2017-10-31
+holiday.de-ChristmasDay2017.name=Christmas Day
+holiday.de-ChristmasDay2017.date=2017-12-25
+holiday.de-SecondChristmasDay2017.name=Second Christmas Day
+holiday.de-SecondChristmasDay2017.date=2017-12-26
+
+# Holidays for year 2018 ----------
+holiday.de-Newyear2018.name=New year
+holiday.de-Newyear2018.date=2018-01-01
+holiday.de-GoodFriday2018.name=Good Friday
+holiday.de-GoodFriday2018.date=2018-03-30
+holiday.de-EasterMonday2018.name=Easter Monday
+holiday.de-EasterMonday2018.date=2018-04-02
+holiday.de-LabourDay2018.name=Labour Day
+holiday.de-LabourDay2018.date=2018-05-01
+holiday.de-AscensionThursday2018.name=Ascension Thursday
+holiday.de-AscensionThursday2018.date=2018-05-10
+holiday.de-WhitMonday2018.name=Whit Monday
+holiday.de-WhitMonday2018.date=2018-05-21
+holiday.de-DayofGermanUnity2018.name=Day of German Unity
+holiday.de-DayofGermanUnity2018.date=2018-10-03
+holiday.de-ChristmasDay2018.name=Christmas Day
+holiday.de-ChristmasDay2018.date=2018-12-25
+holiday.de-SecondChristmasDay2018.name=Second Christmas Day
+holiday.de-SecondChristmasDay2018.date=2018-12-26
+
+# Holidays for year 2019 ----------
+holiday.de-Newyear2019.name=New year
+holiday.de-Newyear2019.date=2019-01-01
+holiday.de-GoodFriday2019.name=Good Friday
+holiday.de-GoodFriday2019.date=2019-04-19
+holiday.de-EasterMonday2019.name=Easter Monday
+holiday.de-EasterMonday2019.date=2019-04-22
+holiday.de-LabourDay2019.name=Labour Day
+holiday.de-LabourDay2019.date=2019-05-01
+holiday.de-AscensionThursday2019.name=Ascension Thursday
+holiday.de-AscensionThursday2019.date=2019-05-30
+holiday.de-WhitMonday2019.name=Whit Monday
+holiday.de-WhitMonday2019.date=2019-06-10
+holiday.de-DayofGermanUnity2019.name=Day of German Unity
+holiday.de-DayofGermanUnity2019.date=2019-10-03
+holiday.de-ChristmasDay2019.name=Christmas Day
+holiday.de-ChristmasDay2019.date=2019-12-25
+holiday.de-SecondChristmasDay2019.name=Second Christmas Day
+holiday.de-SecondChristmasDay2019.date=2019-12-26
+
+# Holidays for year 2020 ----------
+holiday.de-Newyear2020.name=New year
+holiday.de-Newyear2020.date=2020-01-01
+holiday.de-GoodFriday2020.name=Good Friday
+holiday.de-GoodFriday2020.date=2020-04-10
+holiday.de-EasterMonday2020.name=Easter Monday
+holiday.de-EasterMonday2020.date=2020-04-13
+holiday.de-LabourDay2020.name=Labour Day
+holiday.de-LabourDay2020.date=2020-05-01
+holiday.de-AscensionThursday2020.name=Ascension Thursday
+holiday.de-AscensionThursday2020.date=2020-05-21
+holiday.de-WhitMonday2020.name=Whit Monday
+holiday.de-WhitMonday2020.date=2020-06-01
+holiday.de-DayofGermanUnity2020.name=Day of German Unity
+holiday.de-DayofGermanUnity2020.date=2020-10-03
+holiday.de-ChristmasDay2020.name=Christmas Day
+holiday.de-ChristmasDay2020.date=2020-12-25
+holiday.de-SecondChristmasDay2020.name=Second Christmas Day
+holiday.de-SecondChristmasDay2020.date=2020-12-26
+
+# Holidays for year 2021 ----------
+holiday.de-Newyear2021.name=New year
+holiday.de-Newyear2021.date=2021-01-01
+holiday.de-GoodFriday2021.name=Good Friday
+holiday.de-GoodFriday2021.date=2021-04-02
+holiday.de-EasterMonday2021.name=Easter Monday
+holiday.de-EasterMonday2021.date=2021-04-05
+holiday.de-LabourDay2021.name=Labour Day
+holiday.de-LabourDay2021.date=2021-05-01
+holiday.de-AscensionThursday2021.name=Ascension Thursday
+holiday.de-AscensionThursday2021.date=2021-05-13
+holiday.de-WhitMonday2021.name=Whit Monday
+holiday.de-WhitMonday2021.date=2021-05-24
+holiday.de-DayofGermanUnity2021.name=Day of German Unity
+holiday.de-DayofGermanUnity2021.date=2021-10-03
+holiday.de-ChristmasDay2021.name=Christmas Day
+holiday.de-ChristmasDay2021.date=2021-12-25
+holiday.de-SecondChristmasDay2021.name=Second Christmas Day
+holiday.de-SecondChristmasDay2021.date=2021-12-26
+
+# Holidays for year 2022 ----------
+holiday.de-Newyear2022.name=New year
+holiday.de-Newyear2022.date=2022-01-01
+holiday.de-GoodFriday2022.name=Good Friday
+holiday.de-GoodFriday2022.date=2022-04-15
+holiday.de-EasterMonday2022.name=Easter Monday
+holiday.de-EasterMonday2022.date=2022-04-18
+holiday.de-LabourDay2022.name=Labour Day
+holiday.de-LabourDay2022.date=2022-05-01
+holiday.de-AscensionThursday2022.name=Ascension Thursday
+holiday.de-AscensionThursday2022.date=2022-05-26
+holiday.de-WhitMonday2022.name=Whit Monday
+holiday.de-WhitMonday2022.date=2022-06-06
+holiday.de-DayofGermanUnity2022.name=Day of German Unity
+holiday.de-DayofGermanUnity2022.date=2022-10-03
+holiday.de-ChristmasDay2022.name=Christmas Day
+holiday.de-ChristmasDay2022.date=2022-12-25
+holiday.de-SecondChristmasDay2022.name=Second Christmas Day
+holiday.de-SecondChristmasDay2022.date=2022-12-26
+
+# Holidays for year 2023 ----------
+holiday.de-Newyear2023.name=New year
+holiday.de-Newyear2023.date=2023-01-01
+holiday.de-GoodFriday2023.name=Good Friday
+holiday.de-GoodFriday2023.date=2023-04-07
+holiday.de-EasterMonday2023.name=Easter Monday
+holiday.de-EasterMonday2023.date=2023-04-10
+holiday.de-LabourDay2023.name=Labour Day
+holiday.de-LabourDay2023.date=2023-05-01
+holiday.de-AscensionThursday2023.name=Ascension Thursday
+holiday.de-AscensionThursday2023.date=2023-05-18
+holiday.de-WhitMonday2023.name=Whit Monday
+holiday.de-WhitMonday2023.date=2023-05-29
+holiday.de-DayofGermanUnity2023.name=Day of German Unity
+holiday.de-DayofGermanUnity2023.date=2023-10-03
+holiday.de-ChristmasDay2023.name=Christmas Day
+holiday.de-ChristmasDay2023.date=2023-12-25
+holiday.de-SecondChristmasDay2023.name=Second Christmas Day
+holiday.de-SecondChristmasDay2023.date=2023-12-26
+
+# Holidays for year 2024 ----------
+holiday.de-Newyear2024.name=New year
+holiday.de-Newyear2024.date=2024-01-01
+holiday.de-GoodFriday2024.name=Good Friday
+holiday.de-GoodFriday2024.date=2024-03-29
+holiday.de-EasterMonday2024.name=Easter Monday
+holiday.de-EasterMonday2024.date=2024-04-01
+holiday.de-LabourDay2024.name=Labour Day
+holiday.de-LabourDay2024.date=2024-05-01
+holiday.de-AscensionThursday2024.name=Ascension Thursday
+holiday.de-AscensionThursday2024.date=2024-05-09
+holiday.de-WhitMonday2024.name=Whit Monday
+holiday.de-WhitMonday2024.date=2024-05-20
+holiday.de-DayofGermanUnity2024.name=Day of German Unity
+holiday.de-DayofGermanUnity2024.date=2024-10-03
+holiday.de-ChristmasDay2024.name=Christmas Day
+holiday.de-ChristmasDay2024.date=2024-12-25
+holiday.de-SecondChristmasDay2024.name=Second Christmas Day
+holiday.de-SecondChristmasDay2024.date=2024-12-26
+
+# Holidays for year 2025 ----------
+holiday.de-Newyear2025.name=New year
+holiday.de-Newyear2025.date=2025-01-01
+holiday.de-GoodFriday2025.name=Good Friday
+holiday.de-GoodFriday2025.date=2025-04-18
+holiday.de-EasterMonday2025.name=Easter Monday
+holiday.de-EasterMonday2025.date=2025-04-21
+holiday.de-LabourDay2025.name=Labour Day
+holiday.de-LabourDay2025.date=2025-05-01
+holiday.de-AscensionThursday2025.name=Ascension Thursday
+holiday.de-AscensionThursday2025.date=2025-05-29
+holiday.de-WhitMonday2025.name=Whit Monday
+holiday.de-WhitMonday2025.date=2025-06-09
+holiday.de-DayofGermanUnity2025.name=Day of German Unity
+holiday.de-DayofGermanUnity2025.date=2025-10-03
+holiday.de-ChristmasDay2025.name=Christmas Day
+holiday.de-ChristmasDay2025.date=2025-12-25
+holiday.de-SecondChristmasDay2025.name=Second Christmas Day
+holiday.de-SecondChristmasDay2025.date=2025-12-26
+
+# Holidays for year 2026 ----------
+holiday.de-Newyear2026.name=New year
+holiday.de-Newyear2026.date=2026-01-01
+holiday.de-GoodFriday2026.name=Good Friday
+holiday.de-GoodFriday2026.date=2026-04-03
+holiday.de-EasterMonday2026.name=Easter Monday
+holiday.de-EasterMonday2026.date=2026-04-06
+holiday.de-LabourDay2026.name=Labour Day
+holiday.de-LabourDay2026.date=2026-05-01
+holiday.de-AscensionThursday2026.name=Ascension Thursday
+holiday.de-AscensionThursday2026.date=2026-05-14
+holiday.de-WhitMonday2026.name=Whit Monday
+holiday.de-WhitMonday2026.date=2026-05-25
+holiday.de-DayofGermanUnity2026.name=Day of German Unity
+holiday.de-DayofGermanUnity2026.date=2026-10-03
+holiday.de-ChristmasDay2026.name=Christmas Day
+holiday.de-ChristmasDay2026.date=2026-12-25
+holiday.de-SecondChristmasDay2026.name=Second Christmas Day
+holiday.de-SecondChristmasDay2026.date=2026-12-26
+
+# Holidays for year 2027 ----------
+holiday.de-Newyear2027.name=New year
+holiday.de-Newyear2027.date=2027-01-01
+holiday.de-GoodFriday2027.name=Good Friday
+holiday.de-GoodFriday2027.date=2027-03-26
+holiday.de-EasterMonday2027.name=Easter Monday
+holiday.de-EasterMonday2027.date=2027-03-29
+holiday.de-LabourDay2027.name=Labour Day
+holiday.de-LabourDay2027.date=2027-05-01
+holiday.de-AscensionThursday2027.name=Ascension Thursday
+holiday.de-AscensionThursday2027.date=2027-05-06
+holiday.de-WhitMonday2027.name=Whit Monday
+holiday.de-WhitMonday2027.date=2027-05-17
+holiday.de-DayofGermanUnity2027.name=Day of German Unity
+holiday.de-DayofGermanUnity2027.date=2027-10-03
+holiday.de-ChristmasDay2027.name=Christmas Day
+holiday.de-ChristmasDay2027.date=2027-12-25
+holiday.de-SecondChristmasDay2027.name=Second Christmas Day
+holiday.de-SecondChristmasDay2027.date=2027-12-26
+
+# Holidays for year 2028 ----------
+holiday.de-Newyear2028.name=New year
+holiday.de-Newyear2028.date=2028-01-01
+holiday.de-GoodFriday2028.name=Good Friday
+holiday.de-GoodFriday2028.date=2028-04-14
+holiday.de-EasterMonday2028.name=Easter Monday
+holiday.de-EasterMonday2028.date=2028-04-17
+holiday.de-LabourDay2028.name=Labour Day
+holiday.de-LabourDay2028.date=2028-05-01
+holiday.de-AscensionThursday2028.name=Ascension Thursday
+holiday.de-AscensionThursday2028.date=2028-05-25
+holiday.de-WhitMonday2028.name=Whit Monday
+holiday.de-WhitMonday2028.date=2028-06-05
+holiday.de-DayofGermanUnity2028.name=Day of German Unity
+holiday.de-DayofGermanUnity2028.date=2028-10-03
+holiday.de-ChristmasDay2028.name=Christmas Day
+holiday.de-ChristmasDay2028.date=2028-12-25
+holiday.de-SecondChristmasDay2028.name=Second Christmas Day
+holiday.de-SecondChristmasDay2028.date=2028-12-26
+
+# Holidays for year 2029 ----------
+holiday.de-Newyear2029.name=New year
+holiday.de-Newyear2029.date=2029-01-01
+holiday.de-GoodFriday2029.name=Good Friday
+holiday.de-GoodFriday2029.date=2029-03-30
+holiday.de-EasterMonday2029.name=Easter Monday
+holiday.de-EasterMonday2029.date=2029-04-02
+holiday.de-LabourDay2029.name=Labour Day
+holiday.de-LabourDay2029.date=2029-05-01
+holiday.de-AscensionThursday2029.name=Ascension Thursday
+holiday.de-AscensionThursday2029.date=2029-05-10
+holiday.de-WhitMonday2029.name=Whit Monday
+holiday.de-WhitMonday2029.date=2029-05-21
+holiday.de-DayofGermanUnity2029.name=Day of German Unity
+holiday.de-DayofGermanUnity2029.date=2029-10-03
+holiday.de-ChristmasDay2029.name=Christmas Day
+holiday.de-ChristmasDay2029.date=2029-12-25
+holiday.de-SecondChristmasDay2029.name=Second Christmas Day
+holiday.de-SecondChristmasDay2029.date=2029-12-26
+
+# Holidays for year 2030 ----------
+holiday.de-Newyear2030.name=New year
+holiday.de-Newyear2030.date=2030-01-01
+holiday.de-GoodFriday2030.name=Good Friday
+holiday.de-GoodFriday2030.date=2030-04-19
+holiday.de-EasterMonday2030.name=Easter Monday
+holiday.de-EasterMonday2030.date=2030-04-22
+holiday.de-LabourDay2030.name=Labour Day
+holiday.de-LabourDay2030.date=2030-05-01
+holiday.de-AscensionThursday2030.name=Ascension Thursday
+holiday.de-AscensionThursday2030.date=2030-05-30
+holiday.de-WhitMonday2030.name=Whit Monday
+holiday.de-WhitMonday2030.date=2030-06-10
+holiday.de-DayofGermanUnity2030.name=Day of German Unity
+holiday.de-DayofGermanUnity2030.date=2030-10-03
+holiday.de-ChristmasDay2030.name=Christmas Day
+holiday.de-ChristmasDay2030.date=2030-12-25
+holiday.de-SecondChristmasDay2030.name=Second Christmas Day
+holiday.de-SecondChristmasDay2030.date=2030-12-26
+
+# Holidays for year 2031 ----------
+holiday.de-Newyear2031.name=New year
+holiday.de-Newyear2031.date=2031-01-01
+holiday.de-GoodFriday2031.name=Good Friday
+holiday.de-GoodFriday2031.date=2031-04-11
+holiday.de-EasterMonday2031.name=Easter Monday
+holiday.de-EasterMonday2031.date=2031-04-14
+holiday.de-LabourDay2031.name=Labour Day
+holiday.de-LabourDay2031.date=2031-05-01
+holiday.de-AscensionThursday2031.name=Ascension Thursday
+holiday.de-AscensionThursday2031.date=2031-05-22
+holiday.de-WhitMonday2031.name=Whit Monday
+holiday.de-WhitMonday2031.date=2031-06-02
+holiday.de-DayofGermanUnity2031.name=Day of German Unity
+holiday.de-DayofGermanUnity2031.date=2031-10-03
+holiday.de-ChristmasDay2031.name=Christmas Day
+holiday.de-ChristmasDay2031.date=2031-12-25
+holiday.de-SecondChristmasDay2031.name=Second Christmas Day
+holiday.de-SecondChristmasDay2031.date=2031-12-26
+
+# Holidays for year 2032 ----------
+holiday.de-Newyear2032.name=New year
+holiday.de-Newyear2032.date=2032-01-01
+holiday.de-GoodFriday2032.name=Good Friday
+holiday.de-GoodFriday2032.date=2032-03-26
+holiday.de-EasterMonday2032.name=Easter Monday
+holiday.de-EasterMonday2032.date=2032-03-29
+holiday.de-LabourDay2032.name=Labour Day
+holiday.de-LabourDay2032.date=2032-05-01
+holiday.de-AscensionThursday2032.name=Ascension Thursday
+holiday.de-AscensionThursday2032.date=2032-05-06
+holiday.de-WhitMonday2032.name=Whit Monday
+holiday.de-WhitMonday2032.date=2032-05-17
+holiday.de-DayofGermanUnity2032.name=Day of German Unity
+holiday.de-DayofGermanUnity2032.date=2032-10-03
+holiday.de-ChristmasDay2032.name=Christmas Day
+holiday.de-ChristmasDay2032.date=2032-12-25
+holiday.de-SecondChristmasDay2032.name=Second Christmas Day
+holiday.de-SecondChristmasDay2032.date=2032-12-26
+
+# Holidays for year 2033 ----------
+holiday.de-Newyear2033.name=New year
+holiday.de-Newyear2033.date=2033-01-01
+holiday.de-GoodFriday2033.name=Good Friday
+holiday.de-GoodFriday2033.date=2033-04-15
+holiday.de-EasterMonday2033.name=Easter Monday
+holiday.de-EasterMonday2033.date=2033-04-18
+holiday.de-LabourDay2033.name=Labour Day
+holiday.de-LabourDay2033.date=2033-05-01
+holiday.de-AscensionThursday2033.name=Ascension Thursday
+holiday.de-AscensionThursday2033.date=2033-05-26
+holiday.de-WhitMonday2033.name=Whit Monday
+holiday.de-WhitMonday2033.date=2033-06-06
+holiday.de-DayofGermanUnity2033.name=Day of German Unity
+holiday.de-DayofGermanUnity2033.date=2033-10-03
+holiday.de-ChristmasDay2033.name=Christmas Day
+holiday.de-ChristmasDay2033.date=2033-12-25
+holiday.de-SecondChristmasDay2033.name=Second Christmas Day
+holiday.de-SecondChristmasDay2033.date=2033-12-26
+
+# Holidays for year 2034 ----------
+holiday.de-Newyear2034.name=New year
+holiday.de-Newyear2034.date=2034-01-01
+holiday.de-GoodFriday2034.name=Good Friday
+holiday.de-GoodFriday2034.date=2034-04-07
+holiday.de-EasterMonday2034.name=Easter Monday
+holiday.de-EasterMonday2034.date=2034-04-10
+holiday.de-LabourDay2034.name=Labour Day
+holiday.de-LabourDay2034.date=2034-05-01
+holiday.de-AscensionThursday2034.name=Ascension Thursday
+holiday.de-AscensionThursday2034.date=2034-05-18
+holiday.de-WhitMonday2034.name=Whit Monday
+holiday.de-WhitMonday2034.date=2034-05-29
+holiday.de-DayofGermanUnity2034.name=Day of German Unity
+holiday.de-DayofGermanUnity2034.date=2034-10-03
+holiday.de-ChristmasDay2034.name=Christmas Day
+holiday.de-ChristmasDay2034.date=2034-12-25
+holiday.de-SecondChristmasDay2034.name=Second Christmas Day
+holiday.de-SecondChristmasDay2034.date=2034-12-26
+
+# Holidays for year 2035 ----------
+holiday.de-Newyear2035.name=New year
+holiday.de-Newyear2035.date=2035-01-01
+holiday.de-GoodFriday2035.name=Good Friday
+holiday.de-GoodFriday2035.date=2035-03-23
+holiday.de-EasterMonday2035.name=Easter Monday
+holiday.de-EasterMonday2035.date=2035-03-26
+holiday.de-LabourDay2035.name=Labour Day
+holiday.de-LabourDay2035.date=2035-05-01
+holiday.de-AscensionThursday2035.name=Ascension Thursday
+holiday.de-AscensionThursday2035.date=2035-05-03
+holiday.de-WhitMonday2035.name=Whit Monday
+holiday.de-WhitMonday2035.date=2035-05-14
+holiday.de-DayofGermanUnity2035.name=Day of German Unity
+holiday.de-DayofGermanUnity2035.date=2035-10-03
+holiday.de-ChristmasDay2035.name=Christmas Day
+holiday.de-ChristmasDay2035.date=2035-12-25
+holiday.de-SecondChristmasDay2035.name=Second Christmas Day
+holiday.de-SecondChristmasDay2035.date=2035-12-26
+
+# Holidays for year 2036 ----------
+holiday.de-Newyear2036.name=New year
+holiday.de-Newyear2036.date=2036-01-01
+holiday.de-GoodFriday2036.name=Good Friday
+holiday.de-GoodFriday2036.date=2036-04-11
+holiday.de-EasterMonday2036.name=Easter Monday
+holiday.de-EasterMonday2036.date=2036-04-14
+holiday.de-LabourDay2036.name=Labour Day
+holiday.de-LabourDay2036.date=2036-05-01
+holiday.de-AscensionThursday2036.name=Ascension Thursday
+holiday.de-AscensionThursday2036.date=2036-05-22
+holiday.de-WhitMonday2036.name=Whit Monday
+holiday.de-WhitMonday2036.date=2036-06-02
+holiday.de-DayofGermanUnity2036.name=Day of German Unity
+holiday.de-DayofGermanUnity2036.date=2036-10-03
+holiday.de-ChristmasDay2036.name=Christmas Day
+holiday.de-ChristmasDay2036.date=2036-12-25
+holiday.de-SecondChristmasDay2036.name=Second Christmas Day
+holiday.de-SecondChristmasDay2036.date=2036-12-26
+
+# Holidays for year 2037 ----------
+holiday.de-Newyear2037.name=New year
+holiday.de-Newyear2037.date=2037-01-01
+holiday.de-GoodFriday2037.name=Good Friday
+holiday.de-GoodFriday2037.date=2037-04-03
+holiday.de-EasterMonday2037.name=Easter Monday
+holiday.de-EasterMonday2037.date=2037-04-06
+holiday.de-LabourDay2037.name=Labour Day
+holiday.de-LabourDay2037.date=2037-05-01
+holiday.de-AscensionThursday2037.name=Ascension Thursday
+holiday.de-AscensionThursday2037.date=2037-05-14
+holiday.de-WhitMonday2037.name=Whit Monday
+holiday.de-WhitMonday2037.date=2037-05-25
+holiday.de-DayofGermanUnity2037.name=Day of German Unity
+holiday.de-DayofGermanUnity2037.date=2037-10-03
+holiday.de-ChristmasDay2037.name=Christmas Day
+holiday.de-ChristmasDay2037.date=2037-12-25
+holiday.de-SecondChristmasDay2037.name=Second Christmas Day
+holiday.de-SecondChristmasDay2037.date=2037-12-26
+
+# Holidays for year 2038 ----------
+holiday.de-Newyear2038.name=New year
+holiday.de-Newyear2038.date=2038-01-01
+holiday.de-GoodFriday2038.name=Good Friday
+holiday.de-GoodFriday2038.date=2038-04-23
+holiday.de-EasterMonday2038.name=Easter Monday
+holiday.de-EasterMonday2038.date=2038-04-26
+holiday.de-LabourDay2038.name=Labour Day
+holiday.de-LabourDay2038.date=2038-05-01
+holiday.de-AscensionThursday2038.name=Ascension Thursday
+holiday.de-AscensionThursday2038.date=2038-06-03
+holiday.de-WhitMonday2038.name=Whit Monday
+holiday.de-WhitMonday2038.date=2038-06-14
+holiday.de-DayofGermanUnity2038.name=Day of German Unity
+holiday.de-DayofGermanUnity2038.date=2038-10-03
+holiday.de-ChristmasDay2038.name=Christmas Day
+holiday.de-ChristmasDay2038.date=2038-12-25
+holiday.de-SecondChristmasDay2038.name=Second Christmas Day
+holiday.de-SecondChristmasDay2038.date=2038-12-26
+
+# Holidays for year 2039 ----------
+holiday.de-Newyear2039.name=New year
+holiday.de-Newyear2039.date=2039-01-01
+holiday.de-GoodFriday2039.name=Good Friday
+holiday.de-GoodFriday2039.date=2039-04-08
+holiday.de-EasterMonday2039.name=Easter Monday
+holiday.de-EasterMonday2039.date=2039-04-11
+holiday.de-LabourDay2039.name=Labour Day
+holiday.de-LabourDay2039.date=2039-05-01
+holiday.de-AscensionThursday2039.name=Ascension Thursday
+holiday.de-AscensionThursday2039.date=2039-05-19
+holiday.de-WhitMonday2039.name=Whit Monday
+holiday.de-WhitMonday2039.date=2039-05-30
+holiday.de-DayofGermanUnity2039.name=Day of German Unity
+holiday.de-DayofGermanUnity2039.date=2039-10-03
+holiday.de-ChristmasDay2039.name=Christmas Day
+holiday.de-ChristmasDay2039.date=2039-12-25
+holiday.de-SecondChristmasDay2039.name=Second Christmas Day
+holiday.de-SecondChristmasDay2039.date=2039-12-26
+
+# Holidays for year 2040 ----------
+holiday.de-Newyear2040.name=New year
+holiday.de-Newyear2040.date=2040-01-01
+holiday.de-GoodFriday2040.name=Good Friday
+holiday.de-GoodFriday2040.date=2040-03-30
+holiday.de-EasterMonday2040.name=Easter Monday
+holiday.de-EasterMonday2040.date=2040-04-02
+holiday.de-LabourDay2040.name=Labour Day
+holiday.de-LabourDay2040.date=2040-05-01
+holiday.de-AscensionThursday2040.name=Ascension Thursday
+holiday.de-AscensionThursday2040.date=2040-05-10
+holiday.de-WhitMonday2040.name=Whit Monday
+holiday.de-WhitMonday2040.date=2040-05-21
+holiday.de-DayofGermanUnity2040.name=Day of German Unity
+holiday.de-DayofGermanUnity2040.date=2040-10-03
+holiday.de-ChristmasDay2040.name=Christmas Day
+holiday.de-ChristmasDay2040.date=2040-12-25
+holiday.de-SecondChristmasDay2040.name=Second Christmas Day
+holiday.de-SecondChristmasDay2040.date=2040-12-26
+
+# Holidays for year 2041 ----------
+holiday.de-Newyear2041.name=New year
+holiday.de-Newyear2041.date=2041-01-01
+holiday.de-GoodFriday2041.name=Good Friday
+holiday.de-GoodFriday2041.date=2041-04-19
+holiday.de-EasterMonday2041.name=Easter Monday
+holiday.de-EasterMonday2041.date=2041-04-22
+holiday.de-LabourDay2041.name=Labour Day
+holiday.de-LabourDay2041.date=2041-05-01
+holiday.de-AscensionThursday2041.name=Ascension Thursday
+holiday.de-AscensionThursday2041.date=2041-05-30
+holiday.de-WhitMonday2041.name=Whit Monday
+holiday.de-WhitMonday2041.date=2041-06-10
+holiday.de-DayofGermanUnity2041.name=Day of German Unity
+holiday.de-DayofGermanUnity2041.date=2041-10-03
+holiday.de-ChristmasDay2041.name=Christmas Day
+holiday.de-ChristmasDay2041.date=2041-12-25
+holiday.de-SecondChristmasDay2041.name=Second Christmas Day
+holiday.de-SecondChristmasDay2041.date=2041-12-26
+
+# Holidays for year 2042 ----------
+holiday.de-Newyear2042.name=New year
+holiday.de-Newyear2042.date=2042-01-01
+holiday.de-GoodFriday2042.name=Good Friday
+holiday.de-GoodFriday2042.date=2042-04-04
+holiday.de-EasterMonday2042.name=Easter Monday
+holiday.de-EasterMonday2042.date=2042-04-07
+holiday.de-LabourDay2042.name=Labour Day
+holiday.de-LabourDay2042.date=2042-05-01
+holiday.de-AscensionThursday2042.name=Ascension Thursday
+holiday.de-AscensionThursday2042.date=2042-05-15
+holiday.de-WhitMonday2042.name=Whit Monday
+holiday.de-WhitMonday2042.date=2042-05-26
+holiday.de-DayofGermanUnity2042.name=Day of German Unity
+holiday.de-DayofGermanUnity2042.date=2042-10-03
+holiday.de-ChristmasDay2042.name=Christmas Day
+holiday.de-ChristmasDay2042.date=2042-12-25
+holiday.de-SecondChristmasDay2042.name=Second Christmas Day
+holiday.de-SecondChristmasDay2042.date=2042-12-26
+
+# Holidays for year 2043 ----------
+holiday.de-Newyear2043.name=New year
+holiday.de-Newyear2043.date=2043-01-01
+holiday.de-GoodFriday2043.name=Good Friday
+holiday.de-GoodFriday2043.date=2043-03-27
+holiday.de-EasterMonday2043.name=Easter Monday
+holiday.de-EasterMonday2043.date=2043-03-30
+holiday.de-LabourDay2043.name=Labour Day
+holiday.de-LabourDay2043.date=2043-05-01
+holiday.de-AscensionThursday2043.name=Ascension Thursday
+holiday.de-AscensionThursday2043.date=2043-05-07
+holiday.de-WhitMonday2043.name=Whit Monday
+holiday.de-WhitMonday2043.date=2043-05-18
+holiday.de-DayofGermanUnity2043.name=Day of German Unity
+holiday.de-DayofGermanUnity2043.date=2043-10-03
+holiday.de-ChristmasDay2043.name=Christmas Day
+holiday.de-ChristmasDay2043.date=2043-12-25
+holiday.de-SecondChristmasDay2043.name=Second Christmas Day
+holiday.de-SecondChristmasDay2043.date=2043-12-26
+
+# Holidays for year 2044 ----------
+holiday.de-Newyear2044.name=New year
+holiday.de-Newyear2044.date=2044-01-01
+holiday.de-GoodFriday2044.name=Good Friday
+holiday.de-GoodFriday2044.date=2044-04-15
+holiday.de-EasterMonday2044.name=Easter Monday
+holiday.de-EasterMonday2044.date=2044-04-18
+holiday.de-LabourDay2044.name=Labour Day
+holiday.de-LabourDay2044.date=2044-05-01
+holiday.de-AscensionThursday2044.name=Ascension Thursday
+holiday.de-AscensionThursday2044.date=2044-05-26
+holiday.de-WhitMonday2044.name=Whit Monday
+holiday.de-WhitMonday2044.date=2044-06-06
+holiday.de-DayofGermanUnity2044.name=Day of German Unity
+holiday.de-DayofGermanUnity2044.date=2044-10-03
+holiday.de-ChristmasDay2044.name=Christmas Day
+holiday.de-ChristmasDay2044.date=2044-12-25
+holiday.de-SecondChristmasDay2044.name=Second Christmas Day
+holiday.de-SecondChristmasDay2044.date=2044-12-26
+
+# Holidays for year 2045 ----------
+holiday.de-Newyear2045.name=New year
+holiday.de-Newyear2045.date=2045-01-01
+holiday.de-GoodFriday2045.name=Good Friday
+holiday.de-GoodFriday2045.date=2045-04-07
+holiday.de-EasterMonday2045.name=Easter Monday
+holiday.de-EasterMonday2045.date=2045-04-10
+holiday.de-LabourDay2045.name=Labour Day
+holiday.de-LabourDay2045.date=2045-05-01
+holiday.de-AscensionThursday2045.name=Ascension Thursday
+holiday.de-AscensionThursday2045.date=2045-05-18
+holiday.de-WhitMonday2045.name=Whit Monday
+holiday.de-WhitMonday2045.date=2045-05-29
+holiday.de-DayofGermanUnity2045.name=Day of German Unity
+holiday.de-DayofGermanUnity2045.date=2045-10-03
+holiday.de-ChristmasDay2045.name=Christmas Day
+holiday.de-ChristmasDay2045.date=2045-12-25
+holiday.de-SecondChristmasDay2045.name=Second Christmas Day
+holiday.de-SecondChristmasDay2045.date=2045-12-26
+
+# Holidays for year 2046 ----------
+holiday.de-Newyear2046.name=New year
+holiday.de-Newyear2046.date=2046-01-01
+holiday.de-GoodFriday2046.name=Good Friday
+holiday.de-GoodFriday2046.date=2046-03-23
+holiday.de-EasterMonday2046.name=Easter Monday
+holiday.de-EasterMonday2046.date=2046-03-26
+holiday.de-LabourDay2046.name=Labour Day
+holiday.de-LabourDay2046.date=2046-05-01
+holiday.de-AscensionThursday2046.name=Ascension Thursday
+holiday.de-AscensionThursday2046.date=2046-05-03
+holiday.de-WhitMonday2046.name=Whit Monday
+holiday.de-WhitMonday2046.date=2046-05-14
+holiday.de-DayofGermanUnity2046.name=Day of German Unity
+holiday.de-DayofGermanUnity2046.date=2046-10-03
+holiday.de-ChristmasDay2046.name=Christmas Day
+holiday.de-ChristmasDay2046.date=2046-12-25
+holiday.de-SecondChristmasDay2046.name=Second Christmas Day
+holiday.de-SecondChristmasDay2046.date=2046-12-26
+
+# Holidays for year 2047 ----------
+holiday.de-Newyear2047.name=New year
+holiday.de-Newyear2047.date=2047-01-01
+holiday.de-GoodFriday2047.name=Good Friday
+holiday.de-GoodFriday2047.date=2047-04-12
+holiday.de-EasterMonday2047.name=Easter Monday
+holiday.de-EasterMonday2047.date=2047-04-15
+holiday.de-LabourDay2047.name=Labour Day
+holiday.de-LabourDay2047.date=2047-05-01
+holiday.de-AscensionThursday2047.name=Ascension Thursday
+holiday.de-AscensionThursday2047.date=2047-05-23
+holiday.de-WhitMonday2047.name=Whit Monday
+holiday.de-WhitMonday2047.date=2047-06-03
+holiday.de-DayofGermanUnity2047.name=Day of German Unity
+holiday.de-DayofGermanUnity2047.date=2047-10-03
+holiday.de-ChristmasDay2047.name=Christmas Day
+holiday.de-ChristmasDay2047.date=2047-12-25
+holiday.de-SecondChristmasDay2047.name=Second Christmas Day
+holiday.de-SecondChristmasDay2047.date=2047-12-26
+
+# Holidays for year 2048 ----------
+holiday.de-Newyear2048.name=New year
+holiday.de-Newyear2048.date=2048-01-01
+holiday.de-GoodFriday2048.name=Good Friday
+holiday.de-GoodFriday2048.date=2048-04-03
+holiday.de-EasterMonday2048.name=Easter Monday
+holiday.de-EasterMonday2048.date=2048-04-06
+holiday.de-LabourDay2048.name=Labour Day
+holiday.de-LabourDay2048.date=2048-05-01
+holiday.de-AscensionThursday2048.name=Ascension Thursday
+holiday.de-AscensionThursday2048.date=2048-05-14
+holiday.de-WhitMonday2048.name=Whit Monday
+holiday.de-WhitMonday2048.date=2048-05-25
+holiday.de-DayofGermanUnity2048.name=Day of German Unity
+holiday.de-DayofGermanUnity2048.date=2048-10-03
+holiday.de-ChristmasDay2048.name=Christmas Day
+holiday.de-ChristmasDay2048.date=2048-12-25
+holiday.de-SecondChristmasDay2048.name=Second Christmas Day
+holiday.de-SecondChristmasDay2048.date=2048-12-26
+
+# Holidays for year 2049 ----------
+holiday.de-Newyear2049.name=New year
+holiday.de-Newyear2049.date=2049-01-01
+holiday.de-GoodFriday2049.name=Good Friday
+holiday.de-GoodFriday2049.date=2049-04-16
+holiday.de-EasterMonday2049.name=Easter Monday
+holiday.de-EasterMonday2049.date=2049-04-19
+holiday.de-LabourDay2049.name=Labour Day
+holiday.de-LabourDay2049.date=2049-05-01
+holiday.de-AscensionThursday2049.name=Ascension Thursday
+holiday.de-AscensionThursday2049.date=2049-05-27
+holiday.de-WhitMonday2049.name=Whit Monday
+holiday.de-WhitMonday2049.date=2049-06-07
+holiday.de-DayofGermanUnity2049.name=Day of German Unity
+holiday.de-DayofGermanUnity2049.date=2049-10-03
+holiday.de-ChristmasDay2049.name=Christmas Day
+holiday.de-ChristmasDay2049.date=2049-12-25
+holiday.de-SecondChristmasDay2049.name=Second Christmas Day
+holiday.de-SecondChristmasDay2049.date=2049-12-26
+
+# Holidays for year 2050 ----------
+holiday.de-Newyear2050.name=New year
+holiday.de-Newyear2050.date=2050-01-01
+holiday.de-GoodFriday2050.name=Good Friday
+holiday.de-GoodFriday2050.date=2050-04-08
+holiday.de-EasterMonday2050.name=Easter Monday
+holiday.de-EasterMonday2050.date=2050-04-11
+holiday.de-LabourDay2050.name=Labour Day
+holiday.de-LabourDay2050.date=2050-05-01
+holiday.de-AscensionThursday2050.name=Ascension Thursday
+holiday.de-AscensionThursday2050.date=2050-05-19
+holiday.de-WhitMonday2050.name=Whit Monday
+holiday.de-WhitMonday2050.date=2050-05-30
+holiday.de-DayofGermanUnity2050.name=Day of German Unity
+holiday.de-DayofGermanUnity2050.date=2050-10-03
+holiday.de-ChristmasDay2050.name=Christmas Day
+holiday.de-ChristmasDay2050.date=2050-12-25
+holiday.de-SecondChristmasDay2050.name=Second Christmas Day
+holiday.de-SecondChristmasDay2050.date=2050-12-26
+
+# Holidays for year 2051 ----------
+holiday.de-Newyear2051.name=New year
+holiday.de-Newyear2051.date=2051-01-01
+holiday.de-GoodFriday2051.name=Good Friday
+holiday.de-GoodFriday2051.date=2051-03-31
+holiday.de-EasterMonday2051.name=Easter Monday
+holiday.de-EasterMonday2051.date=2051-04-03
+holiday.de-LabourDay2051.name=Labour Day
+holiday.de-LabourDay2051.date=2051-05-01
+holiday.de-AscensionThursday2051.name=Ascension Thursday
+holiday.de-AscensionThursday2051.date=2051-05-11
+holiday.de-WhitMonday2051.name=Whit Monday
+holiday.de-WhitMonday2051.date=2051-05-22
+holiday.de-DayofGermanUnity2051.name=Day of German Unity
+holiday.de-DayofGermanUnity2051.date=2051-10-03
+holiday.de-ChristmasDay2051.name=Christmas Day
+holiday.de-ChristmasDay2051.date=2051-12-25
+holiday.de-SecondChristmasDay2051.name=Second Christmas Day
+holiday.de-SecondChristmasDay2051.date=2051-12-26
+
+# Holidays for year 2052 ----------
+holiday.de-Newyear2052.name=New year
+holiday.de-Newyear2052.date=2052-01-01
+holiday.de-GoodFriday2052.name=Good Friday
+holiday.de-GoodFriday2052.date=2052-04-19
+holiday.de-EasterMonday2052.name=Easter Monday
+holiday.de-EasterMonday2052.date=2052-04-22
+holiday.de-LabourDay2052.name=Labour Day
+holiday.de-LabourDay2052.date=2052-05-01
+holiday.de-AscensionThursday2052.name=Ascension Thursday
+holiday.de-AscensionThursday2052.date=2052-05-30
+holiday.de-WhitMonday2052.name=Whit Monday
+holiday.de-WhitMonday2052.date=2052-06-10
+holiday.de-DayofGermanUnity2052.name=Day of German Unity
+holiday.de-DayofGermanUnity2052.date=2052-10-03
+holiday.de-ChristmasDay2052.name=Christmas Day
+holiday.de-ChristmasDay2052.date=2052-12-25
+holiday.de-SecondChristmasDay2052.name=Second Christmas Day
+holiday.de-SecondChristmasDay2052.date=2052-12-26
+
+# Holidays for year 2053 ----------
+holiday.de-Newyear2053.name=New year
+holiday.de-Newyear2053.date=2053-01-01
+holiday.de-GoodFriday2053.name=Good Friday
+holiday.de-GoodFriday2053.date=2053-04-04
+holiday.de-EasterMonday2053.name=Easter Monday
+holiday.de-EasterMonday2053.date=2053-04-07
+holiday.de-LabourDay2053.name=Labour Day
+holiday.de-LabourDay2053.date=2053-05-01
+holiday.de-AscensionThursday2053.name=Ascension Thursday
+holiday.de-AscensionThursday2053.date=2053-05-15
+holiday.de-WhitMonday2053.name=Whit Monday
+holiday.de-WhitMonday2053.date=2053-05-26
+holiday.de-DayofGermanUnity2053.name=Day of German Unity
+holiday.de-DayofGermanUnity2053.date=2053-10-03
+holiday.de-ChristmasDay2053.name=Christmas Day
+holiday.de-ChristmasDay2053.date=2053-12-25
+holiday.de-SecondChristmasDay2053.name=Second Christmas Day
+holiday.de-SecondChristmasDay2053.date=2053-12-26
+
+# Holidays for year 2054 ----------
+holiday.de-Newyear2054.name=New year
+holiday.de-Newyear2054.date=2054-01-01
+holiday.de-GoodFriday2054.name=Good Friday
+holiday.de-GoodFriday2054.date=2054-03-27
+holiday.de-EasterMonday2054.name=Easter Monday
+holiday.de-EasterMonday2054.date=2054-03-30
+holiday.de-LabourDay2054.name=Labour Day
+holiday.de-LabourDay2054.date=2054-05-01
+holiday.de-AscensionThursday2054.name=Ascension Thursday
+holiday.de-AscensionThursday2054.date=2054-05-07
+holiday.de-WhitMonday2054.name=Whit Monday
+holiday.de-WhitMonday2054.date=2054-05-18
+holiday.de-DayofGermanUnity2054.name=Day of German Unity
+holiday.de-DayofGermanUnity2054.date=2054-10-03
+holiday.de-ChristmasDay2054.name=Christmas Day
+holiday.de-ChristmasDay2054.date=2054-12-25
+holiday.de-SecondChristmasDay2054.name=Second Christmas Day
+holiday.de-SecondChristmasDay2054.date=2054-12-26
+
+# Holidays for year 2055 ----------
+holiday.de-Newyear2055.name=New year
+holiday.de-Newyear2055.date=2055-01-01
+holiday.de-GoodFriday2055.name=Good Friday
+holiday.de-GoodFriday2055.date=2055-04-16
+holiday.de-EasterMonday2055.name=Easter Monday
+holiday.de-EasterMonday2055.date=2055-04-19
+holiday.de-LabourDay2055.name=Labour Day
+holiday.de-LabourDay2055.date=2055-05-01
+holiday.de-AscensionThursday2055.name=Ascension Thursday
+holiday.de-AscensionThursday2055.date=2055-05-27
+holiday.de-WhitMonday2055.name=Whit Monday
+holiday.de-WhitMonday2055.date=2055-06-07
+holiday.de-DayofGermanUnity2055.name=Day of German Unity
+holiday.de-DayofGermanUnity2055.date=2055-10-03
+holiday.de-ChristmasDay2055.name=Christmas Day
+holiday.de-ChristmasDay2055.date=2055-12-25
+holiday.de-SecondChristmasDay2055.name=Second Christmas Day
+holiday.de-SecondChristmasDay2055.date=2055-12-26
+
+# Holidays for year 2056 ----------
+holiday.de-Newyear2056.name=New year
+holiday.de-Newyear2056.date=2056-01-01
+holiday.de-GoodFriday2056.name=Good Friday
+holiday.de-GoodFriday2056.date=2056-03-31
+holiday.de-EasterMonday2056.name=Easter Monday
+holiday.de-EasterMonday2056.date=2056-04-03
+holiday.de-LabourDay2056.name=Labour Day
+holiday.de-LabourDay2056.date=2056-05-01
+holiday.de-AscensionThursday2056.name=Ascension Thursday
+holiday.de-AscensionThursday2056.date=2056-05-11
+holiday.de-WhitMonday2056.name=Whit Monday
+holiday.de-WhitMonday2056.date=2056-05-22
+holiday.de-DayofGermanUnity2056.name=Day of German Unity
+holiday.de-DayofGermanUnity2056.date=2056-10-03
+holiday.de-ChristmasDay2056.name=Christmas Day
+holiday.de-ChristmasDay2056.date=2056-12-25
+holiday.de-SecondChristmasDay2056.name=Second Christmas Day
+holiday.de-SecondChristmasDay2056.date=2056-12-26
+
+# Holidays for year 2057 ----------
+holiday.de-Newyear2057.name=New year
+holiday.de-Newyear2057.date=2057-01-01
+holiday.de-GoodFriday2057.name=Good Friday
+holiday.de-GoodFriday2057.date=2057-04-20
+holiday.de-EasterMonday2057.name=Easter Monday
+holiday.de-EasterMonday2057.date=2057-04-23
+holiday.de-LabourDay2057.name=Labour Day
+holiday.de-LabourDay2057.date=2057-05-01
+holiday.de-AscensionThursday2057.name=Ascension Thursday
+holiday.de-AscensionThursday2057.date=2057-05-31
+holiday.de-WhitMonday2057.name=Whit Monday
+holiday.de-WhitMonday2057.date=2057-06-11
+holiday.de-DayofGermanUnity2057.name=Day of German Unity
+holiday.de-DayofGermanUnity2057.date=2057-10-03
+holiday.de-ChristmasDay2057.name=Christmas Day
+holiday.de-ChristmasDay2057.date=2057-12-25
+holiday.de-SecondChristmasDay2057.name=Second Christmas Day
+holiday.de-SecondChristmasDay2057.date=2057-12-26
+
+# Holidays for year 2058 ----------
+holiday.de-Newyear2058.name=New year
+holiday.de-Newyear2058.date=2058-01-01
+holiday.de-GoodFriday2058.name=Good Friday
+holiday.de-GoodFriday2058.date=2058-04-12
+holiday.de-EasterMonday2058.name=Easter Monday
+holiday.de-EasterMonday2058.date=2058-04-15
+holiday.de-LabourDay2058.name=Labour Day
+holiday.de-LabourDay2058.date=2058-05-01
+holiday.de-AscensionThursday2058.name=Ascension Thursday
+holiday.de-AscensionThursday2058.date=2058-05-23
+holiday.de-WhitMonday2058.name=Whit Monday
+holiday.de-WhitMonday2058.date=2058-06-03
+holiday.de-DayofGermanUnity2058.name=Day of German Unity
+holiday.de-DayofGermanUnity2058.date=2058-10-03
+holiday.de-ChristmasDay2058.name=Christmas Day
+holiday.de-ChristmasDay2058.date=2058-12-25
+holiday.de-SecondChristmasDay2058.name=Second Christmas Day
+holiday.de-SecondChristmasDay2058.date=2058-12-26
+
+# Holidays for year 2059 ----------
+holiday.de-Newyear2059.name=New year
+holiday.de-Newyear2059.date=2059-01-01
+holiday.de-GoodFriday2059.name=Good Friday
+holiday.de-GoodFriday2059.date=2059-03-28
+holiday.de-EasterMonday2059.name=Easter Monday
+holiday.de-EasterMonday2059.date=2059-03-31
+holiday.de-LabourDay2059.name=Labour Day
+holiday.de-LabourDay2059.date=2059-05-01
+holiday.de-AscensionThursday2059.name=Ascension Thursday
+holiday.de-AscensionThursday2059.date=2059-05-08
+holiday.de-WhitMonday2059.name=Whit Monday
+holiday.de-WhitMonday2059.date=2059-05-19
+holiday.de-DayofGermanUnity2059.name=Day of German Unity
+holiday.de-DayofGermanUnity2059.date=2059-10-03
+holiday.de-ChristmasDay2059.name=Christmas Day
+holiday.de-ChristmasDay2059.date=2059-12-25
+holiday.de-SecondChristmasDay2059.name=Second Christmas Day
+holiday.de-SecondChristmasDay2059.date=2059-12-26
+
+# Holidays for year 2060 ----------
+holiday.de-Newyear2060.name=New year
+holiday.de-Newyear2060.date=2060-01-01
+holiday.de-GoodFriday2060.name=Good Friday
+holiday.de-GoodFriday2060.date=2060-04-16
+holiday.de-EasterMonday2060.name=Easter Monday
+holiday.de-EasterMonday2060.date=2060-04-19
+holiday.de-LabourDay2060.name=Labour Day
+holiday.de-LabourDay2060.date=2060-05-01
+holiday.de-AscensionThursday2060.name=Ascension Thursday
+holiday.de-AscensionThursday2060.date=2060-05-27
+holiday.de-WhitMonday2060.name=Whit Monday
+holiday.de-WhitMonday2060.date=2060-06-07
+holiday.de-DayofGermanUnity2060.name=Day of German Unity
+holiday.de-DayofGermanUnity2060.date=2060-10-03
+holiday.de-ChristmasDay2060.name=Christmas Day
+holiday.de-ChristmasDay2060.date=2060-12-25
+holiday.de-SecondChristmasDay2060.name=Second Christmas Day
+holiday.de-SecondChristmasDay2060.date=2060-12-26
