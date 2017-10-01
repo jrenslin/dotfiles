@@ -40,9 +40,9 @@ bindsym $mod+Return exec "termite"
 bindsym $mod+Control+1 exec firefox
 bindsym $mod+Control+2 exec "termite"
 bindsym $mod+Control+3 exec gedit
-bindsym $mod+Control+4 exec hexchat
+bindsym $mod+Control+4 exec "termite -e weechat --role='weechatterminal' --title='weechat'"
 bindsym $mod+Control+5 exec "rambox"
-bindsym $mod+Control+6 exec "termite -e mutt"
+bindsym $mod+Control+6 exec "termite -e mutt --role='muttterminal' --title='mutt'"
 bindsym $mod+Control+7 exec anki
 bindsym $mod+Control+8 exec jabref
 bindsym $mod+Control+9 exec filezilla
@@ -52,9 +52,9 @@ bindsym $mod+Control+0 exec nautilus
 bindsym control+1 [class="Firefox"] focus
 bindsym control+2 [title="termite"] focus
 bindsym control+3 [title="gedit"] focus
-bindsym control+4 [title="Hexchat"] focus
+bindsym control+4 [title="weechat"] focus
 bindsym control+5 [title="Rambox"] focus
-bindsym control+6 [class="Icedove"] focus
+bindsym control+6 [title="mutt"] focus
 bindsym control+7 [class="Anki"] focus
 bindsym control+8 [title="Jabref"] focus
 bindsym control+9 [title="Filezilla"] focus
@@ -120,14 +120,13 @@ bindsym $mod+Shift+a focus parent
 set $WS1 "1:<span font='10.4'> >_ </span>"
 set $WS2 "2:<span font='10.4'> 🌏 </span>"
 set $WS3 "3:<span font='10.4'> 🌓 </span>"
-set $WS4 "4:<span font='10.4'> 🖿 </span>"
-set $WS5 "5:<span font='10.4'> 🗫 </span>"
-set $WS6 "6:<span font='10.4'> 🗨 </span>"
+set $WS4 "4:<span font='10.4'> 🗨  </span>"
+set $WS5 "5:<span font='10.4'> 🖿  </span>"
+set $WS6 "6:<span font='10.4'> 🗫 </span>"
 set $WS7 "7:<span font='10.4'> 🔁 </span>"
 set $WS8 "8:<span font='10.4'> 🕮 </span>"
 set $WS9 "9:<span font='10.4'> 9 </span>"
 set $WS10 "10:<span font='10.4'> 10 </span>"
-
 
 # switch to workspace
 bindsym $mod+1 workspace $WS1
@@ -142,10 +141,10 @@ bindsym $mod+9 workspace $WS9
 bindsym $mod+0 workspace $WS10
 
 # assign workplaces to screens
-workspace $WS1 output HDMI-1
-workspace $WS2 output HDMI-1
-workspace $WS3 output HDMI-1
-workspace $WS4 output HDMI-1
+# workspace $WS1 output HDMI-1
+# workspace $WS2 output HDMI-1
+# workspace $WS3 output HDMI-1
+# workspace $WS4 output HDMI-1
 # workspace $WS5 output DVI-I-1
 # workspace $WS6 output DVI-I-1
 # workspace $WS7 output DVI-I-1
@@ -167,12 +166,12 @@ bindsym $mod+Shift+0 move container to workspace $WS10
 # Assign FF terminals to workspace 2
 assign [class="Firefox"] $WS2
 assign [title="gedit"] $WS1
-assign [class="Rambox"] $WS5
-assign [class="Hexchat"] $WS5
+assign [class="Filezilla"] $WS1
+assign [class="Rambox"] $WS4
+assign [title="weechat"] $WS4
+assign [class="Nautilus"] $WS5
 assign [class="Icedove"] $WS6
 assign [class="JabRef"] $WS8
-assign [class="Filezilla"] $WS1
-assign [class="Nautilus"] $WS4
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -381,7 +380,7 @@ exec --no-startup-id "sleep 1; conky -c ~/.config/conky/tiles/conky-files-cache.
 exec "syncthing"
 exec --no-startup-id "feh --bg-scale ~/Sync/Images/Wallpapers/desktop_light/Bicycle\[Wenchieh_Yang\]\[PD\].jpg &"
 exec "rambox"
-# exec "hexchat"
+exec "termite -e weechat --role='weechatterminal' --title='weechat'"
 exec "offlineimap &"
 
 exec xautolock -time 10 -locker "$Locker -t" -detectsleep 
