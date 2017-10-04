@@ -310,6 +310,8 @@ values."
 (add-hook 'fundamental-mode-hook 'cua-mode)
 (add-hook 'go-mode-hook 'cua-mode)
 (add-hook 'html-mode-hook 'cua-mode)
+(add-hook 'java-mode-hook 'cua-mode)
+(add-hook 'javascript-mode-hook 'cua-mode)
 (add-hook 'lisp-mode-hook 'cua-mode)
 (add-hook 'latex-mode-hook 'cua-mode)
 (add-hook 'markdown-mode-hook 'cua-mode)
