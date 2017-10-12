@@ -1,5 +1,5 @@
 [global]
-    font = Roboto 20
+    font = Roboto 10
  
     # allow a small subset of html markup:
     # <b>bold</b>
