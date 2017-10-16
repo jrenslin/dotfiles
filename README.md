@@ -7,7 +7,7 @@ My dotfiles. I'm running Debian Testing.
 I'm using `stow` to keep my dotfiles in one place. As I got different themes, I split them up:
 
 1. `general` is always stowed and contains configuration files that are unrelated to style and color
-2. `comfy`, `juicy`, and `summer` contain style-related files. If styling cannot be distinguished from other settings for a given program, the programs config file(s) is/are kept here, too.
+2. `comfy`, `juicy`, `seoul`, and `summer` contain style-related files. If styling cannot be distinguished from other settings for a given program, the programs config file(s) is/are kept here, too.
 
 For this split to work properly, `stow` should only set up symlinks to files, not to whole folders. To prevent it from setting up folders, the folders must have been created beforehand. This can be done via the [`install.sh`](#installsh) script included in this repository.
 
