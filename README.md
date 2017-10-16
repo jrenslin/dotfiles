@@ -84,5 +84,10 @@ Some sources that were extremely helpful are:
 
 ![Comfy: Browser startpage](Screenshots/ComfyStartpage.png "Comfy: Browser startpage")
 ![Comfy: Listening to music](Screenshots/Comfy-MusicTmux.png "Comfy: Listening to Music")
+![Seoul](Screenshots/Seoul_Terminals_ncmpcpp.jpg "Seoul: Ncmpcpp, and a work terminal for updating my dotfiles")
 ![Juicy: With one terminal opened](Screenshots/Juicy-OneTerminal.png "Juicy: With One Terminal Opened")
 ![Summer: Newsbeuter and Khal opened side-by-side](Screenshots/Summer-Newsbeuter-Khal.jpg "Summer: Newsbeuter and Khal opened side-by-side")
+
+## Notes
+
+The Seoul theme is based on the color selection of the city of Seoul, but does not follow the common Seoul colorschemes (e.g. for <a href="https://github.com/junegunn/seoul256.vim">vim</a> or <a href="https://github.com/anandpiyer/seoul256-emacs">emacs</a>) except for the used <a href="https://github.com/anandpiyer/seoul256-emacs">emacs theme</a>.
