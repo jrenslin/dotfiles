@@ -1,0 +1,99 @@
+
+/* ##############
+Outside elements
+############## */
+
+html {margin:0px;padding:0px;background-color:e2dccc;color:#555;font-family: Roboto, Courier;text-align:center;height:100%;width:100%; }
+html:before {content: " "; display:block; height:100%;width:100%; background:#744f22; filter: grayscale(0); opacity:0.8; z-index:1;}
+body { margin: 0px; }
+main {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center;font-size:1.0.5em;width:90%;z-index:1;}
+
+/* ##############
+General rukes
+############## */
+
+h1 {border-bottom:1px solid #888;font-weight:normal;color:#c33;padding:0.5em 0px;}
+a {color:#ccc;text-decoration:none;}
+
+dl {display:flex;flex-wrap:wrap;}
+dt {display:inline-block;flex:2;width:100%;padding:0.5em 0px;font-weight:bold;border-bottom:1px solid #888;}
+dd {display:inline-block;flex:1;min-width:350px;border-bottom:1px solid #888;}
+
+input {font-family: Monospace, Courier; border:0px; background:#fff;border:0px solid #555;display:inline-block;padding:1.5em 0.8em;width:calc(100% - 18px); max-width:32vw;color:#333; margin:0px auto; vertical-align:middle; }
+
+main > div {display:flex;flex-wrap:wrap;}
+main > div > div {flex:1; margin:1em 1em 0px 1em; padding:0px; text-align:left;  }
+
+aside {display:block;position:absolute; bottom:0px;left:10vw; z-index:10; }
+aside a {display:block; padding:0.5em 0.8em; background:rgba(0,0,0,0.3); }
+aside div {display:none;}
+aside:hover > a {display:none;}
+aside:hover > div {display:block;z-index:1000;}
+
+aside > div > a {display:block;margin:0px;padding:1.2em 0.8em 1.2em 3em;position:relative; list-style:none; min-width:140px;}
+aside > div > a > span:first-child {background:rgba(0,0,0,0.5); position:absolute;left: 1em; top:50%; transform: translate(0, -50%); font-family:Monospace; font-size:1.3em;}
+aside > div > a > span {display:inline-block; padding:0.3em; }
+aside > div > a:hover {background:rgba(0,0,0,0.4);}
+
+section.help { background: #8E8238; padding: 1em 0px; color: #e4e4e4; margin: 0px 0px; }
+section.help + section { background: #F29901; padding: 2em 0px; } 
+
+table    { width:100%; padding:2em 3vw; background: #F29901; color: #e4e4e4; }
+table a  { color: #fff; }
+table td {border-bottom:1px solid #e4e4e4;}
+table td {min-width:10%;padding:1em;}
+table dt {width:30px;}
+table dd {min-width:calc(100% - 60px);vertical-align:middle;padding:0.5em 0px;}
+
+/* ##############
+First page (these elements deal with main)
+############## */
+
+span#loading:before { display:block; position:fixed; top:-20vh; left:calc(50% - 0.6em); transform: translate(-80% , 0); z-index:100; content: "↻"; font-size:8em;   animation: rotating 2s linear infinite; text-align:center; height:1.3em; width:1.3em; }
+
+form:after { content: " a "; display:inline-block; background:#CD919B; padding:0.03em 0.2em; margin:0px; font-size:2.8em; vertical-align:middle; color:#eee; }
+form#hotkeybar:after {content: "⌨";}
+form#searchbar:after {content: "🍸";}
+form#urlbar:after {content: "🍷";}
+
+div h2 {padding: 1.2em 0.8em 1.2em 3em;background:#8E8238; margin:0px;font-size:1.05em;font-weight:normal;color:#fff;}
+div > div > a {display:block;margin:0px;padding:1.2em 0.8em 1.2em 3em;position:relative; list-style:none; min-width:140px;background:#eee;color:#555;}
+div > div > a > span:first-child {background:#555; position:absolute;left: 1em; top:50%; transform: translate(0, -50%); font-family:Monospace; font-size:1.3em;color:#eee;}
+div > div > a > span {display:inline-block; padding:0.3em;  }
+div > div > a:nth-child(2n) {background:#dddddd;}
+div > div > a:hover {background:#8FBDBD; color:#ff;}
+div > div > a:hover span {color:#fff;}
+
+/* ##############
+Make it responsive.
+############## */
+
+@media screen and (max-width:50em) {
+	main > div {display:block;}
+	main > div > div { flex:1; display:block; margin:1em 0px; }
+}
+
+@media screen and (min-width:60em) {
+    main {width:70vw;}
+}
+
+/* ##############
+Animations
+############## */
+
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

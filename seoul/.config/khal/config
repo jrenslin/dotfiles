@@ -1,0 +1,60 @@
+[calendars]
+[[private]]
+path                              = /home/jrenslin/.calendars/private
+type                              = calendar
+color                             = light blue
+
+[[public]]
+path                              = /home/jrenslin/.calendars/public
+type                              = calendar
+color                             = dark gray
+
+[[university]]
+path                              = /home/jrenslin/.calendars/university
+type                              = calendar
+color                             = light cyan
+
+[[birthdays]]
+path                              = /home/jrenslin/.calendars/birthdays
+type                              = calendar
+color                             = yellow
+
+[locale]
+# local_timezone                  = Europe/Berlin
+# default_timezone                = America/New_York
+
+timeformat                        = %H:%M
+dateformat                        = %Y-%m-%d
+longdateformat                    = %Y-%m-%d
+datetimeformat                    = %Y-%m-%d %H:%M
+longdatetimeformat                = %Y-%m-%d %H:%M
+
+firstweekday                      = 0
+
+[default]
+default_calendar                  = private
+default_command                   = interactive
+highlight_event_days              = True
+#  print_new                      = event, path
+show_all_days                     = False
+timedelta                         = 7d
+
+[sqlite]
+path                              = /home/jrenslin/.calendars/khal.db
+
+[highlight_days]
+# color                           = light green
+default_color                     = dark green
+method                            = fg
+# multiple                        = 
+
+[view]
+# agenda_day_format               = {bold}{name}, {date-long}{reset}
+# agenda_event_format             = 
+bold_for_light_color              = True
+dynamic_days                      = False
+# event_format
+# event_view_always_visible       = False
+# event_view_weighting
+# frame
+theme                             = dark

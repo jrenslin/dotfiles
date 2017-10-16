@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="Terminal">
+			<action name="Execute">
+				<execute>gnome-terminal</execute>
+			</action>
+		</item>
+		<item label="File Manager">
+			<action name="Execute">
+				<execute>nautilus</execute>
+			</action>
+		</item>
+		<item label="File Manager (su)">
+			<action name="Execute">
+				<execute>gksu nautilus</execute>
+			</action>
+		</item>
+		<item label="Firefox">
+			<action name="Execute">
+				<execute>firefox</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Rambox">
+			<action name="Execute">
+				<execute>rambox</execute>
+			</action>
+		</item>
+		<menu id="root-menu-111650" label="Settings">
+			<menu id="root-menu-111650-293032" label="General">
+				<item label="LXAppearance">
+					<action name="Execute">
+						<execute>lxappearance</execute>
+					</action>
+				</item>
+				<item label="Obkey">
+					<action name="Execute">
+						<execute>obkey</execute>
+					</action>
+				</item>
+				<item label="Obconf">
+					<action name="Execute">
+						<execute>obconf</execute>
+					</action>
+				</item>
+				<item label="Obmenu">
+					<action name="Execute">
+						<execute>obmenu</execute>
+					</action>
+				</item>
+				<item label="Network settings">
+					<action name="Execute">
+						<execute>wicd-gtk</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="root-menu-111650-793156" label="Config files">
+				<item label="tint2rc">
+					<action name="Execute">
+						<execute>gedit ~/.config/tint2/tint2rc</execute>
+					</action>
+				</item>
+				<item label="conkyrc">
+					<action name="Execute">
+						<execute>gedit ~/.conkyrc</execute>
+					</action>
+				</item>
+				<item label="rc.xml">
+					<action name="Execute">
+						<execute>gedit ~/.config/openbox/rc.xml</execute>
+					</action>
+				</item>
+				<item label="autostart.sh">
+					<action name="Execute">
+						<execute>gedit ~/.config/openbox/autostart.sh</execute>
+					</action>
+				</item>
+				<item label="Obmenu.xml">
+					<action name="Execute">
+						<execute>gedit ~/.config/openbox/menu.xml</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="root-menu-111650-371746" label="Reconfigure">
+				<item label="Tint2">
+					<action name="Execute">
+						<execute>killall -SIGUSR1 tint2</execute>
+fon					</action>
+				</item>
+				<item label="Conky">
+					<action name="Execute">
+						<execute>killall -SIGUSR1 conky</execute>
+					</action>
+				</item>
+				<item label="Openbox">
+					<action name="Reconfigure"/>
+				</item>
+			</menu>
+		</menu>
+		<!-- <menu id="root-menu-25649" label="Layout">
+			<item label="English">
+				<action name="Execute">
+					<execute>setxkbmap us</execute>
+				</action>
+			</item>
+			<item label="Eesti">
+				<action name="Execute">
+					<execute>setxkbmap ee</execute>
+				</action>
+			</item>
+		</menu>
+		 This requires the presence of the 'menu' package to work -->
+		<separator/>
+		<item label="Feh">
+			<action name="Execute">
+				<execute>sh ~/.fehbg</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Restart">
+			<action name="Restart"/>
+		</item>
+		<item label="Exit">
+			<action name="Exit"/>
+		</item>
+	</menu>
+</openbox_menu>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no" />
+    <title>🏢</title>
+    <link rel="stylesheet" href="home.css">
+
+    <!--
+         JS function for loading a given .js file.
+         This is used for switching between the different modes.
+    -->
+    <script type="text/javascript" >
+     function LoadMyJs(scriptName) {
+         var docHeadObj = document.getElementsByTagName("head")[0];
+         var dynamicScript = document.createElement("script");
+         dynamicScript.type = "text/javascript";
+         dynamicScript.src = scriptName;
+         docHeadObj.appendChild(dynamicScript);
+     }
+    </script>
+
+
+</head>
+<body onLoad="LoadMyJs('hotkeys.js')">
+
+    <main>
+
+        <!-- Empty span for displaying loading icon after a keypress. -->
+        <span id="loading" style="display:none;"></span>
+
+        <!-- -->
+        <form id="hotkeybar" action="https://google.com?ie=utf-8&oe=utf-8" method="get">
+            <input name="q" value="" placeholder="Press keys ..." />
+	      </form>
+
+        <!-- Div columns for links -->
+	      <div>
+
+		        <div>
+			          <h2>Own</h2>
+			          <a href="https://jrenslin.de"><span>Q</span><span>Homepage</span></a>
+                <a href="https://jrenslin.de/tools/books/"><span>B</span><span>Aklaman</span></a>
+                <a href="https://jrenslin.de/tools/business/"><span>M</span><span>Money</span></a>
+                <a href="https://127.0.0.1:8384/"><span>W</span><span>Syncthing</span></a>
+		        </div>
+
+		        <div>
+			          <h2>University</h2>
+			          <a href="https://olat-ce.server.uni-frankfurt.de/"><span>R</span><span>OLAT</span></a>
+  			        <a href="https://qis.server.uni-frankfurt.de"><span>F</span><span>QIS</span></a>
+			          <a href="https://www.ub.uni-frankfurt.de/"><span>G</span><span>UB</span></a>
+			          <a href="http://www.uni-frankfurt.de/43866432/aktuelles"><span>T</span><span>IZO</span></a>
+		        </div>
+
+		        <div>
+			          <h2>Working on</h2>
+			          <a href="http://ppanji.org"><span>A</span><span>PPanji</span></a>
+			          <a href="http://h2383667.stratoserver.net:8001"><span>Y</span><span>SOA-Verein</span></a>
+			          <a href="https://museum-digital.de/"><span>X</span><span>Museum-Digital</span></a>
+			          <a href="http://southeastasiaconference.com"><span>S</span><span>Southeastasiaconference</span></a>
+			          <a href="https://www.facebook.com/groups/410195149324754/"><span>D</span><span>SSK2</span></a>
+		        </div>
+
+            <div>
+                <h2>SEAS</h2>
+   		          <a href="https://www.newmandala.org/"><span>J</span><span>New Mandala</span></a>
+            </div>
+
+            <div>
+			          <h2>Misc</h2>
+			          <a href="https://mangaupdates.com"><span>Z</span><span>Mangaupdates</span></a>
+			          <a href="https://reddit.com/r/unixporn/"><span>U</span><span>/r/unixporn</span></a>
+			          <a href="https://reddit.com/r/cyberpunk/"><span>I</span><span>/r/cyberpunk</span></a>
+			          <a href="https://graphemica.com"><span>O</span><span>Graphemica</span></a>
+			          <a href="https://flickr.com"><span>P</span><span>Flickr</span></a>
+		        </div>
+
+	      </div>
+    </main>
+
+    <!--
+         Different links that are less used, and thus got no keyboard shortcuts bound to them.
+         Only visible on hover.
+    -->
+    <aside>
+        <a>Firefox</a>
+        <div>
+            <a href="about:home"><span>↑</span><span>about:home</span></a>
+            <a href="about:preferences"><span>←</span><span>about:preferences</span></a>
+            <a href="about:config"><span>→</span><span>about:config</span></a>
+            <a href="about:downloads"><span>↓</span><span>about:downloads</span></a>
+        </div>
+    </aside>
+
+    <aside style="left:20%;">
+        <a>Accounts</a>
+        <div>
+            <a href="https://github.com/jrenslin"><span></span><span>GitHub</span></a>
+            <a href="https://twitter.com/JREnslin"><span></span><span>Twitter</span></a>
+            <a href="https://plus.google.com/103265196454000691678"><span></span><span>Google+</span></a>
+        </div>
+    </aside>
+
+    <!--
+         I use the non-default modes rarely myself admittedly.
+         Hence, here's a short reminder on how to switch to them.
+    -->
+    <section class="help" style="">
+
+        <h2>Help: Modes</h2>
+
+        <dl>
+            <dt>Caps Lock</dt>
+            <dd>Enable search mode</dd>
+
+            <dt>Windows / Hyper</dt>
+            <dd>Enable URL mode</dd>
+
+            <dt>Alt</dt>
+            <dd>Enable hotkey mode</dd>
+        </dl>
+
+    </section>
+
+    <!--
+         Time table with the current semester's regular schedule.
+    -->
+    <section>
+
+        <h2>Semester Time Table</h2>
+
+        <table>
+
+            <tr><th></th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
+            <tr><td>10-12</td><td></td><td></td><td></td><td>
+                <h5><a href="https://qis.server.uni-frankfurt.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=228665&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung">Media in Southeast Asia</a></h5>
+                <dl>
+                    <dt>P:</dt><dd>Arndt Graf</dd>
+                    <dt>L:</dt><dd>SH 3.108</dd>
+                </dl>
+            </td><td></td></tr>
+            <tr><td>12-14</td><td></td><td>
+                <h5><a href="https://qis.server.uni-frankfurt.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=238493&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung">Internationalizing higher education in Southeast Asia: global trends in local contexts</a></h5>
+                <dl>
+                    <dt>P:</dt><dd>Alexandra Samokhvalova</dd>
+                    <dt>L:</dt><dd>SH 5.103</dd>
+                </dl>
+            </td><td></td><td></td><td></td></tr>
+            <tr><td>14-16</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>16-18</td><td>
+                <h5><a href="https://qis.server.uni-frankfurt.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=229155&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung">Indonesian movies</a></h5>
+                <dl>
+                    <dt>P:</dt><dd>Hedy Holzwarth</dd>
+                    <dt>L:</dt><dd>JUR 804</dd>
+                </dl>
+            </td><td></td><td></td><td>
+                <h5><a href="https://qis.server.uni-frankfurt.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=238492&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung">Transnationale Migration in Südostasien</a></h5>
+                <dl>
+                    <dt>P:</dt><dd>J. Enslin</dd>
+                    <dt>L:</dt><dd>SH 1.103</dd>
+                </dl>
+            </td><td></td></tr>
+
+        </table>
+
+    </section>
+
+    <!-- Keybindings for switching modes and general inline js functions. -->
+    <script type="text/javascript">
+     document.onkeydown = function(e) {
+         var headobj = document.getElementsByTagName("head")[0];
+         switch (e.keyCode) {
+             /* On caps lock (20) make it a search bar */
+             case 20:
+                 document.getElementsByTagName("form")[0].id = "searchbar";
+                 document.getElementsByTagName("input")[0].placeholder = "Search ...";
+                 document.getElementsByTagName("input")[0].value = "";
+
+                 /* Remove script */
+                 document.getElementById('searchbar').removeEventListener('keydown', hotkeys);
+                 headobj.removeChild(document.getElementsByTagName("script")[1]);
+                 LoadMyJs('hotkeys.js');
+
+                 break;
+             /* On alt (18) make it a hot key bar */
+             case 18:
+                 document.getElementsByTagName("form")[0].id = "hotkeybar";
+                 document.getElementsByTagName("input")[0].placeholder = "Press keys ...";
+                 document.getElementsByTagName("input")[0].value = "";
+
+                 /* Remove script */
+                 document.getElementsByTagName("form")[0].removeEventListener('keydown', hotkeys);
+                 headobj.removeChild(document.getElementsByTagName("script")[1]);
+                 LoadMyJs('hotkeys.js');
+
+                 break;
+             /* On windows key / hyper (91) make it a URL bar */
+             case 91:
+                 document.getElementsByTagName("form")[0].id = "urlbar";
+                 document.getElementsByTagName("input")[0].placeholder = "Enter URL ...";
+                 document.getElementsByTagName("form")[0].action = '';
+                 document.getElementsByTagName("input")[0].value = "https://";
+
+                 /* Remove script */
+                 document.getElementById('urlbar').removeEventListener('keydown', hotkeys);
+                 headobj.removeChild(document.getElementsByTagName("script")[1]);
+                 LoadMyJs('hotkeys.js');
+
+                 break;
+         }
+     }
+
+    </script>
+
+</body>
+</html>
