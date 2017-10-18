@@ -16,7 +16,7 @@ print_info() {
     info "OS		" distro
     # info "Model" model
     info "Kernel		" kernel
-    info "Uptime		" uptime
+    info "Uptime " uptime
     info "Packages	" packages
     info "Shell		" shell
     info "Resolution	" resolution
@@ -152,9 +152,9 @@ speed_type="bios_limit"
 # tiny:  'i7-6500U (4)'
 # name:  'Intel i7-6500U (4)'
 # speed: '3.1GHz'
-$cpu_brand="on"
-$cpu_cores="on"
-$cpu_speed="on"
+cpu_brand="on"
+cpu_cores="on"
+cpu_speed="on"
 
 # CPU Speed
 # Hide/Show CPU speed.
@@ -180,7 +180,7 @@ cpu_speed="on"
 # logical:  'Intel i7-6500U (4) @ 3.1GHz' (All virtual cores)
 # physical: 'Intel i7-6500U (2) @ 3.1GHz' (All physical cores)
 # off:      'Intel i7-6500U @ 3.1GHz'
-cpu_cores="logical"
+# cpu_cores="logical"
 
 # CPU Temperature
 # Hide/Show CPU temperature.
