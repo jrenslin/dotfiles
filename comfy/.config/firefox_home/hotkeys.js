@@ -1,9 +1,9 @@
-/* 
-Hotkeys on Firefox start page.
-The main bar on the start page can be turned to different "modes", depending on the mode behaviour will change.
+/*
+   Hotkeys on Firefox start page.
+   The main bar on the start page can be turned to different "modes", depending on the mode behaviour will change.
 
-urlbar opens urls.
-hotkeybar opens predefined links upon keypresses.
+   urlbar opens urls.
+   hotkeybar opens predefined links upon keypresses.
 */
 if (document.getElementById('urlbar') != null) {
     document.getElementById('urlbar').addEventListener('keydown', seturlsearch);
@@ -19,152 +19,120 @@ function seturlsearch (e) {
 }
 
 /*
-"hotkeybar" mode.
-Bind keybindings to the bar.
+  "hotkeybar" mode.
+  Bind keybindings to the bar.
 */
 if (document.getElementById('hotkeybar') != null) {
     document.getElementById('hotkeybar').addEventListener('keydown', hotkeys);
 }
+
 /*
-Define usable keybindings.
+  Function for referral.
+*/
+function goTo (target) {
+    document.getElementById('loading').style = "display:block;";
+    window.location.replace(target);
+}
+
+/*
+  Define usable keybindings.
 */
 function hotkeys (e) {
 
-         switch (e.keyCode) {
-             /* On Q go to jrenslin.de */
-             case 81:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('https://jrenslin.de/');
-                 break;
-             /* On B go to Aklaman */
-             case 66:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('https://jrenslin.de/tools/books/');
-                 break;
-             /* On M go to Money Tool */
-             case 77:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('https://jrenslin.de/tools/business/');
-                 break;
-             /* On W go to Synthing */
-             case 87:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('https://127.0.0.1:8384/');
-                 break;
+    switch (e.keyCode) {
 
+    case 81: // On Q go to jrenslin.de
+        goTo('https://jrenslin.de/');
+        break;
+    case 66: // On B go to Aklaman
+        goTo('https://jrenslin.de/tools/books/');
+        break;
+    case 77: // On M go to Money Tool
+        goTo('https://jrenslin.de/tools/business/');
+        break;
+    case 87: // On W go to Synthing
+        goTo('http://127.0.0.1:8384/');
+        break;
 
-             /* On R go to OLAT of Uni Frankfurt */
-             case 82:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('https://olat-ce.server.uni-frankfurt.de/');
-                 break;
-             /* On F go to QIS of Uni Frankfurt */
-             case 70:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('https://qis.server.uni-frankfurt.de');
-                 break;
-             /* On G go to the website of the University Library of Uni Frankfurt */
-             case 71:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('https://www.ub.uni-frankfurt.de/');
-                 break;
-             /* On T go to the IZO website */
-             case 84:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('http://www.uni-frankfurt.de/43866432/aktuelles');
-                 break;
+    case 82: // On R go to OLAT of Uni Frankfurt
+        goTo('https://olat-ce.server.uni-frankfurt.de/');
+        break;
+    case 70: // On F go to QIS of Uni Frankfurt
+        goTo('https://qis.server.uni-frankfurt.de');
+        break;
+    case 71: // On G go to the website of the University Library of Uni Frankfurt
+        goTo('https://www.ub.uni-frankfurt.de/');
+        break;
+    case 84: // On T go to the IZO website
+        goTo('https://www.uni-frankfurt.de/43866432/aktuelles');
+        break;
 
-             /* On A go to ppanji.org */
-             case 65:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('http://ppanji.org');
-                 break;
-             /* On Y go to SOA-Verein Dummy Page */
-             case 89:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('http://h2383667.stratoserver.net:8001');
-                 break;
-             /* On X go to Museum-Digital */
-             case 88:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('https://museum-digital.de');
-                 break;
-             /* On S go to southeastasiaconference.com */
-             case 83:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('http://southeastasiaconference.com');
-                 break;
-             /* On D go to SSK2 group on FB */
-             case 68:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('https://www.facebook.com/groups/410195149324754/');
-                 break;
+    case 65: // On A go to ppanji.org
+        goTo('http://ppanji.org');
+        break;
+    case 89: // On Y go to SOA-Verein Dummy Page
+        goTo('http://h2383667.stratoserver.net:8001');
+        break;
+    case 88: // On X go to Museum-Digital
+        goTo('https://museum-digital.de');
+        break;
+    case 83: // On S go to southeastasiaconference.com
+        goTo('http://southeastasiaconference.com');
+        break;
+    case 68: // On D go to SSK2 group on FB
+        goTo('https://museumsdokumentation.de');
+        break;
 
-             /* On J go to New Mandala */
-             case 74:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('https://newmandala.org');
-                 break;
+    /* On J go to New Mandala */
+    case 74:
+        goTo('');
+        document.getElementById('loading').style = "display:block;";
+        window.location.replace('https://newmandala.org');
+        break;
 
+    case 90: // On Z go to mangaupdates.com
+        goTo('https://mangaupdates.com');
+        break;
+    case 85: // On U go to /r/unixporn
+        goTo('https://reddit.com/r/unixporn/');
+        break;
+    case 73: // On I go to /r/cyberpunk
+        goTo('https://reddit.com/r/cyberpunk/');
+        break;
+    case 79: // On O go to Graphemica
+        goTo('https://graphemica.com/');
+        break;
+    case 80: // On P go to Flickr
+        goTo('https://flickr.com/');
+        break;
 
-             /* On Z go to mangaupdates.com */
-             case 90:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('https://mangaupdates.com');
-                 break;
-             /* On U go to /r/unixporn */
-             case 85:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('https://reddit.com/r/unixporn/');
-                 break;
-             /* On I go to /r/cyberpunk */
-             case 73:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('https://reddit.com/r/cyberpunk/');
-                 break;
-             /* On O go to Graphemica */
-             case 79:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('https://graphemica.com/');
-                 break;
-             /* On P go to Flickr */
-             case 80:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('https://flickr.com/');
-                 break;
+        /*
+    case 37: // On arrow left open firefox preferences
+        goTo('about:preferences');
+        break;
+    case 38: // On arrow up open firefox about:home
+        goTo('about:home');
+        break;
+    case 39: // On arrow right go to about:config
+        goTo('about:config');
+        break;
+    case 40: // On arrow down go to open about:downloads
+        goTo('about:downloads');
+        break;
+        */
 
-             /* On arrow left open firefox preferences */
-             case 37:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('about:preferences');
-                 break;
-             /* On arrow up open firefox about:home */
-             case 38:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.replace('about:home');
-                 break;
-             /* On arrow right go to about:config */
-             case 39:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.href('about:config');
-                 break;
-             /* On arrow down go to open about:downloads */
-             case 40:
-                 document.getElementById('loading').style = "display:block;";
-                 window.location.href('about:downloads');
-                 break;
+    case 37: // On arrow left open chromium history
+        goTo('chrome://history');
+        break;
+    case 38: // On arrow up open chromium settings
+        goTo('chrome://settings');
+        break;
+    case 39: // On arrow right open chromium flags
+        goTo('chrome://flags');
+        break;
+    case 40: // On arrow down open chromium downloads page 
+        goTo('chrome://downloads');
+        break;
 
-             case 37:
-                 alert('left');
-                 break;
-             case 38:
-                 alert('up');
-                 break;
-             case 39:
-                 alert('right');
-                 break;
-             case 40:
-                 alert('down');
-                 break;
-         }
+    }
 };

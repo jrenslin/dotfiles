@@ -62,7 +62,7 @@
 			          <a href="http://h2383667.stratoserver.net:8001"><span>Y</span><span>SOA-Verein</span></a>
 			          <a href="https://museum-digital.de/"><span>X</span><span>Museum-Digital</span></a>
 			          <a href="http://southeastasiaconference.com"><span>S</span><span>Southeastasiaconference</span></a>
-			          <a href="https://www.facebook.com/groups/410195149324754/"><span>D</span><span>SSK2</span></a>
+			          <a href="https://museumsdokumentation.de/"><span>D</span><span>Museumsdokumentation</span></a>
 		        </div>
 
             <div>
@@ -86,13 +86,23 @@
          Different links that are less used, and thus got no keyboard shortcuts bound to them.
          Only visible on hover.
     -->
-    <aside>
+    <aside id="aside-chromium" style="display:none;">
         <a>Firefox</a>
         <div>
             <a href="about:home"><span>↑</span><span>about:home</span></a>
             <a href="about:preferences"><span>←</span><span>about:preferences</span></a>
             <a href="about:config"><span>→</span><span>about:config</span></a>
             <a href="about:downloads"><span>↓</span><span>about:downloads</span></a>
+        </div>
+    </aside>
+
+    <aside id="aside-chromium">
+        <a>Chromium</a>
+        <div>
+            <a href="chrome://history"><span>↑</span><span>History</span></a>
+            <a href="chrome://settings"><span>←</span><span>Settings</span></a>
+            <a href="chrome://flags"><span>→</span><span>Flags</span></a>
+            <a href="chrome://downloads"><span>↓</span><span>Downloads</span></a>
         </div>
     </aside>
 
@@ -213,8 +223,9 @@
                  break;
          }
      }
+     </script>
 
-    </script>
+     <script type='text/javascript' src='./checknetwork.js'></script>
 
 </body>
 </html>

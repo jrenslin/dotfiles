@@ -9,7 +9,7 @@ body { margin: 0px; }
 main {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center;font-size:1.0.5em;width:90%;z-index:1;}
 
 /* ##############
-General rukes
+General rules
 ############## */
 
 h1 {border-bottom:1px solid #888;font-weight:normal;color:#c33;padding:0.5em 0px;}
@@ -63,6 +63,17 @@ div > div > a > span {display:inline-block; padding:0.3em;  }
 div > div > a:nth-child(2n) {background:#dddddd;}
 div > div > a:hover {background:#8FBDBD; color:#ff;}
 div > div > a:hover span {color:#fff;}
+
+/* ##############
+Offline screen
+############## */
+html#offline:before           { display: none; }
+html#offline body             { position: absolute; left: 50%; top: 55%; transform: translate(-50%, -50%);
+                                background: #CD919B; color: #fff; font-size: 2.5em; }
+html#offline body span        { position: relative; }
+html#offline body span:before { content: "\01F50C"; display: block;
+                                position: absolute; left: 50%; bottom: 110%; transform: translate(-50%, 0px);
+                                Font-size: 4em;  }
 
 /* ##############
 Make it responsive.
