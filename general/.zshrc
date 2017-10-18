@@ -17,6 +17,7 @@ alias list-installed='dpkg-query -W --showformat='${Installed-Size;10}\t${Packag
 # Files
 alias appendfoldername='for i in *; do mv $i "`pwd|awk -F'/' '{print $NF}'`$i"; done'
 alias dots='cd ~/Sync/Programming/dotfiles'
+alias writing='cd ~/synced_notes/CUR'
 alias flattendir='find "/$1" -mindepth 2 -type f -exec mv -t "/$1" -i "{}" +'
 
 # Mail
