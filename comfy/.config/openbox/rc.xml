@@ -355,7 +355,7 @@
     <!-- Keybindings for executing applications -->
     <keybind key="C-A-1">
       <action name="Execute">
-        <command>firefox</command>
+        <command>chromium --force-device-scale-factor=2</command>
       </action>
     </keybind>
     <keybind key="C-A-2">
@@ -498,7 +498,7 @@
     <!-- Two keys not bound in the list (C-2 and C-6) belong to terminals -->
     <keybind key="C-1">
       <action name="Execute">
-        <command>wmctrl -a firefox</command>
+        <command>wmctrl -a chromium</command>
       </action>
     </keybind>
     <keybind key="C-3">
@@ -1129,6 +1129,14 @@
       </position>
     </application>
     <application name="Navigator" role="browser" class="Firefox-esr">
+      <maximize>yes</maximize>
+      <desktop>2</desktop>
+      <position force="yes">
+        <x>0</x>
+        <y>0</y>
+      </position>
+    </application>
+    <application role="browser" class="Chromium">
       <maximize>yes</maximize>
       <desktop>2</desktop>
       <position force="yes">
