@@ -104,7 +104,7 @@ color     header          black              default   '\[1.2.3.5\]'
 # Sidebar ------------------------------------------
 
 color     sidebar_highlight      default             color8            # Color of the highlighted, but not open, mailbox.
-color     sidebar_divider        white               black             # Color of the divider separating the Sidebar from NeoMutt panels
+color     sidebar_divider        white               default           # Color of the divider separating the Sidebar from NeoMutt panels
 color     sidebar_flagged        default             black             # Color to give mailboxes containing flagged mail
 color     sidebar_new            default             black             # Color to give mailboxes containing new mail
 color     sidebar_ordinary       default             default           # Color to give mailboxes containing no new/flagged mail, etc

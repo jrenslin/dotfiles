@@ -12,9 +12,9 @@ function seturlsearch (e) {
 
     switch (e.keyCode) {
     /* On return set name of urlbar to it's content/value */
-    case 91:
+    case 13:
+        e.preventDefault();
         window.location.replace(document.getElementsByTagName("input")[0].value);
-        break;
     }
 }
 
@@ -44,6 +44,8 @@ function hotkeys (e) {
 
     switch (e.keyCode) {
 
+    case 91: // If mod is pressed, don't do any of the following.
+        break;
     case 81: // On Q go to jrenslin.de
         goTo('https://jrenslin.de/');
         break;
