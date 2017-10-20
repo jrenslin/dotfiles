@@ -31,6 +31,9 @@ if (document.getElementById('hotkeybar') != null) {
 */
 function goTo (target) {
     document.getElementById('loading').style = "display:block;";
+    var aim = document.querySelectorAll("a[href^='" + target.substr(0, 10) + "']");
+    aim[0].focus();
+    aim[0].classList.add("selectedLink");
     window.location.replace(target);
 }
 
@@ -85,9 +88,7 @@ function hotkeys (e) {
 
     /* On J go to New Mandala */
     case 74:
-        goTo('');
-        document.getElementById('loading').style = "display:block;";
-        window.location.replace('https://newmandala.org');
+        goTo('https://newmandala.org');
         break;
 
     case 90: // On Z go to mangaupdates.com

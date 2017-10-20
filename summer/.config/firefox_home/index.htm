@@ -8,20 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no" />
     <title>🏢</title>
     <link rel="stylesheet" href="home.css">
-
-    <!--
-         JS function for loading a given .js file.
-         This is used for switching between the different modes.
-    -->
-    <script type="text/javascript" >
-     function LoadMyJs(scriptName) {
-         var docHeadObj = document.getElementsByTagName("head")[0];
-         var dynamicScript = document.createElement("script");
-         dynamicScript.type = "text/javascript";
-         dynamicScript.src = scriptName;
-         docHeadObj.appendChild(dynamicScript);
-     }
-    </script>
+    <script type='text/javascript' src='./loadJs.js'></script>
 
 
 </head>
@@ -86,7 +73,7 @@
          Different links that are less used, and thus got no keyboard shortcuts bound to them.
          Only visible on hover.
     -->
-    <aside id="aside-chromium" style="display:none;">
+    <aside id="aside-firefox" style="display:none;">
         <a>Firefox</a>
         <div>
             <a href="about:home"><span>↑</span><span>about:home</span></a>
@@ -181,48 +168,6 @@
 
     <!-- Keybindings for switching modes and general inline js functions. -->
     <script type="text/javascript">
-     document.onkeydown = function(e) {
-         var headobj = document.getElementsByTagName("head")[0];
-         switch (e.keyCode) {
-             /* On caps lock (20) make it a search bar */
-             case 20:
-                 document.getElementsByTagName("form")[0].id = "searchbar";
-                 document.getElementsByTagName("input")[0].placeholder = "Search ...";
-                 document.getElementsByTagName("input")[0].value = "";
-
-                 /* Remove script */
-                 document.getElementById('searchbar').removeEventListener('keydown', hotkeys);
-                 headobj.removeChild(document.getElementsByTagName("script")[1]);
-                 LoadMyJs('hotkeys.js');
-
-                 break;
-             /* On alt (18) make it a hot key bar */
-             case 18:
-                 document.getElementsByTagName("form")[0].id = "hotkeybar";
-                 document.getElementsByTagName("input")[0].placeholder = "Press keys ...";
-                 document.getElementsByTagName("input")[0].value = "";
-
-                 /* Remove script */
-                 document.getElementsByTagName("form")[0].removeEventListener('keydown', hotkeys);
-                 headobj.removeChild(document.getElementsByTagName("script")[1]);
-                 LoadMyJs('hotkeys.js');
-
-                 break;
-             /* On windows key / hyper (91) make it a URL bar */
-             case 91:
-                 document.getElementsByTagName("form")[0].id = "urlbar";
-                 document.getElementsByTagName("input")[0].placeholder = "Enter URL ...";
-                 document.getElementsByTagName("form")[0].action = '';
-                 document.getElementsByTagName("input")[0].value = "https://";
-
-                 /* Remove script */
-                 document.getElementById('urlbar').removeEventListener('keydown', hotkeys);
-                 headobj.removeChild(document.getElementsByTagName("script")[1]);
-                 LoadMyJs('hotkeys.js');
-
-                 break;
-         }
-     }
      </script>
 
      <script type='text/javascript' src='./checknetwork.js'></script>
