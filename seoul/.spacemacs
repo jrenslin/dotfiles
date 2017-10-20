@@ -303,6 +303,7 @@ values."
 (add-to-list 'auto-mode-alist '(".*mutt.*" . message-mode))
 (add-to-list 'auto-mode-alist '("\\.task\\'" . conf-mode))
 (add-to-list 'auto-mode-alist '("\\rc\\'" . conf-mode))
+(add-to-list 'auto-mode-alist '("\\.cshtml\\'" . web-mode))
 
 ;; Enable CUA in usual cases
 (add-hook 'conf-mode-hook 'cua-mode)

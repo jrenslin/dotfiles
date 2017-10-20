@@ -2,7 +2,7 @@ albums
 scripts/
 general/.weechat/weechat.log
 general/.weechat/sec.conf
-
+general/.weechat/script/plugins.xml.gz
 general/emacs/snippets/c++-mode/.yas-parents
 general/emacs/snippets/c++-mode/.yas-setup.el
 general/emacs/snippets/c++-mode/.yas-setup.elc
