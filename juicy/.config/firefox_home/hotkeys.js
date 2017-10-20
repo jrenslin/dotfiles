@@ -88,8 +88,7 @@ function hotkeys (e) {
         goTo('https://museumsdokumentation.de');
         break;
 
-    /* On J go to New Mandala */
-    case 74:
+    case 74: // On J go to New Mandala
         goTo('https://newmandala.org');
         break;
 
@@ -139,3 +138,40 @@ function hotkeys (e) {
 
     }
 };
+
+function navigateSections (direction) {
+
+    // Build array of all available sections
+    var navigatable = ["start"];
+    var sections = document.getElementsByTagName("section");
+    for(var i = 0, max = sections.length; i < max; i++) navigatable.push(sections[i].getAttribute("id"));
+
+    // Get current position in page
+    var position = window.location.hash;
+    if (position == "") position = "start";
+
+    var index = navigatable.indexOf(position.replace("#", "")); // Get index of current
+
+    if (direction == "down") {
+        if (index + 2 > navigatable.length) window.location.hash = navigatable[0]; // Go back to start after last section
+        else window.location.hash = navigatable[index + 1];
+    } else {
+        if (index - 1 < 0) window.location.hash = navigatable[0]; // Disable scrolling further up when already on start
+        else window.location.hash = navigatable[index - 1];
+    }
+
+}
+
+document.addEventListener('keydown', function (e) {
+    switch (e.keyCode) {
+    case 33: // On page up, scroll up one section
+        e.preventDefault();
+        navigateSections("up");
+        break;
+    case 34: // On page down, scroll down one section
+        e.preventDefault();
+        navigateSections("down");
+        break;
+    }
+});
+
