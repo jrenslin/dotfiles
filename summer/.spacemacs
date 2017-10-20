@@ -142,6 +142,7 @@ values."
    dotspacemacs-themes '(moe-light
                          kaolin
                          moe-dark
+                         seoul256
                          subatomic256
                          monokai
                          wheatgrass

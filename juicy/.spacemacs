@@ -141,6 +141,7 @@ values."
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(kaolin
                          moe-dark
+                         seoul256
                          subatomic256
                          monokai
                          moe-light
