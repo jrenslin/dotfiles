@@ -1,45 +1,50 @@
-/*
-   Hotkeys on Firefox start page.
-   The main bar on the start page can be turned to different "modes", depending on the mode behaviour will change.
+/* ---------------------------------
+// Hotkeys on Firefox start page.
+// The main bar on the start page can be turned to different "modes", depending on the mode behaviour will change.
+// For the binding of modes, see barModes.js.
+// --------------------------------- */
 
-   urlbar opens urls.
-   hotkeybar opens predefined links upon keypresses.
-*/
+/* ------------
+// urlbar opens urls.
+// hotkeybar opens predefined links upon keypresses.
+// --------- */
 if (document.getElementById('urlbar') != null) {
     document.getElementById('urlbar').addEventListener('keydown', seturlsearch);
 }
-function seturlsearch (e) {
 
+function seturlsearch (e) {
     switch (e.keyCode) {
-    /* On return set name of urlbar to it's content/value */
-    case 13:
+    case 13: // On return set name of urlbar to it's content/value
         e.preventDefault();
         window.location.replace(document.getElementsByTagName("input")[0].value);
+        console.log("Opening " + document.getElementsByTagName("input")[0].value);
     }
 }
 
-/*
-  "hotkeybar" mode.
-  Bind keybindings to the bar.
-*/
+/* ------------
+// "hotkeybar" mode.
+// Bind keybindings to the bar.
+// --------- */
 if (document.getElementById('hotkeybar') != null) {
     document.getElementById('hotkeybar').addEventListener('keydown', hotkeys);
 }
 
-/*
-  Function for referral.
-*/
+/* ------------
+// Function for referral to a given URL.
+// --------- */
 function goTo (target) {
     document.getElementById('loading').style = "display:block;";
     var aim = document.querySelectorAll("a[href^='" + target.substr(0, 10) + "']");
-    aim[0].focus();
-    aim[0].classList.add("selectedLink");
-    window.location.replace(target);
+
+    aim[0].focus();                       // Focus link to disable double entries
+    aim[0].classList.add("selectedLink"); // Add class to color the list entry of the selected page
+    window.location.replace(target);      // Refer page to target
+    console.log("Opening " + target);
 }
 
-/*
-  Define usable keybindings.
-*/
+/* ------------
+// Define usable keybindings.
+// --------- */
 function hotkeys (e) {
 
     switch (e.keyCode) {
@@ -135,7 +140,6 @@ function hotkeys (e) {
     case 40: // On arrow down open chromium downloads page 
         goTo('chrome://downloads');
         break;
-
     }
 };
 
@@ -159,9 +163,13 @@ function navigateSections (direction) {
         if (index - 1 < 0) window.location.hash = navigatable[0]; // Disable scrolling further up when already on start
         else window.location.hash = navigatable[index - 1];
     }
+    console.log("Scrolled one section " + direction);
 
 }
 
+/* ------------
+// Event listeners for scrolling through sections
+// --------- */
 document.addEventListener('keydown', function (e) {
     switch (e.keyCode) {
     case 33: // On page up, scroll up one section
@@ -174,4 +182,3 @@ document.addEventListener('keydown', function (e) {
         break;
     }
 });
-

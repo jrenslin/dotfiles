@@ -35,7 +35,7 @@ div.mainWrapper > div > div  { flex: 1; margin: 1em 1em 0px 1em; padding:0px; te
 Aside: Shown as boxes to open by hovering over them
 ############## */
 
-aside               { display: block; position: fixed; bottom: 0px; left: 10vw; z-index:10; }
+aside               { display: block; position: absolute; bottom: 0px; left: 10vw; z-index:10; }
 aside a             { display: block; padding: 0.5em 0.8em; background: rgba(0,0,0,0.3); }
 aside div           { display: none; }
 aside:hover > a     { display: none; }
@@ -52,20 +52,20 @@ aside > div > a:hover              { background: rgba(0,0,0,0.4); }
 Help section
 ############## */
 
-section.help { margin: 0px 0px; padding: 1em 0px; background: #8E8238; color: #e4e4e4; }
+section#help { margin: 0px 0px; padding: 1em 0px; background: #8E8238; color: #e4e4e4; }
 
 /* ##############
 Last Section: Weekly schedule at university
 ############## */
 
-section.help + section { background: #F29901; padding: 2em 0px; }
+section#semesterSchedule  { background: #F29901; padding: 2em 0px; }
 
 table    { width:100%; padding:2em 3vw; background: #F29901; color: #e4e4e4; }
 table a  { color: #fff; }
-table td {border-bottom:1px solid #e4e4e4;}
-table td {min-width:10%;padding:1em;}
-table dt {width:30px;}
-table dd {min-width:calc(100% - 60px);vertical-align:middle;padding:0.5em 0px;}
+table td { border-bottom: 1px solid #e4e4e4; }
+table td { min-width: 10%; padding:1em;}
+table dt { width: 30px; }
+table dd { min-width: calc(100% - 60px); vertical-align:middle; padding:0.5em 0px; }
 
 /* ##############
 First page (these elements deal with main)
@@ -94,26 +94,39 @@ div > div > a:hover               { animation: colorizeLinkFromList 0.4s; backgr
 /* ##############
 Offline screen
 ############## */
-html#offline:before           { display: none; }
-html#offline                  { background: #CD919B; }
-html#offline body             { position: absolute; left: 50%; top: 55%; transform: translate(-50%, -50%);
-                                background: #CD919B; color: #fff; font-size: 2.5em; }
-html#offline body span        { position: relative; }
-html#offline body span:before { content: "\01F50C"; display: block;
-                                position: absolute; left: 50%; bottom: 110%; transform: translate(-50%, 0px);
-                                Font-size: 4em;  }
+
+html#offline:before               { display: none; }
+html#offline                      { background: #CD919B; }
+html#offline body                 { position: absolute; left: 50%; top: 55%; transform: translate(-50%, -50%);
+                                    background: #CD919B; color: #fff; font-size: 2.5em; }
+html#offline body span            { position: relative; }
+html#offline body span:before     { content: "\01F50C"; display: block;
+                                    position: absolute; left: 50%; bottom: 110%; transform: translate(-50%, 0px);
+                                    font-size: 4em;  }
+
+/* ##############
+Scrollbar
+############## */
+
+body::-webkit-scrollbar {
+    width: 0.5em; border-left: 1px solid #eee; background: #eee;
+}
+body::-webkit-scrollbar-thumb {
+    background-color:  #4E4E4E;
+    outline: 1px solid #4E4E4E;
+}
 
 /* ##############
 Make it responsive.
 ############## */
 
 @media screen and (max-width:50em) {
-	  div.mainWrapper > div       { display: block; }
-	  div.mainWrapper > div > div { flex: 1; display: block; margin: 1em 0px; }
+	  div.mainWrapper > div         { display: block; }
+	  div.mainWrapper > div > div   { flex: 1; display: block; margin: 1em 0px; }
 }
 
 @media screen and (min-width:60em) {
-    div.mainWrapper { width: 70vw; }
+    div.mainWrapper               { width: 70vw; }
 }
 
 /* ##############
