@@ -355,7 +355,7 @@
     <!-- Keybindings for executing applications -->
     <keybind key="C-A-1">
       <action name="Execute">
-        <command>chromium --force-device-scale-factor=2</command>
+        <command>chromium --force-device-scale-factor=2 --allow-file-access-from-files</command>
       </action>
     </keybind>
     <keybind key="C-A-2">
