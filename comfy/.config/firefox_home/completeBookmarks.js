@@ -78,7 +78,7 @@ function mainComplete (str) {
         var match = regex.exec(elements[i]);
 
         if (match != null) {
-            addSelectOption(elements[i], hits);
+            addSelectOption(elements[i], hits + 1);
             hits++;
             if (hits >= 10) { // Display only the last 10 elements
                 break;
