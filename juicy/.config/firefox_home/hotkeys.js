@@ -42,6 +42,14 @@ function goTo (target) {
     console.log("Opening " + target);
 }
 
+/* Function for referring based on a link in the page */
+function replaceWindowById (id) {
+    var link = document.getElementById(id);
+    if (link != null) {
+        window.location.href = link.href;
+    }
+}
+
 /* ------------
 // Define usable keybindings.
 // --------- */
@@ -182,3 +190,51 @@ document.addEventListener('keydown', function (e) {
         break;
     }
 });
+
+/* ------------
+// Event listener for opening search through bookmarks
+// --------- */
+document.addEventListener('keydown', function (e) {
+    switch (e.keyCode) {
+    case 77:
+        if (e.ctrlKey) {
+            console.log("Pressed CTRL+M, displaying search.");
+            document.getElementById('search').style = "";
+            document.getElementById('searchInput').focus();
+            mainComplete ("");
+            window.location.hash = "search";
+            break;
+        }
+
+    case 49:
+        replaceWindowById("link1");
+        break;
+    case 50:
+        replaceWindowById("link2");
+        break;
+    case 51:
+        replaceWindowById("link3");
+        break;
+    case 52:
+        replaceWindowById("link4");
+        break;
+    case 53:
+        replaceWindowById("link5");
+        break;
+    case 54:
+        replaceWindowById("link6");
+        break;
+    case 55:
+        replaceWindowById("link7");
+        break;
+    case 56:
+        replaceWindowById("link8");
+        break;
+    case 57:
+        replaceWindowById("link9");
+        break;
+
+    }
+});
+
+

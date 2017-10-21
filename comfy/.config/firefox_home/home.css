@@ -89,6 +89,33 @@ html#offline body span:before     { content: "\01F50C"; display: block;
                                     font-size: 4em;  }
 
 /* ##############
+Search
+############## */
+
+div#search            { display: block; min-height: calc(100vh - 4em); padding: 2em 0px;
+                        background: #3C8282; color: #fff; font-size: 1.05em; }
+div#search h2         { background: initial; font-size: 2em; }
+div#search a          { display: block; padding: 0.6em 0.5em; color: #fff; text-align: left;
+                        list-style: none; line-height: 1.5em; border-bottom: 1px solid #8FBDBD;
+                        counter-increment: step-counter; }
+div#search a:before   { content: counter(step-counter); display: inline-block; width: 1.8em; margin: 0px 0.5em 0px 0px;
+                        background: #8FBDBD; color: #fff; text-align: center;  }
+div#search a:hover    { background: #8FBDBD; cursor: pointer; }
+div#search a time     { float: right; color: #ccc; }
+
+/* ##############
+Scrollbar
+############## */
+
+body::-webkit-scrollbar {
+    width: 0.5em; border-left: 1px solid #eee; background: #eee;
+}
+body::-webkit-scrollbar-thumb {
+    background-color:  #4E4E4E;
+    outline: 1px solid #4E4E4E;
+}
+
+/* ##############
 Make it responsive.
 ############## */
 
@@ -98,7 +125,8 @@ Make it responsive.
 }
 
 @media screen and (min-width:60em) {
-    div.mainWrapper               { width: 70vw; }
+      div.mainWrapper              { width: 70vw; }
+      div#search ul                { padding: 2em 20vw; }
 }
 
 /* ##############
