@@ -66,7 +66,7 @@ function hotkeys (e) {
         goTo('https://jrenslin.de/tools/books/');
         break;
     case 77: // On M go to Money Tool
-        goTo('https://jrenslin.de/tools/business/');
+        goTo('https://jrenslin.de/cont/');
         break;
     case 87: // On W go to Synthing
         goTo('http://127.0.0.1:8384/');
