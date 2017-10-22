@@ -203,8 +203,8 @@ document.addEventListener('keydown', function (e) {
             document.getElementById('searchInput').focus();
             mainComplete ("");
             window.location.hash = "search";
-            break;
         }
+        break;
 
     case 49:
         replaceWindowById("link1");
