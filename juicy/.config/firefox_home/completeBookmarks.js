@@ -73,7 +73,7 @@ function mainComplete (str) {
     var regex = new RegExp(str);
 
     var hits = 0;
-    for (var i = elements.length - 2; i > 0; i--) {
+    for (var i = elements.length - 2; i >= 0; i--) {
 
         var match = regex.exec(elements[i]);
 
