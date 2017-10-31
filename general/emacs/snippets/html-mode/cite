@@ -1,0 +1,5 @@
+#contributor : Joshua Ramon Enslin <joshua@jrenslin.de>
+#name : <cite> ... </cite>
+#group : semantic
+# --
+<cite>$1</cite>

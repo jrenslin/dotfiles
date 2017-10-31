@@ -1,0 +1,7 @@
+#contributor : Joshua Ramon Enslin <joshua@jrenslin.de>
+#name : <section class="oneElement"> ... </section>
+#group : semantic
+# --
+    <section class="oneElement">
+             <p>$1</p>
+    </section>

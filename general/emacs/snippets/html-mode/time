@@ -1,0 +1,5 @@
+#contributor : Joshua Ramon Enslin <joshua@jrenslin.de>
+#name : <time> ... </time>
+#group : semantic
+# --
+<time datetime="$1">$1</time>
