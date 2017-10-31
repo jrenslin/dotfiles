@@ -32,6 +32,7 @@ input   { display: inline-block; width: calc(100% - 18px); max-width:32vw; margi
 
 div.mainWrapper > div       { display: flex; flex-wrap: wrap; }
 div.mainWrapper > div > div { flex: 1; margin: 1em 1em 0px 1em; padding:0px; text-align:left;  }
+.toggledVisible              { display: block !important; }
 
 aside               { position: absolute; display: block; left:10vw; bottom:0px; z-index:10; }
 aside a             { display: block; padding: 0.5em 0.8em; background: rgba(0,0,0,0.3); }
@@ -45,6 +46,14 @@ aside > div > a > span:first-child  { position:absolute; left: 1em; top: 50%; tr
                                       font-family: Monospace; background: rgba(0,0,0,0.5); font-size: 1.3em; }
 aside > div > a > span              { display: inline-block; padding: 0.3em; }
 aside > div > a:hover               { background: rgba(0,0,0,0.4); }
+
+main > aside#aside-accounts        { left: calc(10vw + 8em); }
+
+/* ##############
+Do not display links for Firefox
+############## */
+
+#aside-firefox        { display: none; }
 
 table    { width: 94%; padding: 2em 3vw; }
 table td { border-bottom: 1px solid #222; }

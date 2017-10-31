@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="home.css">
     <script type='text/javascript' src='./loadJs.js'></script>
 
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Content-Security-Policy" content="default-src file:; font-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; script-src 'self' 'unsafe-inline'; style-src 'self'">
+
+
 </head>
 <body onLoad="LoadMyJs('hotkeys.js')">
 
@@ -18,7 +22,7 @@
         <div class="mainWrapper">
 
         <!-- Empty span for displaying loading icon after a keypress. -->
-        <span id="loading" style="display:none;"></span>
+        <span id="loading"></span>
 
         <!-- -->
         <form id="hotkeybar" action="https://google.com?ie=utf-8&oe=utf-8" method="get">
@@ -74,7 +78,7 @@
          Different links that are less used, and thus got no keyboard shortcuts bound to them.
          Only visible on hover.
            -->
-        <aside id="aside-firefox" style="display:none;">
+        <aside id="aside-firefox">
             <a>Firefox</a>
             <div>
                 <a href="about:home"><span>↑</span><span>about:home</span></a>
@@ -94,7 +98,7 @@
             </div>
         </aside>
 
-        <aside style="left:20%;">
+        <aside id="aside-accounts">
             <a>Accounts</a>
             <div>
                 <a href="https://github.com/jrenslin"><span></span><span>GitHub</span></a>
@@ -169,7 +173,7 @@
 
     </section>
 
-    <div id="search" style="display: none;">
+    <div id="search">
         <div>
             <h2>Bookmarks</h2>
             <input id="searchInput" name="p" />

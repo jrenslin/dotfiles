@@ -33,7 +33,7 @@ if (document.getElementById('hotkeybar') != null) {
 // Function for referral to a given URL.
 // --------- */
 function goTo (target) {
-    document.getElementById('loading').style = "display:block;";
+    document.getElementById('loading').classList.add("toggledVisible");
     var aim = document.querySelectorAll("a[href^='" + target.substr(0, 10) + "']");
 
     aim[0].focus();                       // Focus link to disable double entries
@@ -199,7 +199,7 @@ document.addEventListener('keydown', function (e) {
     case 77:
         if (e.ctrlKey) {
             console.log("Pressed CTRL+M, displaying search.");
-            document.getElementById('search').style = "";
+            document.getElementById('search').classList.add("toggledVisible");
             document.getElementById('searchInput').focus();
             mainComplete ("");
             window.location.hash = "search";

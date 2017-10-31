@@ -30,6 +30,7 @@ input { display: inline-block; width: calc(100% - 18px); max-width:32vw; margin:
 
 div.mainWrapper > div        { display: flex; flex-wrap:wrap; }
 div.mainWrapper > div > div  { flex: 1; margin: 1em 1em 0px 1em; padding:0px; text-align:left; }
+.toggledVisible              { display: block !important; }
 
 /* ##############
 Aside: Shown as boxes to open by hovering over them
@@ -47,6 +48,14 @@ aside > div > a > span:first-child { position: absolute;left: 1em; top:50%; tran
                                      font-family: Monospace; font-size: 1.3em; background: rgba(0,0,0,0.5); }
 aside > div > a > span             { display: inline-block; padding: 0.3em; }
 aside > div > a:hover              { background: rgba(0,0,0,0.4); }
+
+main > aside#aside-accounts        { left: calc(10vw + 8em); }
+
+/* ##############
+Do not display links for Firefox
+############## */
+
+#aside-firefox        { display: none; }
 
 /* ##############
 Help section
@@ -71,7 +80,8 @@ table dd { min-width: calc(100% - 60px); vertical-align:middle; padding:0.5em 0p
 First page (these elements deal with main)
 ############## */
 
-span#loading:before   { content: "↻"; position:fixed; display:block; top: -0vh; left: calc(50% - 0.6em); height: 1.3em;
+span#loading          { display: none; }
+span#loading:before   { content: "↻"; position:fixed; display: block; top: -0vh; left: calc(50% - 0.6em); height: 1.3em;
                         width: 1.3em; transform: translate(-80% , 0); z-index: 100; font-size: 8em; text-align: center;
                         animation: rotating 2s linear infinite; }
 
@@ -109,7 +119,7 @@ html#offline body span:before     { content: "\01F50C"; display: block;
 Search
 ############## */
 
-div#search            { display: block; min-height: calc(100vh - 4em); padding: 2em 0px;
+div#search            { display: none; min-height: calc(100vh - 4em); padding: 2em 0px;
                         background: #3C8282; color: #fff; font-size: 1.05em; }
 div#search h2         { background: initial; font-size: 2em; }
 div#search a          { display: block; padding: 0.6em 0.5em; color: #fff; text-align: left;
