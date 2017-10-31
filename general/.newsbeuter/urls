@@ -71,3 +71,9 @@ http://rss.asahi.com/rss/asahi/politics.rdf                                 Japa
 "query:Japan                                                                Articles:tags # \"Japan\""
 
 http://www.taipeitimes.com/xml/taiwan.rss                                   Taiwan                         "Taipei Times"
+
+### Own Feeds
+https://jrenslin.de/activityFeed.php                                        Own                            "!Activity Feed"
+
+"query:Own Feeds                                                            Articles:tags # \"Own\""
+
