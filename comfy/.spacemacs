@@ -380,6 +380,13 @@ values."
 
 (add-hook 'org-mode-hook 'org-mode-rebindings)
 
+;; Bindings for web-mode
+(defun web-mode-rebindings ()
+  (define-key web-mode-map (kbd "C-c 1") 'helm-yas-complete)
+  (define-key web-mode-map (kbd "C-c 2") 'helm-bibtex))
+
+(add-hook 'web-mode-hook 'web-mode-rebindings)
+
 ;; Reftex
 
 (setq reftex-default-bibliography 
