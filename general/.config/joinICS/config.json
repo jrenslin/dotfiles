@@ -1,0 +1,8 @@
+{
+    "outputfolder": "/home/jrenslin/.calendars/Z_merged-to-single/",
+    "inputfolders": [
+        "/home/jrenslin/.calendars/private",
+        "/home/jrenslin/.calendars/public",
+        "/home/jrenslin/.calendars/university"
+    ]
+}
