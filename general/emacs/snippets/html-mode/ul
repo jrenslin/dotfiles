@@ -1,0 +1,7 @@
+#contributor : Joshua Ramon Enslin <joshua@gmail.comjrenslin.de>
+#name : <ul><li> ... </li></ul>
+#group : list
+# --
+<ul>
+    <li>$0</li>
+</ul>
