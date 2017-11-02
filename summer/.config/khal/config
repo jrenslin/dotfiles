@@ -14,6 +14,11 @@ path                              = /home/jrenslin/.calendars/university
 type                              = calendar
 color                             = light magenta
 
+[[university-private]]
+path                              = /home/jrenslin/.calendars/university-private
+type                              = calendar
+color                             = light blue
+
 [[birthdays]]
 path                              = /home/jrenslin/.calendars/birthdays
 type                              = calendar
