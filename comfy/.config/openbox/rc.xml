@@ -210,6 +210,8 @@
     <keybind key="S-A-o-p">
       <action name="Restart"/>
     </keybind>
+
+
     <!-- Keybindings for handling window size  -->
     <keybind key="A-w">
       <action name="ToggleMaximize"/>
@@ -246,6 +248,42 @@
         <height>100%</height>
       </action>
     </keybind>
+
+    <!-- Keybindings for handling window size (on Windows key) -->
+    <keybind key="W-e">
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>0</y>
+        <width>1380</width>
+        <height>920</height>
+      </action>
+    </keybind>
+    <keybind key="C-W-e">
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>-24</y>
+        <width>1380</width>
+        <height>920</height>
+      </action>
+    </keybind>
+    <keybind key="C-S-W-e">
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>0</y>
+        <width>1380</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+    <keybind key="S-W-e">
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>2230</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+
+
     <!-- Keybindings for interacting with mail -->
     <!-- <keybind key="C-A-e"><action name="Execute"><command>~/Sync/Programming/Python/checkmaildir/sendnotif.sh checkmaildirs.py</command></action></keybind> -->
     <keybind key="C-A-u">
