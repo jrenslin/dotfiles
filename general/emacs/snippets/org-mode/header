@@ -1,0 +1,26 @@
+# -*- mode: snippet -*-
+# name: header
+# key: header_
+# --
+#+TITLE: 
+#+AUTHOR: Joshua Ramon Enslin
+#+EMAIL: joshua@jrenslin.de
+#+DATE: 2017-05-00
+
+#+LANGUAGE: en
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+SUBTITLE: 
+#+ODT_STYLES_FILE: "~/Sync/Programming/dotfiles/general/emacs/orgmode/Goethe-Uni-Frankfurt.ott"
+#+ODT: <text:p text:style-name="PageBreak"/>
+#+BIBLIOGRAPHY: pdf plain
+#+LATEX_CLASS_OPTIONS: [a4paper, 12pt, linespread=5.5, colorlinks=true, citecolor=., linkcolor=black, urlcolor=black]
+#+LATEX_HEADER: \usepackage{apacite}
+#+LATEX_HEADER: \usepackage{parskip}
+#+LATEX_HEADER: \setlength{\parindent}{1cm}
+#+LATEX_HEADER: \usepackage{setspace}
+#+LATEX_HEADER: \usepackage{etoolbox}
+#+LATEX_HEADER: \AtBeginEnvironment{quote}{\singlespacing\small}
+#+LATEX: \onehalfspacing
+#+LATEX: \pagebreak
+
