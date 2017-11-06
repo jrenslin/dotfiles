@@ -66,7 +66,10 @@ alias reloaddunst='killall dunst;notify-send foo'
 alias stow='stow -t ~/'
 
 alias muse='ncmpcpp -h 192.168.2.106 -p 6601'
-
+ 
+# FZF
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+alias fzf="fzf --height 40% --reverse --preview 'head -30 {}'"
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
