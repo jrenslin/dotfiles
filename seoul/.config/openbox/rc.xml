@@ -183,10 +183,15 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-    <!-- General keybindings for handing desktop -->
+    <!-- General keybindings for handling desktop -->
     <keybind key="A-d">
       <action name="Execute">
         <command>rofi -show run</command>
+      </action>
+    </keybind>
+    <keybind key="S-A-d">
+      <action name="Execute">
+        <command>rofi -config ~/.config/rofi/configTop -show run</command>
       </action>
     </keybind>
     <keybind key="W-r">
