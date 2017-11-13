@@ -13,7 +13,7 @@ rofi.font:                             Roboto 40
 "Enable color"
 rofi.color-enabled:                    true
 "Color scheme for normal row" Set from: Default
-rofi.color-normal:                     argb:0263238, #eceff1, argb:0263238, #3C8282, #eceff1
+rofi.color-normal:                     argb:02632388, #eceff1, argb:02632388, #3C8282, #eceff1
 "Color scheme for urgent row" Set from: Default
 rofi.color-urgent:                     #f6e3, #3C8282, #3C8282, #3C8282, #f6e3
 "Color scheme for active row" Set from: Default
