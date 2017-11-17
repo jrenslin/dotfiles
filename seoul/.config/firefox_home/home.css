@@ -8,7 +8,7 @@ html              { height: 100%; width: 100%; margin: 0px; padding: 0px;
 body              { margin: 0px; }
 main:before       { content: " "; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;
                     filter: grayscale(0); opacity: 0.6; z-index: 1;
-                    background: url(/home/jrenslin/Sync/Images/Wallpapers/高雄愛河[CC-BY][Toomore-Chiang].jpg)
+                    background: url(http://localhost/Wallpapers/高雄愛河[CC-BY][Toomore-Chiang].jpg)
                                    no-repeat center center fixed; background-size: cover;  }
 main              { position: relative; display: flex; min-height: 60vh; width: 100%; padding: 20vh 0px; margin: auto;
                     align-items:center; }
