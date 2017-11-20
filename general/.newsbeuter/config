@@ -151,7 +151,7 @@ highlight             article "\\[image\\ [0-9]+\\]"                  yellow    
 ##### Interaction ######################
 ########################################
 
-browser                       chromium
+browser                       firefox
 notify-program                dunst
 player                        mpv
 # notify-always               no
