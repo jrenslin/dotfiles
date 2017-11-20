@@ -9,11 +9,11 @@ rofi.width:                            50
 "Number of columns" Set from: Default
 # rofi.columns:                        1
 "Font to use" Set from: Default
-rofi.font:                             Roboto 40
+rofi.font:                             Roboto 18
 "Enable color"
 rofi.color-enabled:                    true
 "Color scheme for normal row" Set from: Default
-rofi.color-normal:                     argb:0263238, #eceff1, argb:0263238, #98971A, #eceff1
+rofi.color-normal:                     argb:00263238, #eceff1, argb:00263238, #98971A, #eceff1
 "Color scheme for urgent row" Set from: Default
 rofi.color-urgent:                     #f6e3, #98971A, #98971A, #98971A, #f6e3
 "Color scheme for active row" Set from: Default
@@ -26,7 +26,7 @@ rofi.bw:                               0
 "Location on screen" Set from: Default
 rofi.location:                         0
 "Padding" Set from: Default
-rofi.padding:                          700
+rofi.padding:                          300
 "Y-offset relative to location" Set from: Default
 # rofi.yoffset:                        -468
 "X-offset relative to location" Set from: Default
