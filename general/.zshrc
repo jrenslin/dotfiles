@@ -39,6 +39,8 @@ alias readings='~/Sync/Programming/bash/shortcut_scripts/readings.sh'
 # Running other programs
 alias aard='java -Dslobber.browse=true -jar ~/.jars/aard2-web-0.7.jar ~/Sync/Data/Dictionaries/*.slob'
 alias scanlocalnetwork='nmap -T4 -F 192.168.2.1/24'
+alias aria2c='aria2c --conf-path=$HOME/.config/aria2/aria2.conf'
+alias aria2batch='aria2c --conf-path=$HOME/.config/aria2/aria2.conf -i $HOME/Downloads/batch.txt'
 
 # Custom commands for specific handling of other programs 
 alias fe='feh -F -Z "$1"'

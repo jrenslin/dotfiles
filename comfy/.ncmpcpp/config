@@ -314,7 +314,7 @@ song_columns_list_format = "(7)[white]{l} (15)[cyan]{a|c} (20)[cyan]{b} (50)[whi
 ## Attention: It doesn't support song format anymore.
 ## Use `ncmpcpp --now-playing SONG_FORMAT` instead.
 ##
-#execute_on_song_change = "notify-send 'Next song'"
+execute_on_song_change = "/home/jrenslin/Sync/Programming/bash/publicListens/publicListens.sh"
 #
 #playlist_show_remaining_time = no
 #
