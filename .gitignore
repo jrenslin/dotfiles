@@ -1,6 +1,6 @@
 albums
 scripts/
-general/.hledger.journal
+/hledger
 general/.weechat/weechat.log
 general/.weechat/sec.conf
 general/.weechat/script/plugins.xml.gz
