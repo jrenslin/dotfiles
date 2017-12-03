@@ -56,9 +56,6 @@ set       sidebar_new_mail_only = yes
 # When searching for mailboxes containing new mail, should the search wrap around when it reaches the end of the list?
 set       sidebar_next_new_wrap = no
 
-# Show the Sidebar on the right-hand side of the screen
-set       sidebar_on_right = no
-
 # The character to use as the divider between the Sidebar and the other Mutt panels. [On previous versions, this function seems to have only been available for one character. Now, the string may contain more than one character that will be used.]
 set       sidebar_divider_char = ' | '
 

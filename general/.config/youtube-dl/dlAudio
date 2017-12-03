@@ -1,0 +1,13 @@
+# Lines starting with # are comments
+
+# Write subs, thumbnail and metadata to file
+--add-metadata
+
+# Take only audio
+--extract-audio
+
+# Always download the best video available
+-f 'm4a'
+
+# Save all videos under Movies directory in your home directory
+-o ~/Downloads/%(title)s.%(ext)s

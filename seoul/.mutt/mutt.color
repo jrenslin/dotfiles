@@ -107,8 +107,6 @@ color     sidebar_highlight      default             default           # Color o
 color     sidebar_divider        white               default           # Color of the divider separating the Sidebar from NeoMutt panels
 color     sidebar_flagged        default             black             # Color to give mailboxes containing flagged mail
 color     sidebar_new            default             black             # Color to give mailboxes containing new mail
-color     sidebar_ordinary       default             default           # Color to give mailboxes containing no new/flagged mail, etc
-
 
 # Note (From http://www.strcat.de/dotfiles/mutt.color)
 # 
