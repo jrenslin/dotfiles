@@ -45,6 +45,7 @@ folders=(
     ~/.config/dunst
     ~/.config/firefox
     ~/.config/firefox_home
+    ~/.config/hledger
     ~/.config/i3
     ~/.config/i3blocks
     ~/.config/khal
@@ -176,9 +177,11 @@ done
 headline "Running stow"
 
 echo "Stowed general config files"
-stow -t "/home/$USER/" -d "/home/$USER/Sync/Programming/dotfiles/" "general"
+stow -t "$HOME/" -d "$HOME/Sync/Programming/dotfiles/" "general"
+echo "Stowed hledger files"
+stow -t "$HOME/" -d "$HOME/Sync/Programming/dotfiles/hledger/" "hledger"
 echo "Stowed default style-related config files ($default)"
-stow -t "/home/$USER/" -d "/home/$USER/Sync/Programming/dotfiles/" "$default"
+stow -t "$HOME/" -d "$HOME/Sync/Programming/dotfiles/" "$default"
 
 emphasize "Finished."
 

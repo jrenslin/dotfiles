@@ -15,8 +15,8 @@ to="$2"
 # Unstow the theme that's currently used and stow the target theme.
 # -------------------------------
 
-stow -t "/home/$USER/" -d "/home/$USER/Sync/Programming/dotfiles/" -D "$from"
-stow -t "/home/$USER/" -d "/home/$USER/Sync/Programming/dotfiles/" "$to"
+stow -t "$HOME/" -d "$HOME/Sync/Programming/dotfiles/" -D "$from"
+stow -t "$HOME/" -d "$HOME/Sync/Programming/dotfiles/" "$to"
 
 # -------------------------------
 # Restart i3 if on workstation, else reconfigure openbox.
