@@ -74,6 +74,28 @@ alias muse='ncmpcpp -h 192.168.2.106 -p 6601'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 alias fzf="fzf --height 40% --reverse --preview 'head -30 {}'"
 
+# hledger-reports: Little function to list useful reports in hledger 
+function hledger-reports() {
+cat << EOF
+    
+hledger bal -HM --pretty-tables -V -p thisyear
+- Display monthly account balances for this year
+
+hledger bal -HM --pretty-tables -V -p <year>
+- Display monthly account balances for given year
+
+hledger bal -HW --pretty-tables -V date:lastmonth-thismonth
+- Display weekly account balances of the last 2 months
+
+hledger bal -HY --pretty-tables -V
+- Display yearly account balances since start of records
+
+hledger is -M --pretty-tables -V date:thisyear
+- Monthly income statement for the current year
+
+EOF
+}
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
