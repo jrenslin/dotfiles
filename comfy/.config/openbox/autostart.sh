@@ -2,6 +2,7 @@
 xscreensaver -c &
 xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &
 mpd &
+mpdscribble &
 tint2 &
 emacs --daemon &
 # conky -c ~/.config/conky/load-rarely-laptop/conky-clock.conf &

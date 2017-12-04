@@ -65,6 +65,7 @@ folders=(
     ~/.contacts
     ~/.mpd
     ~/.mpd/playlists
+    ~/.mpdscribble
     ~/.mutt
     ~/.mutt/accounts
     ~/.ncmpcpp
