@@ -351,7 +351,6 @@ exec "xcompmgr &"
 exec "mpd"
 exec "mpdscribble"
 exec "termite"
-exec "mpdscribble"
 exec --no-startup-id "xcompmgr &"
 exec --no-startup-id "sleep 1; emacs --daemon"
 
