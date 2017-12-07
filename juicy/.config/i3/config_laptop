@@ -349,7 +349,9 @@ for_window [class="Rambox"] floating enable; resize shrink 800px; move right 130
 exec_always "xscreensaver -c"
 exec "xcompmgr &"
 exec "mpd"
+exec "mpdscribble"
 exec "termite"
+exec "mpdscribble"
 exec --no-startup-id "xcompmgr &"
 exec --no-startup-id "sleep 1; emacs --daemon"
 

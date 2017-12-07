@@ -366,6 +366,7 @@ for_window [class="Rambox"] resize shrink 800px
 exec_always "xscreensaver -c"
 exec "xrandr --output HDMI-1 --primary --left-of DVI-I-1"
 exec "mpd"
+exec "mpdscribble"
 exec --no-startup-id "xcompmgr &"
 exec --no-startup-id "sleep 1; emacs --daemon"
 exec "termite"

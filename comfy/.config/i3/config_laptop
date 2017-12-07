@@ -364,6 +364,7 @@ for_window [class="florence"] floating enable; resize grow left 800, resize grow
 exec_always "xscreensaver -c"
 exec --no-startup-id "xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &"
 exec "mpd"
+exec "mpdscribble"
 exec --no-startup-id "sleep 1; emacs --daemon"
 exec "gnome-terminal --hide-menubar"
 # exec --no-startup-id "xcompmgr &"
