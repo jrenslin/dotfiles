@@ -8,7 +8,7 @@
 # Aliases
 
 # Updating and interaction w/ system
-alias update='sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade && sudo apt-get autoremove'
+alias update='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y'
 alias brightness='xrandr --output eDP-1 --brightness `echo $1`'
 increase_brightness() { ~/Sync/Programming/bash/brightness/increase_brightness.sh }
 reduce_brightness() { ~/Sync/Programming/bash/brightness/reduce_brightness.sh }

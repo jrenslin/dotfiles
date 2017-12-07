@@ -23,4 +23,4 @@
 #+LATEX_HEADER: \AtBeginEnvironment{quote}{\singlespacing\small}
 #+LATEX: \onehalfspacing
 #+LATEX: \pagebreak
-
+#+LATEX: \setcounter{page}{1}
