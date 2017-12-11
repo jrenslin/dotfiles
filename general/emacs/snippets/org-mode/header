@@ -21,6 +21,9 @@
 #+LATEX_HEADER: \usepackage{setspace}
 #+LATEX_HEADER: \usepackage{etoolbox}
 #+LATEX_HEADER: \AtBeginEnvironment{quote}{\singlespacing\small}
+#+LATEX_HEADER: \pagenumbering{gobble}
 #+LATEX: \onehalfspacing
 #+LATEX: \pagebreak
 #+LATEX: \setcounter{page}{1}
+#+LATEX: \pagenumbering{arabic}
+
