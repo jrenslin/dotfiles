@@ -7,6 +7,33 @@
 #+EMAIL: joshua@jrenslin.de
 #+DATE: 2017-05-00
 
+#+OPTIONS:   toc:nil todo:nil tags:nil
+#+BIND: org-export-latex-title-command ""
+#+text: 
+
+#+LATEX_HEADER: \renewcommand{\maketitle}{}
+#+LATEX_HEADER: \usepackage{graphicx}
+#+begin_latex
+\begin{titlepage}
+        \centering
+        \vspace{2cm}
+        {\scshape\LARGE \par}
+        \vspace{1cm}
+        {\scshape\Lar Context \par}
+        \vspace{1.5cm}
+        {\huge\bfseries Title \par}
+        {\Large Subtitle \par}
+        \vspace{2cm}
+        {\Large\itshape Joshua R. Enslin \par} \\ \vspace{1cm}
+        \vfill
+        supervised by\par
+        Supervisor
+
+        \vfill
+        {\large \today\par}
+\end{titlepage}
+#+end_latex
+
 #+LANGUAGE: en
 #+DESCRIPTION: 
 #+KEYWORDS: 
@@ -22,7 +49,9 @@
 #+LATEX_HEADER: \usepackage{etoolbox}
 #+LATEX_HEADER: \AtBeginEnvironment{quote}{\singlespacing\small}
 #+LATEX_HEADER: \pagenumbering{gobble}
-#+LATEX: \onehalfspacing
+#+LATEX_HEADER: \onehalfspacing
+#+LATEX: \pagebreak
+#+TOC: headlines 2
 #+LATEX: \pagebreak
 #+LATEX: \setcounter{page}{1}
 #+LATEX: \pagenumbering{arabic}
