@@ -9,3 +9,7 @@ uda.progress.default  = 0
 
 uda.estimate.label    = Estimate
 uda.estimate.type     = duration
+
+uda.priority.label=Priority
+uda.priority.type=string
+uda.priority.values   = H,M,,L

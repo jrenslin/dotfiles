@@ -75,7 +75,12 @@ Plug 'mhinz/vim-startify'       " Fancy start screen
 
 Plug 'MarcWeber/vim-addon-mw-utils' | Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
-Plug 'honza/vim-snippets' " Snippets
+Plug 'honza/vim-snippets'       " Snippets
+
+" ==== Documenting and Commenting
+
+" Plug 'scrooloose/nerdcommenter'
+Plug 'tomtom/tcomment_vim'
 
 " ==== Integration with other programs
 
@@ -273,8 +278,19 @@ let g:syntastic_aggregate_errors = 1
 
 " ==== File types
 
+if filereadable($HOME . '/Sync/Programming/Rules/md_Rules/md_phpcs_rules.xml')
+    let g:syntastic_php_phpmd_post_args = $HOME . '/Sync/Programming/Rules/md_Rules/md_phpmd_rules.xml'
+    let g:syntastic_php_phpcs_args='--standard='.$HOME . '/Sync/Programming/Rules/md_Rules/md_phpcs_rules.xml'
+    let g:syntastic_css_phpcs_args='--standard='.$HOME . '/Sync/Programming/Rules/md_Rules/md_phpcs_rules.xml'
+elseif filereadable($HOME . '/Rules/md_Rules/md_phpmd_rules.xml')
+    let g:syntastic_php_phpmd_post_args = $HOME . '/Rules/md_Rules/md_phpmd_rules.xml'
+    let g:syntastic_php_phpcs_args='--standard='.$HOME . '/Rules/md_Rules/md_phpcs_rules.xml'
+    let g:syntastic_css_phpcs_args='--standard='.$HOME . '/Rules/md_Rules/md_phpcs_rules.xml'
+endif
+
 let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
 let g:syntastic_css_checkers = ['phpcs']
+let g:syntastic_javascript_checkers = ['gjslint']
 
 " ======== Startify: Start Screen
 
