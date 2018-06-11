@@ -18,7 +18,7 @@ alias list-installed='dpkg-query -W --showformat='${Installed-Size;10}\t${Packag
 alias appendfoldername='for i in *; do mv $i "`pwd|awk -F'/' '{print $NF}'`$i"; done'
 alias dots='cd ~/Sync/Programming/dotfiles'
 alias writing='cd ~/synced_notes/CUR'
-alias flattendir='find "/$1" -mindepth 2 -type f -exec mv -t "/$1" -i "{}" +'
+alias padImgNames="rename 'unless (/0+[0-9]{4}.(jpeg|jpg|png)/) {s/^([0-9]{1,3}\.(jpeg|jpg|png))$/000$1/g;s/0*([0-9]{4}\..*)/$1/}' *"
 
 # Mail
 alias synctasks='~/Sync/Programming/bash/backups/sync_tasks_with_ftp.sh'
