@@ -71,7 +71,7 @@ folders=(
     ~/.ncmpcpp
     ~/.ncmpcpp/artists
     ~/.ncmpcpp/lyrics
-    ~/.newsbeuter
+    ~/.newsboat
     ~/.password-store
     ~/.weechat
     ~/.weechat/logs
