@@ -1,9 +1,6 @@
 ! Desktop/Laptop Settings.
-#ifdef SRVR_jrenslin-laptop
-    Xft.dpi:      180
-#else
-    Xft.dpi:      180
-#endif
+
+Xft.dpi:      180
 
 Xft.antialias:    true
 Xft.hinting:      true

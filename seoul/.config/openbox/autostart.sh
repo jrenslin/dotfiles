@@ -1,4 +1,7 @@
 #!/bin/sh
+
+bash ~/.checkScreenSize.sh
+
 xscreensaver -c &
 xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &
 mpd &
@@ -31,3 +34,8 @@ conky -c /home/jrenslin/.config/conky/tiles-laptop/conky-files-pictures.conf &
 conky -c /home/jrenslin/.config/conky/tiles-laptop/conky-files-cache.conf &
 conky -c /home/jrenslin/.config/conky/load-rarely/conky-next-event.conf &
 
+#if [ "$HOST" = "jrenslin-pc" ]; then
+#    printf '%s\n' "on the right host"
+# else
+#    printf '%s\n' "uh-oh, not on foo"
+#fi

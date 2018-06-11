@@ -538,7 +538,7 @@
       </action>
     </keybind>
     <!-- Keybindings for focusing applications -->
-    <!-- Two keys not bound in the list (C-2 and C-6) belong to terminals -->
+    <!-- Two keys not bound in the list (C-2 and C-6) belong to terminals
     <keybind key="C-1">
       <action name="Execute">
         <command>wmctrl -a firefox</command>
@@ -584,6 +584,7 @@
         <command>wmctrl -x -a Nautilus</command>
       </action>
     </keybind>
+    -->
     <!-- Keybindings for sending application to desktop X -->
     <keybind key="S-A-1">
       <action name="SendToDesktop">
