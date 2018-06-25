@@ -13,3 +13,6 @@ uda.estimate.type     = duration
 uda.priority.label=Priority
 uda.priority.type=string
 uda.priority.values   = H,M,,L
+
+uda.reviewed.type     = date
+uda.reviewed.label    = Reviewed

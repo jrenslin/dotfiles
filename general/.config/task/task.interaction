@@ -2,7 +2,7 @@
 # Editing
 # ----------------------------
 
-editor                = emacsclient            # Text editor for `task edit`   default: $EDITOR
+editor                = vim                    # Text editor for `task edit`   default: $EDITOR
 edit.verbose          = on                     # Show comments when editing    default: on
 # locale                = en-US.UTF8             # Locale; used for syncing
 
@@ -16,3 +16,12 @@ list.all.tags         = yes     # List all tags on `task tags`
 complete.all.tags     = yes     # Autocomplete works with all tags
 regex                 = yes
 recurrence.limit      = 5       # Increase recurrence limit
+
+# ----------------------------
+# Reports
+# ----------------------------
+
+report._reviewed.description = Tasksh review report.  Adjust the filter to your needs.
+report._reviewed.columns     = uuid
+report._reviewed.sort        = reviewed+,modified+
+report._reviewed.filter      = ( reviewed.none: or reviewed.before:now-6days ) and ( +PENDING or +WAITING )
