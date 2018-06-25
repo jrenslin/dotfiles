@@ -1,154 +1,151 @@
 
-/* ##############
-Outside elements
-############## */
+/*
+ * Outside elements
+ */
 
-html              { height: 100%; width: 100%; margin: 0px; padding: 0px;
-                    background: #e2dccc; color: #555; font-family: Roboto, Courier; text-align: center; }
-body              { margin: 0px; }
-main:before       { content: " "; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;
-                    filter: grayscale(0); opacity: 0.6; z-index: 1;
-                    background: url(http://localhost/Wallpapers/高雄愛河[CC-BY][Toomore-Chiang].jpg)
-                                   no-repeat center center fixed; background-size: cover;  }
-main              { position: relative; display: flex; min-height: 60vh; width: 100%; padding: 20vh 0px; margin: auto;
-                    align-items:center; }
+html              { height: 100%; width: 100%; margin: 0; padding: 0;
+                    background: #E2DCCC; color: #555; font-family: Roboto, Courier; text-align: center; }
+body              { margin: 0; }
+main:before       { content: " "; position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+                    filter: grayscale(0); opacity: .6; z-index: 1;
+                    background: url(http://localhost/Wallpapers/高雄愛河[CC-BY][Toomore-Chiang].jpg) no-repeat center center fixed;
+                    background-size: cover;  }
+main              { position: relative; display: flex; min-height: 60vh; width: 100%; margin: auto; padding: 20vh 0;
+                    align-items: center; }
 div.mainWrapper   { position: relative; display: block; text-align: center; font-size: 1.05em; margin: auto; width: 90%; z-index: 1; }
 
-/* ##############
-General rules
-############## */
+/*
+ * General rules
+ */
 
-h1    { border-bottom: 1px solid #888; font-weight:normal;color:#c33;padding:0.5em 0px;}
-a     { color: #ccc; text-decoration:none;}
+h1    { padding: .5em 0px;border-bottom: 1px solid #888; font-weight: normal; color: #C33; }
+a     { color: #CCC; text-decoration: none; }
 
 dl    { display: flex; flex-wrap: wrap; }
-dt    { display: inline-block; flex: 2; width: 100%; padding:0.5em 0px; font-weight: bold; border-bottom: 1px solid #888; }
+dt    { display: inline-block; flex: 2; width: 100%; padding: .5em 0; font-weight: bold; border-bottom: 1px solid #888; }
 dd    { display: inline-block; flex: 1; min-width: 350px; border-bottom: 1px solid #888; }
 
-input { display: inline-block; width: calc(100% - 18px); max-width:32vw; margin:0px auto; padding:1.5em 0.8em;
-        font-family: Monospace, Courier; background:#fff; color:#333; border:0px solid #555; vertical-align:middle; }
+input { display: inline-block; width: calc(100% - 18px); max-width: 32vw; margin:0px auto; padding: 1.5em .8em;
+        font-family: Monospace, Courier; background: #FFF; color: #333; border: 0 solid #555; vertical-align: middle; }
 
-div.mainWrapper > div        { display: flex; flex-wrap:wrap; }
-div.mainWrapper > div > div  { flex: 1; margin: 1em 1em 0px 1em; padding:0px; text-align:left; }
+div.mainWrapper > div        { display: flex; flex-wrap: wrap; }
+div.mainWrapper > div > div  { flex: 1; margin: 1em 1em 0 1em; padding: 0; text-align:left; }
 .toggledVisible              { display: block !important; }
 
-/* ##############
-Aside: Shown as boxes to open by hovering over them
-############## */
+iframe { width: 100%; height: 60vh; border: 0; box-sizing: border-box; }
 
-aside               { display: block; position: absolute; bottom: 0px; left: 10vw; z-index:10; }
-aside a             { display: block; padding: 0.5em 0.8em; background: rgba(0,0,0,0.3); }
+/*
+ * Aside: Shown as boxes to open by hovering over them
+ */
+
+aside               { display: block; position: absolute; left: 10vw; bottom: 0; z-index: 10; }
+aside a             { display: block; padding: .5em .8em; background: rgba(0, 0, 0, .3); }
 aside div           { display: none; }
 aside:hover > a     { display: none; }
 aside:hover > div   { display: block; z-index: 1000; }
 
 aside > div > a                    { position: relative; display: block; min-width: 140px;
-                                     margin: 0px; padding: 1.2em 0.8em 1.2em 3em; list-style: none; }
-aside > div > a > span:first-child { position: absolute;left: 1em; top:50%; transform: translate(0, -50%);
-                                     font-family: Monospace; font-size: 1.3em; background: rgba(0,0,0,0.5); }
-aside > div > a > span             { display: inline-block; padding: 0.3em; }
-aside > div > a:hover              { background: rgba(0,0,0,0.4); }
+                                     margin: 0; padding: 1.2em .8em 1.2em 3em; list-style: none; }
+aside > div > a > span:first-child { position: absolute; left: 1em; top: 50%; transform: translate(0, -50%);
+                                     font-family: Monospace; font-size: 1.3em; background: rgba(0, 0, 0, .5); }
+aside > div > a > span             { display: inline-block; padding: .3em; }
+aside > div > a:hover              { background: rgba(0, 0, 0, .4); }
 
 main > aside#aside-accounts        { left: calc(10vw + 8em); }
 
-/* ##############
-Do not display links for Firefox
-############## */
+/*
+ * Do not display links for Firefox
+ */
 
 #aside-firefox        { display: none; }
 
-/* ##############
-Help section
-############## */
+/*
+ * Help section
+ */
 
-section#help { margin: 0px 0px; padding: 1em 0px; background: #8E8238; color: #e4e4e4; }
+section#help { margin: 0 0; padding: 1em 0; background: #8E8238; color: #E4E4E4; }
 
-/* ##############
-Last Section: Weekly schedule at university
-############## */
+/*
+ * Last Section: Weekly schedule at university
+ */
 
-section#semesterSchedule  { background: #F29901; padding: 2em 0px; }
+section#semesterSchedule  { background: #F29901; padding: 2em 0; }
 
-table    { width:100%; padding:2em 3vw; background: #F29901; color: #e4e4e4; }
-table a  { color: #fff; }
-table td { border-bottom: 1px solid #e4e4e4; }
-table td { min-width: 10%; padding:1em;}
+table    { width: 100%; padding: 2em 3vw; background: #F29901; color: #E4E4E4; }
+table a  { color: #FFF; }
+table td { border-bottom: 1px solid #E4E4E4; }
+table td { min-width: 10%; padding: 1em; }
 table dt { width: 30px; }
-table dd { min-width: calc(100% - 60px); vertical-align:middle; padding:0.5em 0px; }
+table dd { min-width: calc(100% - 60px); padding: .5em 0; vertical-align: middle; }
 
-/* ##############
-First page (these elements deal with main)
-############## */
+/*
+ * First page (these elements deal with main)
+ */
 
 span#loading          { display: none; }
-span#loading:before   { content: "↻"; position:fixed; display: block; top: -0vh; left: calc(50% - 0.6em); height: 1.3em;
+span#loading:before   { content: "↻"; position: fixed; display: block; top: 0; left: calc(50% - 0.6em); height: 1.3em;
                         width: 1.3em; transform: translate(-80% , 0); z-index: 100; font-size: 8em; text-align: center;
                         animation: rotating 2s linear infinite; }
 
-form:after            { content: " a "; display:inline-block; padding: 0.03em 0.2em; margin:0px;
-                        font-size:2.8em; background:#CD919B; color:#eee; vertical-align:middle; }
+form:after            { content: " a "; display: inline-block; margin: 0; padding: .03em .2em;
+                        font-size: 2.8em; background: #CD919B; color: #EEE; vertical-align: middle; }
 form#hotkeybar:after  { content: "⌨"; }
 form#searchbar:after  { content: "🍸";}
 form#urlbar:after     { content: "🍷";}
 
-div h2                            { padding: 1.2em 0.8em 1.2em 3em; background: #8E8238; margin: 0px;
-                                    font-size: 1.05em; font-weight:normal; color:#fff; }
-div > div > a                     { position:relative; display: block; margin:0px; padding: 1.2em 0.8em 1.2em 3em;
-                                    list-style:none; min-width:140px; background: #eee; color: #555; }
-div > div > a > span:first-child  { position: absolute;left: 1em; top:50%; transform: translate(0, -50%);
-                                    font-family: Monospace; font-size:1.3em; background:#555; color:#eee; }
-div > div > a > span              { display: inline-block; padding:0.3em; }
-div > div > a:nth-child(2n)       { background: #ddd; }
+div h2                            { margin: 0; padding: 1.2em .8em 1.2em 3em; background: #8E8238; color: #FFF;
+                                    font-size: 1.05em; font-weight: normal; }
+div > div > a                     { position: relative; display: block; margin: 0; padding: 1.2em .8em 1.2em 3em;
+                                    list-style:none; min-width:140px; background: #EEE; color: #555; }
+div > div > a > span:first-child  { position: absolute; left: 1em; top: 50%; transform: translate(0, -50%);
+                                    font-family: Monospace; font-size: 1.3em; background: #555; color: #EEE; }
+div > div > a > span              { display: inline-block; padding: .3em; }
+div > div > a:nth-child(2n)       { background: #DDD; }
 div > div > a.selectedLink,
-div > div > a:hover               { animation: colorizeLinkFromList 0.4s; background: #8FBDBD; color: #fff; }
+div > div > a:hover               { animation: colorizeLinkFromList .4s; background: #8FBDBD; color: #FFF; }
 
-/* ##############
-Offline screen
-############## */
+/*
+ * Offline screen
+ */
 
 html#offline:before               { display: none; }
 html#offline                      { background: #CD919B; }
 html#offline body                 { position: absolute; left: 50%; top: 55%; transform: translate(-50%, -50%);
-                                    background: #CD919B; color: #fff; font-size: 2.5em; }
+                                    background: #CD919B; color: #FFF; font-size: 2.5em; }
 html#offline body span            { position: relative; }
 html#offline body span:before     { content: "\01F50C"; display: block;
-                                    position: absolute; left: 50%; bottom: 110%; transform: translate(-50%, 0px);
+                                    position: absolute; left: 50%; bottom: 110%; transform: translate(-50%, 0);
                                     font-size: 4em;  }
 
-/* ##############
-Search
-############## */
+/*
+ * Search
+ */
 
-div#search            { display: none; min-height: calc(100vh - 4em); padding: 2em 0px;
-                        background: #3C8282; color: #fff; font-size: 1.05em; }
+div#search            { display: none; min-height: calc(100vh - 4em); padding: 2em 0;
+                        background: #3C8282; color: #FFF; font-size: 1.05em; }
 div#search h2         { background: initial; font-size: 2em; }
-div#search a          { display: block; padding: 0.6em 0.5em; color: #fff; text-align: left;
+div#search a          { display: block; padding: .6em .5em; color: #FFF; text-align: left;
                         list-style: none; line-height: 1.5em; border-bottom: 1px solid #8FBDBD;
                         counter-increment: step-counter; }
-div#search a:before   { content: counter(step-counter); display: inline-block; width: 1.8em; margin: 0px 0.5em 0px 0px;
-                        background: #8FBDBD; color: #fff; text-align: center;  }
+div#search a:before   { content: counter(step-counter); display: inline-block; width: 1.8em; margin: 0 .5em 0 0;
+                        background: #8FBDBD; color: #FFF; text-align: center;  }
 div#search a:hover    { background: #8FBDBD; cursor: pointer; }
-div#search a time     { float: right; color: #ccc; }
+div#search a time     { float: right; color: #CCC; }
 
-/* ##############
-Scrollbar
-############## */
+/*
+ * Scrollbar
+ */
 
-body::-webkit-scrollbar {
-    width: 0.5em; border-left: 1px solid #eee; background: #eee;
-}
-body::-webkit-scrollbar-thumb {
-    background-color:  #4E4E4E;
-    outline: 1px solid #4E4E4E;
-}
+body::-webkit-scrollbar       { width: .5em; border-left: 1px solid #EEE; background: #EEE; }
+body::-webkit-scrollbar-thumb { background-color:  #4E4E4E; outline: 1px solid #4E4E4E; }
 
-/* ##############
-Make it responsive.
-############## */
+/*
+ * Make it responsive.
+ */
 
 @media screen and (max-width:50em) {
-	  div.mainWrapper > div         { display: block; }
-	  div.mainWrapper > div > div   { flex: 1; display: block; margin: 1em 0px; }
+    div.mainWrapper > div         { display: block; }
+    div.mainWrapper > div > div   { flex: 1; display: block; margin: 1em 0; }
 }
 
 @media screen and (min-width:60em) {
@@ -156,13 +153,13 @@ Make it responsive.
     div#search ul                 { padding: 2em 20vw; }
 }
 
-/* ##############
-Animations
-############## */
+/*
+ * Animations
+ */
 
 @keyframes colorizeLinkFromList {
-    from { background: #ddd;    color: #555; }
-    to   { background: #8FBDBD; color: #fff; }
+    from { background: #DDD;    color: #555; }
+    to   { background: #8FBDBD; color: #FFF; }
 }
 
 @keyframes rotating {
